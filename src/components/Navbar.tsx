@@ -25,19 +25,15 @@ const YoutubeIcon = ({ className }: { className?: string }) => (
 );
 
 const productCategories = [
+  { name: 'KIRLOSKAR ENGINE HEADS', path: '/products/kirloskar-engine-heads' },
+  { name: 'KIRLOSKAR CYLINDER BLOCKS (AIR COOLED)', path: '/products/kirloskar-cylinder-blocks' },
   { name: 'CYLINDER LINERS', path: '/products/cylinder-liners' },
   { name: 'PISTONS', path: '/products/pistons' },
   { name: 'AIR COMPRESSOR KITS', path: '/products/air-compressor-kits' },
   { name: 'PISTON RINGS', path: '/products/piston-rings' },
-  { name: 'VALVES', path: '/products/valves' },
-  { name: 'VALVE GUIDES', path: '/products/valve-guides' },
+  { name: 'BUSH PINS', path: '/products/bush-pins' },
   { name: 'ENGINE BEARINGS', path: '/products/engine-bearings' },
-  { name: 'GASKETS', path: '/products/gaskets' },
-  { name: 'CRANKSHAFTS', path: '/products/crankshafts' },
-  { name: 'CONNECTING RODS', path: '/products/connecting-rods' },
-  { name: 'CASTINGS', path: '/products/castings' },
-  { name: 'AGRICULTURAL DIESEL ENGINES', path: '/products/agricultural-diesel-engines' },
-  { name: 'POWER GENSETS', path: '/products/power-gensets' },
+  { name: 'CUSTOM CASTINGS', path: '/custom-manufacturing' },
 ];
 
 export function Navbar() {
@@ -81,18 +77,24 @@ export function Navbar() {
     { name: 'Products', path: '/products', hasDropdown: true },
     { name: 'Infrastructure', path: '/infrastructure' },
     { name: 'News & Events', path: '/news' },
-    { name: 'Contact', path: '/quote' },
+    { name: 'Contact Us', path: '/quote' },
   ];
 
   return (
     <>
-      {/* Top Red Bar */}
-      <div className="bg-[#D34747] text-white py-1.5 sm:py-2 z-[60] relative border-b border-red-600 max-w-full overflow-visible">
+      {/* Top Orange Bar */}
+      <div className="bg-[#EA580C] text-white py-1.5 sm:py-2 z-[60] relative border-b border-orange-700 max-w-full overflow-visible">
         <div className="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 flex items-center justify-between text-xs gap-1.5 sm:gap-4 overflow-visible">
           
           {/* Left Side: Language Dropdown Selector */}
           <div className="flex items-center text-[10px] sm:text-[11px] font-bold tracking-wider shrink-0 relative z-[70]">
             <LanguageSelector align="left" />
+          </div>
+
+          {/* Center/Info Badge */}
+          <div className="hidden md:flex items-center text-xs font-semibold text-orange-100 space-x-4">
+            <span>📍 AGRA, INDIA (Est. 1960)</span>
+            <span>📞 +91 6396566120</span>
           </div>
 
           {/* Right Side: Social Media Icons */}
@@ -108,9 +110,9 @@ export function Navbar() {
                 target="_blank"
                 rel="noreferrer"
                 title={item.name}
-                className="bg-white text-[#D34747] p-1.5 rounded hover:bg-zinc-100 transition-colors flex items-center justify-center shadow-xs"
+                className="bg-black text-[#EA580C] p-1.5 rounded hover:bg-zinc-900 transition-colors flex items-center justify-center shadow-xs"
               >
-                <item.icon className="w-3.5 h-3.5" />
+                <item.icon className="w-3.5 h-3.5 text-[#EA580C]" />
               </a>
             ))}
           </div>
@@ -121,18 +123,26 @@ export function Navbar() {
       {/* Main Header */}
       <header 
         className={`w-full z-40 transition-all duration-300 bg-white ${
-          scrolled ? 'fixed top-0 shadow-sm py-3' : 'relative py-4 border-b border-zinc-100'
+          scrolled ? 'fixed top-0 shadow-md py-3' : 'relative py-4 border-b border-zinc-100'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center group py-0.5">
+            <Link to="/" className="flex items-center space-x-3 group py-0.5">
               <img 
-                src="/images/singhal_logo.jpeg" 
-                alt="Singhal Industrial Corporation" 
-                className="h-12 sm:h-16 md:h-20 max-h-20 w-auto object-contain transition-transform group-hover:scale-105"
+                src="/images/gr_logo.jpeg" 
+                alt="GR Engine Parts" 
+                className="h-12 sm:h-16 md:h-18 max-h-20 w-auto object-contain transition-transform group-hover:scale-105"
               />
+              <div className="flex flex-col">
+                <span className="text-xl md:text-2xl font-black text-zinc-900 tracking-tight leading-none group-hover:text-[#EA580C] transition-colors">
+                  GEE ARR
+                </span>
+                <span className="text-[10px] font-extrabold uppercase tracking-widest text-zinc-500 mt-1">
+                  Engine Parts • Est. 1960
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Nav */}
@@ -146,7 +156,7 @@ export function Navbar() {
                 >
                   <Link 
                     to={link.path}
-                    className="text-sm font-semibold text-zinc-700 hover:text-[#D34747] transition-colors flex items-center py-2"
+                    className="text-sm font-bold text-zinc-800 hover:text-[#EA580C] transition-colors flex items-center py-2 uppercase tracking-wider"
                   >
                     {link.name}
                     {link.hasDropdown && <ChevronDown className="w-3.5 h-3.5 ml-1 text-zinc-500 transition-transform group-hover:rotate-180" />}
@@ -154,13 +164,16 @@ export function Navbar() {
 
                   {/* Dropdown Menu */}
                   {link.hasDropdown && dropdownOpen && (
-                    <div className="absolute top-full left-0 w-72 bg-white shadow-2xl border border-zinc-100 rounded-b-xl overflow-hidden z-50 max-h-[75vh] overflow-y-auto">
-                      <div className="py-2">
+                    <div className="absolute top-full left-0 w-80 bg-white shadow-2xl border border-zinc-100 rounded-b-xl overflow-hidden z-50 max-h-[75vh] overflow-y-auto">
+                      <div className="py-2 bg-zinc-950 text-white px-4 py-2 text-[11px] font-bold tracking-widest uppercase text-[#EA580C]">
+                        GR Product Categories
+                      </div>
+                      <div className="py-1">
                         {productCategories.map((category) => (
                           <Link
                             key={category.name}
                             to={category.path}
-                            className="block px-5 py-2.5 text-xs font-bold text-zinc-700 hover:bg-[#D34747] hover:text-white transition-colors uppercase tracking-wide border-b border-zinc-50 last:border-0"
+                            className="block px-5 py-2.5 text-xs font-bold text-zinc-800 hover:bg-[#EA580C] hover:text-white transition-colors uppercase tracking-wide border-b border-zinc-50 last:border-0"
                           >
                             {category.name}
                           </Link>
@@ -174,7 +187,7 @@ export function Navbar() {
 
             {/* Mobile menu button */}
             <button 
-              className="lg:hidden text-zinc-900 hover:text-[#D34747] p-1"
+              className="lg:hidden text-zinc-900 hover:text-[#EA580C] p-1"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -192,16 +205,16 @@ export function Navbar() {
                     <div>
                       <button
                         onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
-                        className="w-full flex justify-between items-center px-3 py-3 text-sm font-bold text-zinc-800 hover:text-[#D34747] hover:bg-zinc-50 rounded-md transition-colors"
+                        className="w-full flex justify-between items-center px-3 py-3 text-sm font-bold text-zinc-800 hover:text-[#EA580C] hover:bg-zinc-50 rounded-md transition-colors"
                       >
                         <span>{link.name}</span>
-                        <ChevronDown className={`w-4 h-4 text-zinc-500 transition-transform duration-200 ${mobileProductsOpen ? 'rotate-180 text-[#D34747]' : ''}`} />
+                        <ChevronDown className={`w-4 h-4 text-zinc-500 transition-transform duration-200 ${mobileProductsOpen ? 'rotate-180 text-[#EA580C]' : ''}`} />
                       </button>
                       {mobileProductsOpen && (
-                        <div className="pl-4 pr-2 space-y-1 py-2 my-1 border-l-2 border-[#D34747] ml-3 bg-zinc-50/70 rounded-r-md">
+                        <div className="pl-4 pr-2 space-y-1 py-2 my-1 border-l-2 border-[#EA580C] ml-3 bg-zinc-50/70 rounded-r-md">
                           <Link
                             to="/products"
-                            className="block px-3 py-2 text-xs font-extrabold text-[#D34747] uppercase tracking-wider"
+                            className="block px-3 py-2 text-xs font-extrabold text-[#EA580C] uppercase tracking-wider"
                             onClick={() => setIsOpen(false)}
                           >
                             All Products Catalog &rarr;
@@ -210,7 +223,7 @@ export function Navbar() {
                             <Link
                               key={category.name}
                               to={category.path}
-                              className="block px-3 py-2 text-xs font-semibold text-zinc-700 hover:text-[#D34747] uppercase tracking-wide border-b border-zinc-100 last:border-0"
+                              className="block px-3 py-2 text-xs font-semibold text-zinc-700 hover:text-[#EA580C] uppercase tracking-wide border-b border-zinc-100 last:border-0"
                               onClick={() => setIsOpen(false)}
                             >
                               {category.name}
@@ -222,7 +235,7 @@ export function Navbar() {
                   ) : (
                     <Link
                       to={link.path}
-                      className="flex justify-between items-center px-3 py-3 text-sm font-bold text-zinc-800 hover:text-[#D34747] hover:bg-zinc-50 rounded-md"
+                      className="flex justify-between items-center px-3 py-3 text-sm font-bold text-zinc-800 hover:text-[#EA580C] hover:bg-zinc-50 rounded-md"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.name}

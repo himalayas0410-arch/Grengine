@@ -1,16 +1,16 @@
 export const companyConfig = {
-  name: "Singhal Industrial Corporation",
-  shortName: "SINGHAL",
-  brandName: "Singhal Industrial Corporation",
+  name: "GEE ARR",
+  shortName: "GR",
+  brandName: "GEE ARR (GR Engine Parts)",
   domain: "indiasparepart.com",
   siteUrl: "https://indiasparepart.com",
-  tagline: "Your trusted partner for high quality auto and agricultural spare parts.",
-  subtitle: "Manufacturer of Cylinder Liners, Pistons & Engine Valves. We are one of the leading engine parts manufacturers & exporters, serving automotive OEMs and aftermarket customers around the world with decades of excellence in customer service.",
-  email: "singhal.agra123@gmail.com",
-  phone: "+91 89580 08645",
-  whatsapp: "+91 89580 08645",
-  address: "C-5/1, Foundry Nagar, Agra, INDIA",
-  established: "1966",
+  tagline: "Quality Auto & Agricultural Engine Spare Parts Manufacturer",
+  subtitle: "Manufacturer of Cylinder Liners, Pistons, Air Cooled Cylinder Blocks, Kirloskar Engine Heads & High Performance Engine Components in Agra, India.",
+  email: "ggrindia123@gmail.com",
+  phone: "+91 6396566120",
+  whatsapp: "+91 6396566120",
+  address: "G-59 Foundry Nagar, Agra, UP, INDIA",
+  established: "1960",
   moq: "300 pieces",
   countriesServed: "45+",
   productionCapacity: "500K+ units/month",
@@ -27,4 +27,5 @@ export const companyConfig = {
     secretKey: "6LfyzaQtAAAAAP-WcjD9nckGIRZ0Px_DhAoxlYcF"
   }
 };
+
 

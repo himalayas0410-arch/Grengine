@@ -1,99 +1,105 @@
-import { Award, CheckCircle2, ArrowRight, ShieldCheck, Building2, Target, Globe } from 'lucide-react';
+import { Award, CheckCircle2, ArrowRight, ShieldCheck, Building2, Target, Globe, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { companyConfig } from '../config';
 import { SEO } from '../components/SEO';
 
+const domesticLocations = [
+  "Agra - UP", "Punjab", "Srinagar", "UTTARAKHAND", "Mumbai", 
+  "Haryana", "Jaipur", "Gujarat", "Lucknow", "Delhi", 
+  "Bihar", "West Bengal", "Hyderabad", "Bengaluru", "Chennai", "Kerala", "Manipur"
+];
+
 export function About() {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white text-zinc-900 font-sans">
       <SEO 
-        title="About Us - 60+ Years of Manufacturing Excellence"
-        description="Learn about Singhal Industrial Corporation (KOMODO Engine Parts). Established in 1966 in Agra, India, we are a leading ISO 9001:2015 certified manufacturer & exporter of engine spare parts, cylinder liners, and pistons."
+        title="About GEE ARR (GR) - Established 1960 in Agra, India"
+        description="Learn about GEE ARR (GR Engine Parts). Established in 1960 in Foundry Nagar, Agra, India, we are a premier ISO 9001:2015 certified manufacturer of Kirloskar Engine Heads, Cylinder Blocks, Liners, and Pistons."
         canonicalPath="/about"
       />
 
       {/* Hero Banner */}
-      <section className="bg-zinc-900 text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-red-950/80 via-zinc-900 to-zinc-950 z-0" />
+      <section className="bg-zinc-950 text-white py-16 md:py-24 relative overflow-hidden border-b border-orange-600/30">
+        <div className="absolute inset-0 bg-[radial-gradient(#EA580C_1px,transparent_1px)] [background-size:24px_24px] opacity-15" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center space-x-2 bg-red-600/20 text-red-400 border border-red-500/30 text-xs font-bold px-3.5 py-1.5 rounded-full mb-6 uppercase tracking-wider">
-              <Award className="w-4 h-4 mr-1" /> Established 1966 | Agra, India
+            <span className="inline-flex items-center space-x-2 bg-[#EA580C] text-black font-black text-xs px-3.5 py-1.5 rounded-full mb-6 uppercase tracking-wider shadow-md">
+              <Award className="w-4 h-4 mr-1" /> ESTABLISHED 1960 | AGRA, INDIA
             </span>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-2 tracking-tight leading-tight">
-              About Singhal Industrial Corporation
+            <h1 className="text-4xl md:text-5xl font-black text-white mb-3 tracking-tight leading-tight">
+              About GEE ARR <span className="text-[#EA580C]">GR</span>
             </h1>
+            <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
+              Over 65 years of engineering precision, quality manufacturing, and pan-India presence in auto & agricultural engine spare parts.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-20 bg-white">
+      <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             <div className="lg:col-span-8 space-y-6 text-zinc-700 leading-relaxed text-sm md:text-base">
-              <div className="p-6 rounded-2xl bg-red-50 border border-red-100 mb-8">
-                <h2 className="text-2xl font-extrabold text-zinc-900 mb-2">Company Overview</h2>
-                <p className="text-zinc-800 font-semibold">
-                  Singhal Industrial Corporation, established in 1966, is a trusted name in the global automotive and agricultural aftermarket, with more than six decades of experience in manufacturing, sourcing, and exporting high-quality engine spare parts.
+              <div className="p-6 md:p-8 rounded-3xl bg-zinc-50 border border-zinc-200 mb-8 shadow-sm">
+                <h2 className="text-2xl font-black text-zinc-900 mb-3 tracking-tight">Company History & Heritage</h2>
+                <p className="text-zinc-800 font-semibold leading-relaxed">
+                  Established in 1960 in Foundry Nagar, Agra, India, <strong>GEE ARR (GR Engine Parts)</strong> has been a trusted pioneer in manufacturing precision auto and agricultural engine spare parts for over six decades.
                 </p>
               </div>
 
               <p>
-                Over the years, we have built lasting relationships with customers across international markets through our commitment to quality, reliability, technical expertise, and dependable customer service.
+                From humble beginnings in 1960, GEE ARR has expanded into a state-of-the-art manufacturing operation equipped with modern shell moulding foundries, CNC machining centers, and comprehensive quality assurance testing equipment.
               </p>
 
               <p>
-                Singhal Industrial Corporation is committed to delivering reliable, high-performance engine components for a wide range of automotive, commercial vehicle, and agricultural applications.
+                We specialize in heavy-duty replacement engine components including <strong>Kirloskar Engine Heads, Air-Cooled Kirloskar Cylinder Blocks, Centrifugally Cast Cylinder Liners, Eutectic Silicon Pistons, Air Compressor Kits, Hardened Bush Pins, and Piston Rings</strong>.
               </p>
 
-              <p>
-                We manufacture and supply a comprehensive range of engine components, including <strong>Cylinder Liners, Pistons, Piston Rings, Engine Valves, Valve Guides, Gaskets</strong>, and other critical engine spare parts. Our manufacturing and machining capabilities, supported by a carefully selected network of suppliers, allow us to offer a broad range of products and applications to customers worldwide.
-              </p>
-
-              <div className="my-8 p-6 bg-zinc-50 rounded-2xl border border-zinc-200">
-                <h3 className="text-xl font-bold text-zinc-900 mb-3">Uncompromising Quality Philosophy</h3>
-                <p className="mb-4">
-                  At Singhal Industrial Corporation, quality is built into every stage of our operations. Products manufactured in-house as well as those sourced from approved suppliers undergo rigorous quality checks, dimensional inspection, and value-adding processes before reaching our customers. This enables us to maintain consistent standards across our product range and markets.
+              <div className="my-8 p-6 md:p-8 bg-zinc-900 text-white rounded-3xl border border-zinc-800 shadow-xl">
+                <h3 className="text-xl font-extrabold text-[#EA580C] mb-3">Uncompromising Quality Policy</h3>
+                <p className="mb-4 text-zinc-300 text-xs md:text-sm leading-relaxed">
+                  At GEE ARR, quality is engineered into every stage of production. From raw material melt analysis on multi-channel optical emission spectrometers to final CMM dimensional inspection, every part meets rigorous OE-grade standards.
                 </p>
-                <p className="font-bold text-[#D32F2F]">
-                  We strongly believe that quality is never an accident—it is the result of disciplined processes, continuous improvement, technical expertise, and an uncompromising commitment to excellence.
-                </p>
+                <div className="font-extrabold text-white text-sm border-l-4 border-[#EA580C] pl-4 py-1">
+                  Quality is never an accident—it is the result of 65+ years of disciplined processes and technical excellence.
+                </div>
               </div>
 
-              {/* Global Reach Map Section */}
+              {/* Domestic Presence Grid */}
               <div className="my-10 bg-zinc-50 rounded-3xl p-6 md:p-8 border border-zinc-200/80 shadow-sm">
                 <div className="flex items-center space-x-3 mb-3">
-                  <Globe className="w-6 h-6 text-[#D32F2F]" />
-                  <h3 className="text-xl font-extrabold text-zinc-900">Global Export Network & Presence</h3>
+                  <MapPin className="w-6 h-6 text-[#EA580C]" />
+                  <h3 className="text-xl font-extrabold text-zinc-900">Domestic Network & Presence</h3>
                 </div>
                 <p className="text-zinc-600 text-sm mb-6">
-                  Serving automotive OEMs, commercial fleets, and agricultural aftermarket distributors across 25+ international markets worldwide.
+                  Supplying stockists, OEMs, and aftermarket distributors across 17 key states and commercial hubs in India:
                 </p>
-                <div className="rounded-2xl overflow-hidden bg-white border border-zinc-200 p-3 shadow-sm">
+
+                <div className="mb-6 rounded-2xl overflow-hidden bg-white border border-zinc-200 p-3 shadow-sm flex items-center justify-center">
                   <img 
-                    src="/images/map.png" 
-                    alt="Singhal Industrial Corporation Global Export Reach Map" 
-                    className="w-full h-auto object-contain rounded-xl"
+                    src="/images/orangemap.png" 
+                    alt="GEE ARR Pan-India Network Map" 
+                    className="max-h-96 w-auto object-contain rounded-xl"
                   />
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                  {domesticLocations.map((loc, idx) => (
+                    <div key={idx} className="bg-white border border-zinc-200 rounded-xl p-3 text-center text-xs font-bold text-zinc-800 shadow-xs">
+                      {loc}
+                    </div>
+                  ))}
                 </div>
               </div>
 
-              <p>
-                Our experienced team, skilled manufacturing workforce, machining capabilities, and dedicated warehousing facilities in Agra, India, provide us with the infrastructure and expertise required to serve customers across international markets.
-              </p>
-
-              <p>
-                With over 60 years of industry experience, Singhal Industrial Corporation continues to strengthen its global presence through <strong>KOMODO Engine Parts</strong>, combining traditional expertise with modern manufacturing practices and a forward-looking approach to the aftermarket.
-              </p>
-
-              <div className="p-6 rounded-2xl bg-zinc-900 text-white mt-8">
-                <div className="flex items-center space-x-3 mb-2 text-[#D32F2F] font-bold text-xs uppercase tracking-wider">
+              <div className="p-6 rounded-2xl bg-black text-white mt-8">
+                <div className="flex items-center space-x-3 mb-2 text-[#EA580C] font-bold text-xs uppercase tracking-wider">
                   <Target className="w-5 h-5" /> Our Mission
                 </div>
-                <p className="text-lg font-bold">
-                  Our mission is simple: to deliver dependable engine parts, create lasting customer relationships, and be a trusted global partner for automotive and agricultural spare parts.
+                <p className="text-base md:text-lg font-bold">
+                  To manufacture high performance engine parts that keep commercial vehicles and agricultural machinery running reliably across India and global markets.
                 </p>
               </div>
             </div>
@@ -101,28 +107,37 @@ export function About() {
             {/* Sidebar */}
             <div className="lg:col-span-4 space-y-6">
               <div className="bg-zinc-50 p-8 rounded-3xl border border-zinc-200 shadow-sm text-center">
-                <div className="w-16 h-16 rounded-2xl bg-red-50 text-[#D32F2F] flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 rounded-2xl bg-orange-950/60 text-[#EA580C] border border-orange-800/40 flex items-center justify-center mx-auto mb-4">
                   <Building2 className="w-8 h-8" />
                 </div>
-                <h3 className="font-black text-xl text-zinc-900 mb-1 uppercase">Singhal Industrial Corporation</h3>
-                <div className="text-xs font-bold text-[#D32F2F] uppercase tracking-wider mb-4">Established 1966 | Agra, India</div>
+                <h3 className="font-black text-2xl text-zinc-900 mb-1 tracking-tight">GEE ARR</h3>
+                <div className="text-xs font-extrabold text-[#EA580C] uppercase tracking-wider mb-4">Brand: GR • Est. 1960</div>
                 <div className="p-4 rounded-xl bg-white border border-zinc-200 text-xs font-bold text-zinc-800">
-                  Singhal Industrial Corporation<br/>
-                  <span className="text-zinc-500 font-normal">Built for Performance. Trusted for Quality.</span>
+                  G-59 Foundry Nagar, Agra, UP, India<br/>
+                  <span className="text-zinc-500 font-normal">Phone: +91 6396566120</span>
                 </div>
               </div>
 
-              <div className="bg-zinc-900 text-white p-8 rounded-3xl shadow-xl">
-                <h4 className="font-bold text-lg mb-4 text-[#D32F2F] uppercase tracking-wider">Key Product Lines</h4>
+              <div className="bg-zinc-950 text-white p-8 rounded-3xl shadow-xl border border-zinc-800">
+                <h4 className="font-bold text-base mb-4 text-[#EA580C] uppercase tracking-wider">Core Product Range</h4>
                 <ul className="space-y-3 text-xs">
-                  {["Cylinder Liners & Sleeves", "Pistons & Pin Assemblies", "Piston Rings", "Engine Valves & Guides", "Air Brake Compressor Kits", "Engine Gaskets & Bearings", "Crankshafts & Connecting Rods", "Cylinder Heads & Castings"].map((item, idx) => (
-                    <li key={idx} className="flex items-center text-zinc-300">
-                      <CheckCircle2 className="w-4 h-4 text-red-500 mr-2.5 shrink-0" />
+                  {[
+                    "Kirloskar Engine Heads",
+                    "Kirloskar Cylinder Blocks (Air Cooled)",
+                    "Cylinder Liners & Sleeves",
+                    "Pistons & Pin Assemblies",
+                    "Air Brake Compressor Kits",
+                    "Hardened Bush Pins",
+                    "Compression Piston Rings",
+                    "Precision Shell-Moulded Castings"
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-center text-zinc-300 font-medium">
+                      <CheckCircle2 className="w-4 h-4 text-[#EA580C] mr-2.5 shrink-0" />
                       {item}
                     </li>
                   ))}
                 </ul>
-                <Link to="/quote" className="mt-8 block w-full py-3 text-center bg-[#D32F2F] text-white font-bold text-xs uppercase tracking-wider rounded-xl hover:bg-red-700 transition-colors">
+                <Link to="/quote" className="mt-8 block w-full py-3.5 text-center bg-[#EA580C] text-white font-extrabold text-xs uppercase tracking-wider rounded-xl hover:bg-orange-700 transition-colors shadow-md">
                   Contact Sales Office
                 </Link>
               </div>

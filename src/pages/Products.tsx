@@ -3,94 +3,69 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { SEO } from '../components/SEO';
 
-
 const products = [
   { 
     id: '1', 
-    slug: 'pistons', 
-    name: 'Precision Engine Pistons', 
-    category: 'Engine Components', 
-    shortDescription: 'Precision engineered eutectic aluminum pistons with Ni-Resist ring carrier inserts, oil cooling galleries, and moly skirt coatings.', 
-    image: '/images/products/pistons/img_1.jpeg' 
+    slug: 'kirloskar-engine-heads', 
+    name: 'Kirloskar Engine Heads', 
+    category: 'Kirloskar Engine Parts', 
+    shortDescription: 'Precision engineered replacement cylinder heads built with premium alloy cast iron for Kirloskar diesel engines and pumpsets.', 
+    image: '/images/kat.jpeg' 
   },
   { 
     id: '2', 
-    slug: 'cylinder-liners', 
-    name: 'Cylinder Liners (Dry & Wet)', 
-    category: 'Engine Components', 
-    shortDescription: 'Centrifugally cast grey iron cylinder liners with 95%+ pearlitic micro-structure, plateau honing, and high thermal wear resistance.', 
-    image: '/images/products/cylinder_liners/img_1.jpeg' 
+    slug: 'kirloskar-cylinder-blocks', 
+    name: 'Air-Cooled Kirloskar Cylinder Blocks', 
+    category: 'Kirloskar Engine Parts', 
+    shortDescription: 'Heavy-duty air-cooled cylinder blocks cast with extended cooling fins for maximum heat exchange under severe continuous duty.', 
+    image: '/images/in_cylinder_liners.jpeg' 
   },
   { 
     id: '3', 
-    slug: 'engine-bearings', 
-    name: 'Engine Bearings & Bushings', 
+    slug: 'cylinder-liners', 
+    name: 'Cylinder Liners (Dry & Wet)', 
     category: 'Engine Components', 
-    shortDescription: 'Bi-metal & tri-metal connecting rod and crankshaft main bearing shells engineered for heavy duty commercial and agricultural engines.', 
-    image: '/images/products/engine_bearings/img_1.jpeg' 
+    shortDescription: 'Centrifugally cast grey iron cylinder liners with 95%+ pearlitic micro-structure, plateau honing, and high wear resistance.', 
+    image: '/images/in_cylinder_liners.jpeg' 
   },
   { 
     id: '4', 
-    slug: 'gaskets', 
-    name: 'Engine Gaskets & High Pressure Seals', 
+    slug: 'pistons', 
+    name: 'Precision Engine Pistons', 
     category: 'Engine Components', 
-    shortDescription: 'Multi-layer steel (MLS) and composite cylinder head gaskets and complete overhaul seal kits for commercial diesel engines.', 
-    image: '/images/products/gaskets/img_1.jpeg' 
+    shortDescription: 'Precision engineered eutectic aluminum pistons with optional Ni-Resist ring carrier inserts and CNC machined skirts.', 
+    image: '/images/pistons.jpeg' 
   },
   { 
     id: '5', 
     slug: 'air-compressor-kits', 
-    name: 'Air Brake Compressor Kits', 
-    category: 'Braking Systems', 
-    shortDescription: 'Complete repair kits including cylinder block, pistons, and piston rings for heavy-duty commercial truck air brake compressors.', 
-    image: '/images/products/air_compressor/compressor_1.jpeg' 
+    name: 'Air Brake Compressor Repair Kits', 
+    category: 'Braking & Air Systems', 
+    shortDescription: 'Complete overhaul repair kits including cylinder block, pistons, and piston rings for heavy-duty truck air brake systems.', 
+    image: '/images/air_compressor_kits.jpeg' 
   },
   { 
     id: '6', 
-    slug: 'connecting-rods', 
-    name: 'Forged Steel Connecting Rods', 
-    category: 'Engine Components', 
-    shortDescription: 'Drop-forged micro-alloy steel connecting rods engineered for high fatigue strength, fracture splitting, and precise center-to-center tolerances.', 
-    image: '/images/connecting_rods.jpeg' 
+    slug: 'bush-pins', 
+    name: 'Hardened Bush Pins', 
+    category: 'Suspension & Mechanical Pins', 
+    shortDescription: 'High grade alloy steel bush pins case-hardened and centerless ground for high load-bearing suspension and engine assemblies.', 
+    image: '/images/air_compressor.jpeg' 
   },
   { 
     id: '7', 
-    slug: 'agricultural-diesel-engines', 
-    name: 'Agricultural Diesel Engines & Pump Sets', 
-    category: 'Agricultural Engines', 
-    shortDescription: 'Heavy-duty replacement engine assemblies and spare parts for 1 to 4 cylinder agricultural tractors, water pumps, and field generators.', 
-    image: '/images/products/agricultural_engines/engine_1.jpeg' 
+    slug: 'engine-bearings', 
+    name: 'Engine Bearings & Bushings', 
+    category: 'Engine Components', 
+    shortDescription: 'Bi-metal & tri-metal connecting rod and crankshaft main bearing shells engineered for heavy duty commercial and agricultural engines.', 
+    image: '/images/air_compressor.jpeg' 
   },
   { 
     id: '8', 
-    slug: 'valves', 
-    name: 'Engine Intake & Exhaust Valves', 
-    category: 'Valve Train', 
-    shortDescription: 'Bi-metallic alloy steel engine valves with friction-welded stems, hard chrome plating, and stellite faced seats.', 
-    image: '/images/products/valves/img_1.jpeg' 
-  },
-  { 
-    id: '9', 
-    slug: 'crankshafts', 
-    name: 'Precision Forged Crankshafts', 
-    category: 'Engine Components', 
-    shortDescription: 'Drop-forged alloy steel and SG iron crankshafts, induction hardened and dynamic balanced for heavy duty performance.', 
-    image: '/images/products/crankshafts/img_1.jpeg' 
-  },
-  { 
-    id: '10', 
-    slug: 'power-gensets', 
-    name: 'Power Gensets & Stationary Engines', 
-    category: 'Power Solutions', 
-    shortDescription: 'Heavy-duty stationary power generation components, agricultural pumpsets, and engine repair assemblies.', 
-    image: '/images/products/power_gensets/genset_1.jpeg' 
-  },
-  { 
-    id: '11', 
-    slug: 'castings', 
-    name: 'Precision Iron & Aluminum Castings', 
-    category: 'Foundry Products', 
-    shortDescription: 'Custom shell-moulded grey iron, ductile SG iron, and aluminum gravity die castings produced to exact customer drawings.', 
+    slug: 'custom-manufacturing', 
+    name: 'Precision Shell-Moulded Castings', 
+    category: 'Foundry & OEM', 
+    shortDescription: 'Custom shell-moulded grey iron, ductile SG iron, and aluminum gravity die castings produced to exact CAD drawings.', 
     image: '/images/our_castings.jpeg' 
   }
 ];
@@ -100,28 +75,29 @@ export function Products() {
 
   const filteredProducts = products.filter(p => 
     p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    p.shortDescription.toLowerCase().includes(searchTerm.toLowerCase())
+    p.shortDescription.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    p.category.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
-    <div className="w-full pt-20 pb-24 bg-white min-h-screen">
+    <div className="w-full pt-12 pb-24 bg-white min-h-screen font-sans">
       <SEO 
-        title="Engine Spare Parts Catalog & OEM Components"
-        description="Explore Singhal Industrial Corporation's complete catalog of auto engine spare parts: Cylinder Liners, Eutectic Alloy Pistons, Gaskets, Air Compressor Repair Kits, Crankshafts, and Valves."
+        title="Engine Spare Parts Catalog | GEE ARR (GR)"
+        description="Explore GEE ARR (GR) complete catalog: Kirloskar Engine Heads, Air-Cooled Cylinder Blocks, Dry & Wet Cylinder Liners, Pistons, Air Compressor Kits, and Bush Pins."
         canonicalPath="/products"
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="max-w-3xl mb-14">
-          <div className="inline-block bg-[#D32F2F] text-white text-xs font-extrabold px-3.5 py-1.5 rounded-full mb-4 uppercase tracking-wider">
-            Our Products Catalog
+        <div className="max-w-3xl mb-12">
+          <div className="inline-block bg-[#EA580C] text-white text-xs font-black px-3.5 py-1.5 rounded-full mb-4 uppercase tracking-wider shadow-sm">
+            GEE ARR (GR) Catalog
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-zinc-900 mb-4 tracking-tight">
-            Engineered for Global Excellence
+          <h1 className="text-4xl md:text-5xl font-black text-zinc-900 mb-4 tracking-tight">
+            Engineered Engine Spare Parts
           </h1>
           <p className="text-zinc-600 text-sm leading-relaxed">
-            Browse our core catalog of auto and tractor engine parts. We specialize in custom OEM manufacturing based on your CAD drawings or physical samples.
+            Browse our core product catalog for automotive, agricultural, and industrial diesel engines. Custom OEM production available based on technical drawings or physical samples.
           </p>
         </div>
 
@@ -134,7 +110,7 @@ export function Products() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search catalog by component name, specification, or application..." 
-              className="w-full bg-white border border-zinc-200 rounded-xl py-3.5 pl-12 pr-4 text-xs font-medium text-zinc-900 focus:outline-none focus:border-[#D32F2F] focus:ring-1 focus:ring-[#D32F2F] transition-all shadow-sm"
+              className="w-full bg-white border border-zinc-200 rounded-xl py-3.5 pl-12 pr-4 text-xs font-medium text-zinc-900 focus:outline-none focus:border-[#EA580C] focus:ring-1 focus:ring-[#EA580C] transition-all shadow-sm"
             />
           </div>
         </div>
@@ -142,17 +118,17 @@ export function Products() {
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map((product) => (
-            <div key={product.id} className="group bg-white border border-zinc-200/80 rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div key={product.id} className="group bg-white border border-zinc-200 rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
               <div>
-                <div className="relative h-60 overflow-hidden bg-zinc-50 p-6 flex items-center justify-center">
+                <div className="relative h-56 overflow-hidden bg-zinc-50 p-6 flex items-center justify-center border-b border-zinc-100">
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-6">
-                  <div className="text-[11px] font-extrabold uppercase tracking-wider text-[#D32F2F] mb-2">{product.category}</div>
+                  <div className="text-[11px] font-black uppercase tracking-wider text-[#EA580C] mb-2">{product.category}</div>
                   <h3 className="text-xl font-extrabold text-zinc-900 mb-3">{product.name}</h3>
                   <p className="text-zinc-600 text-xs leading-relaxed mb-6">
                     {product.shortDescription}
@@ -162,8 +138,8 @@ export function Products() {
 
               <div className="p-6 pt-0">
                 <Link 
-                  to={`/products/${product.slug}`} 
-                  className="inline-flex items-center text-xs font-bold text-[#D32F2F] hover:text-red-700 transition-colors uppercase tracking-wider"
+                  to={product.slug === 'custom-manufacturing' ? '/custom-manufacturing' : `/products/${product.slug}`} 
+                  className="inline-flex items-center text-xs font-extrabold text-[#EA580C] hover:text-orange-700 transition-colors uppercase tracking-wider"
                 >
                   View Details & Specs
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -172,20 +148,20 @@ export function Products() {
             </div>
           ))}
 
-          {/* Custom Manufacturing CTA Card */}
-          <div className="group bg-[#111827] rounded-3xl overflow-hidden shadow-xl transition-all duration-300 flex flex-col justify-between text-left p-8 relative">
+          {/* Custom OEM Card */}
+          <div className="group bg-zinc-950 rounded-3xl overflow-hidden shadow-xl transition-all duration-300 flex flex-col justify-between text-left p-8 border border-zinc-800 relative">
             <div>
-              <div className="inline-block bg-[#D32F2F] text-white text-[10px] font-extrabold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
+              <div className="inline-block bg-[#EA580C] text-white text-[10px] font-black px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
                 Custom OEM Engineering
               </div>
-              <h3 className="text-2xl font-extrabold text-white mb-3">Custom Component Orders</h3>
+              <h3 className="text-2xl font-black text-white mb-3">Custom Component Orders</h3>
               <p className="text-zinc-400 text-xs leading-relaxed mb-6">
-                Send us your CAD technical drawings or physical sample components. We produce custom pistons, cylinder liners, and alloy castings to your exact specifications.
+                Send us your CAD technical drawings or physical sample components. GEE ARR manufactures custom pistons, cylinder liners, and alloy castings to your exact specifications.
               </p>
             </div>
             <Link 
               to="/custom-manufacturing" 
-              className="inline-flex justify-center items-center px-6 py-3.5 bg-[#D32F2F] text-white font-bold rounded-xl hover:bg-red-700 transition-colors w-full uppercase tracking-wider text-xs shadow-md"
+              className="inline-flex justify-center items-center px-6 py-3.5 bg-[#EA580C] text-white font-extrabold rounded-xl hover:bg-orange-700 transition-colors w-full uppercase tracking-wider text-xs shadow-md"
             >
               Custom Inquiry Request
             </Link>

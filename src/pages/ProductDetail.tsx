@@ -10,7 +10,7 @@ const STATIC_PRODUCTS: Record<string, any> = {
     image: '/images/in_cylinder_liners.jpeg',
     description: 'High performance centrifugally cast dry, wet, and air-cooled cylinder liners with 95%+ pearlitic micro-structure.',
     richDescription: `
-      <p class="mb-4">Singhal Industrial Corporation manufactures Cylinder Liners, Sleeves, and Air-Cooled Blocks to exact OE specifications or custom drawing requirements. Our expertise in alloy metallurgy and centrifugal casting delivers durable, high-performance liners built for severe thermal loads.</p>
+      <p class="mb-4">GEE ARR (GR Engine Parts) manufactures Cylinder Liners, Sleeves, and Air-Cooled Blocks to exact OE specifications or custom drawing requirements. Our expertise in alloy metallurgy and centrifugal casting delivers durable, high-performance liners built for severe thermal loads.</p>
       <p class="mb-4">Our Cylinder Liners are centrifugally cast from high-grade grey iron with finely dispersed Type-A flake graphite in a fully pearlitic matrix (>95% Pearlite). This produces uniform wall density, high wear resistance, Brinell hardness of 220-240 HB, and reliable dimensional stability.</p>
       <p class="mb-4">Air-cooled cylinder liners are shell-moulded with precision exterior cooling fins for agricultural pumps, tractors, and air compressor engines.</p>
     `,
@@ -23,9 +23,9 @@ const STATIC_PRODUCTS: Record<string, any> = {
     image: '/images/piston_hero.jpg',
     description: 'Precision engineered eutectic aluminum pistons with Ni-Resist ring groove inserts and graphite skirt coating.',
     richDescription: `
-      <p class="mb-4">KOMODO Pistons are gravity die-cast from eutectic silicon-aluminum alloy (LM13) and solution heat-treated to T6 condition for maximum tensile strength, low thermal expansion, and optimum hardness (85-110 HB).</p>
+      <p class="mb-4">GEE ARR (GR) Pistons are gravity die-cast from eutectic silicon-aluminum alloy (LM13) and solution heat-treated to T6 condition for maximum tensile strength, low thermal expansion, and optimum hardness (85-110 HB).</p>
       <p class="mb-4">Our pistons feature metallurgically bonded austenitic cast iron (Ni-Resist) inserts in the top ring groove to prevent groove pounding in turbocharged diesel engines. Oil cooling gallery pistons incorporate internal oil circulation channels to reduce crown temperatures by 30-50°C.</p>
-      <p class="mb-4">With 60+ years of export expertise, Singhal Industrial Corporation supplies pistons across 50-180mm bore sizes for light automotive, tractor, and heavy commercial diesel engines worldwide.</p>
+      <p class="mb-4">With 65+ years of engineering expertise (Est. 1960), GEE ARR supplies pistons across 50-180mm bore sizes for light automotive, tractor, and heavy commercial diesel engines.</p>
     `,
     applications: ['Automotive Diesel Engines', 'Agricultural Tractors', 'Stationary Power Gensets', 'Light & Heavy Commercial Vehicles'],
     materials: ['Eutectic Silicon-Aluminum Alloy (LM13)', 'Ni-Resist Austenitic Cast Iron Inserts', 'Steel Expansion Control Struts']
@@ -202,9 +202,9 @@ export function ProductDetail() {
     return (
       <div className="w-full pt-32 pb-24 min-h-screen bg-white flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-3xl font-extrabold text-zinc-900 mb-4">Product Category Catalog</h1>
-        <p className="text-zinc-600 mb-8 max-w-md">Contact Singhal Industrial Corporation for custom OEM manufacturing or catalog specifications.</p>
+        <p className="text-zinc-600 mb-8 max-w-md">Contact GEE ARR (GR Engine Parts) for custom OEM manufacturing or catalog specifications.</p>
         <div className="flex space-x-4">
-          <Link to="/products" className="px-6 py-3 bg-[#D34747] text-white font-bold text-xs uppercase tracking-wider rounded-md">
+          <Link to="/products" className="px-6 py-3 bg-[#EA580C] text-white font-bold text-xs uppercase tracking-wider rounded-md">
             Return to Products
           </Link>
           <Link to="/quote" className="px-6 py-3 bg-zinc-900 text-white font-bold text-xs uppercase tracking-wider rounded-md">
@@ -216,10 +216,10 @@ export function ProductDetail() {
   }
 
   return (
-    <div className="w-full pt-20 bg-white min-h-screen">
+    <div className="w-full pt-20 bg-white min-h-screen font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
-        <Link to="/products" className="inline-flex items-center text-xs font-bold text-zinc-500 hover:text-[#D34747] transition-colors mb-8 uppercase tracking-wider">
+        <Link to="/products" className="inline-flex items-center text-xs font-bold text-zinc-500 hover:text-[#EA580C] transition-colors mb-8 uppercase tracking-wider">
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Catalog
         </Link>
@@ -245,7 +245,7 @@ export function ProductDetail() {
                       key={idx}
                       onClick={() => setActiveImage(imgUrl)}
                       className={`relative w-20 h-20 rounded-2xl overflow-hidden border-2 bg-white p-1 transition-all shrink-0 ${
-                        isSelected ? 'border-[#D34747] ring-2 ring-red-100 shadow-md' : 'border-zinc-200 opacity-70 hover:opacity-100'
+                        isSelected ? 'border-[#EA580C] ring-2 ring-orange-100 shadow-md' : 'border-zinc-200 opacity-70 hover:opacity-100'
                       }`}
                     >
                       <img src={imgUrl} alt={`${product.name} view ${idx + 1}`} className="w-full h-full object-contain" />
@@ -259,7 +259,7 @@ export function ProductDetail() {
           {/* Details */}
           <div className="space-y-6">
             <div>
-              <span className="inline-flex items-center space-x-2 bg-red-50 text-[#D32F2F] border border-red-200 text-[11px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
+              <span className="inline-flex items-center space-x-2 bg-orange-50 text-[#EA580C] border border-orange-200 text-[11px] font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">
                 <Award className="w-3.5 h-3.5 mr-1" /> {companyConfig.brandName}
               </span>
               <h1 className="text-3xl lg:text-4xl font-extrabold text-zinc-900 tracking-tight mb-2">
@@ -294,7 +294,7 @@ export function ProductDetail() {
                 <ul className="space-y-2">
                   {product.materials.map((mat: string, idx: number) => (
                     <li key={idx} className="flex items-center text-xs text-zinc-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#D32F2F] mr-2 shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-[#EA580C] mr-2 shrink-0" />
                       {mat}
                     </li>
                   ))}
@@ -303,7 +303,7 @@ export function ProductDetail() {
             )}
 
             <div className="pt-6 border-t border-zinc-100 flex flex-wrap gap-4">
-              <Link to="/quote" className="px-8 py-3.5 bg-[#D32F2F] text-white font-bold text-xs uppercase tracking-wider rounded-md hover:bg-red-700 transition-colors shadow-md">
+              <Link to="/quote" className="px-8 py-3.5 bg-[#EA580C] text-white font-extrabold text-xs uppercase tracking-wider rounded-xl hover:bg-orange-700 transition-colors shadow-md">
                 Request Specifications Quote
               </Link>
             </div>
