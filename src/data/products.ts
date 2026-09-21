@@ -68,17 +68,6 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: '6',
-    name: 'Hardened Bush Pins',
-    slug: 'hardened-bush-pins',
-    shortDescription: 'Precision ground and case-hardened bush pins built for maximum load capacity.',
-    description: 'Manufactured from high-grade alloy steel, case-hardened to precise depth tolerances, centerless ground, and lapped for smooth articulation and high wear resistance under heavy loads.',
-    category: 'Bush Pins',
-    image: '/images/air_compressor.jpeg',
-    applications: ['Heavy Machinery', 'Suspension & Steering Systems', 'Engine Assemblies'],
-    materials: ['Case-Hardened Alloy Steel', '20MnCr5 Steel'],
-  },
-  {
-    id: '7',
     name: 'Compression Piston Rings',
     slug: 'compression-piston-rings',
     shortDescription: 'High-sealing compression and oil scraper ring sets with protective coatings.',
@@ -87,16 +76,5 @@ export const MOCK_PRODUCTS: Product[] = [
     image: '/images/piston_hero.jpg',
     applications: ['Automotive Engines', 'Agricultural Diesel Engines', 'Air Compressors'],
     materials: ['Ductile Cast Iron', 'Alloy Steel'],
-  },
-  {
-    id: '8',
-    name: 'Heavy-Duty Engine Bearings',
-    slug: 'engine-bearings',
-    shortDescription: 'Bi-metal and tri-metal precision engine bearings and bushings.',
-    description: 'Engineered main and connecting rod bearings delivering high fatigue strength, superior embeddability, and conformability for demanding engine operating environments.',
-    category: 'Engine Bearings',
-    image: '/images/air_compressor.jpeg',
-    applications: ['Commercial Diesel Engines', 'Tractors', 'Industrial Machinery'],
-    materials: ['Aluminum-Tin Alloy', 'Copper-Lead Tri-Metal'],
   }
 ];

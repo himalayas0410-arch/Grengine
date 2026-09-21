@@ -60,7 +60,7 @@ export function PistonsPage() {
 
   return (
     <div className="w-full bg-white">
-      <SEO 
+      <SEO
         title="Engine Pistons & Piston Assemblies Manufacturer India"
         description="High-performance eutectic silicon-aluminum alloy engine pistons with Ni-Resist inserts manufactured in Agra, India by Singhal Industrial Corporation (KOMODO)."
         canonicalPath="/products/pistons"
@@ -116,13 +116,13 @@ export function PistonsPage() {
               </p>
             </div>
 
-            <div 
+            <div
               onClick={() => setSelectedPhoto('/images/products/pistons/img_1.jpeg')}
               className="relative rounded-3xl overflow-hidden shadow-2xl border border-zinc-200 cursor-pointer group"
             >
-              <img 
-                src="/images/products/pistons/img_1.jpeg" 
-                alt="Singhal Precision Pistons" 
+              <img
+                src="/images/products/pistons/img_1.jpeg"
+                alt="Singhal Precision Pistons"
                 className="w-full h-80 md:h-[420px] object-contain bg-zinc-50 p-6 transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -158,16 +158,16 @@ export function PistonsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {pistonPhotos.map((photo, idx) => (
-              <div 
+              <div
                 key={idx}
                 onClick={() => setSelectedPhoto(photo.url)}
                 className="group relative rounded-2xl overflow-hidden bg-zinc-50 border border-zinc-200 shadow-sm hover:shadow-xl transition-all cursor-pointer"
               >
                 <div className="h-56 overflow-hidden bg-white p-4 flex items-center justify-center">
-                  <img 
-                    src={photo.url} 
+                  <img
+                    src={photo.url}
                     alt={photo.title}
-                    className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105" 
+                    className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-3 bg-zinc-900 text-white flex items-center justify-between">
@@ -199,16 +199,16 @@ export function PistonsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {pistonRingsPhotos.map((photo, idx) => (
-              <div 
+              <div
                 key={idx}
                 onClick={() => setSelectedPhoto(photo.url)}
                 className="group relative rounded-2xl overflow-hidden bg-white border border-zinc-200 shadow-sm hover:shadow-xl transition-all cursor-pointer"
               >
                 <div className="h-60 overflow-hidden bg-zinc-50 p-4 flex items-center justify-center">
-                  <img 
-                    src={photo.url} 
+                  <img
+                    src={photo.url}
                     alt={photo.title}
-                    className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105" 
+                    className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-3.5 bg-zinc-900 text-white flex items-center justify-between">
@@ -261,21 +261,21 @@ export function PistonsPage() {
 
       {/* Lightbox Modal */}
       {selectedPhoto && (
-        <div 
+        <div
           onClick={() => setSelectedPhoto(null)}
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
         >
           <div className="relative max-w-4xl w-full bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 p-4">
-            <button 
+            <button
               onClick={() => setSelectedPhoto(null)}
               className="absolute top-4 right-4 text-zinc-400 hover:text-white bg-zinc-800 p-2 rounded-full z-10"
             >
               <X className="w-6 h-6" />
             </button>
             <div className="h-[75vh] flex items-center justify-center bg-white rounded-xl p-4">
-              <img 
-                src={selectedPhoto} 
-                alt="Product Enlarged" 
+              <img
+                src={selectedPhoto}
+                alt="Product Enlarged"
                 className="max-h-full max-w-full object-contain"
               />
             </div>

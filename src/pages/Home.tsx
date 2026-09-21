@@ -38,13 +38,6 @@ const productsGrid = [
     path: '/products/air-compressor-kits' 
   },
   { 
-    name: 'HARDENED BUSH PINS', 
-    desc: 'Precision ground and case-hardened bush pins engineered for heavy mechanical loads.', 
-    img: '/images/air_compressor.jpeg', 
-    fallbackImg: '/images/cnc_machine.jpg',
-    path: '/products/bush-pins' 
-  },
-  { 
     name: 'PISTON RINGS & PINS', 
     desc: 'Engineered compression ring sets with chrome and nitriding coatings for minimal blow-by.', 
     img: '/images/piston_hero.jpg', 

@@ -46,22 +46,6 @@ const products = [
   },
   { 
     id: '6', 
-    slug: 'bush-pins', 
-    name: 'Hardened Bush Pins', 
-    category: 'Suspension & Mechanical Pins', 
-    shortDescription: 'High grade alloy steel bush pins case-hardened and centerless ground for high load-bearing suspension and engine assemblies.', 
-    image: '/images/air_compressor.jpeg' 
-  },
-  { 
-    id: '7', 
-    slug: 'engine-bearings', 
-    name: 'Engine Bearings & Bushings', 
-    category: 'Engine Components', 
-    shortDescription: 'Bi-metal & tri-metal connecting rod and crankshaft main bearing shells engineered for heavy duty commercial and agricultural engines.', 
-    image: '/images/air_compressor.jpeg' 
-  },
-  { 
-    id: '8', 
     slug: 'custom-manufacturing', 
     name: 'Precision Shell-Moulded Castings', 
     category: 'Foundry & OEM', 

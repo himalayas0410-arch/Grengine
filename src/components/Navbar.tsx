@@ -31,8 +31,6 @@ const productCategories = [
   { name: 'PISTONS', path: '/products/pistons' },
   { name: 'AIR COMPRESSOR KITS', path: '/products/air-compressor-kits' },
   { name: 'PISTON RINGS', path: '/products/piston-rings' },
-  { name: 'BUSH PINS', path: '/products/bush-pins' },
-  { name: 'ENGINE BEARINGS', path: '/products/engine-bearings' },
   { name: 'CUSTOM CASTINGS', path: '/custom-manufacturing' },
 ];
 

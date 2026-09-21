@@ -15,7 +15,7 @@ const processSteps = [
 export function CustomManufacturing() {
   return (
     <div className="w-full bg-white">
-      <SEO 
+      <SEO
         title="Custom OEM Engine Parts Manufacturing from CAD Drawings & Samples"
         description="Singhal Industrial Corporation manufactures custom engine components, pistons, cylinder liners & castings based on technical CAD drawings or physical samples."
         canonicalPath="/custom-manufacturing"

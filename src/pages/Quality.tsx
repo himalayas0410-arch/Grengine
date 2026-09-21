@@ -13,14 +13,14 @@ export function Quality() {
 
   return (
     <div className="w-full pt-24 bg-white min-h-screen">
-      <SEO 
+      <SEO
         title="ISO 9001:2015 Quality Standards & Spectro Analysis"
         description="Learn about Singhal Industrial Corporation's ISO 9001:2015 quality assurance system: CMM dimensional inspection, spectro alloy analysis & surface profiling."
         canonicalPath="/quality"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        
+
         <div className="max-w-3xl mb-16">
           <div className="inline-block bg-[#D34747] text-white text-[10px] font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
             Quality Assurance

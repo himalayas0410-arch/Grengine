@@ -89,7 +89,7 @@ export function Footer() {
               <li><Link to="/products/cylinder-liners" className="hover:text-[#EA580C] transition-colors">Cylinder Liners (Dry & Wet)</Link></li>
               <li><Link to="/products/pistons" className="hover:text-[#EA580C] transition-colors">Engine Pistons</Link></li>
               <li><Link to="/products/air-compressor-kits" className="hover:text-[#EA580C] transition-colors">Air Compressor Repair Kits</Link></li>
-              <li><Link to="/products/bush-pins" className="hover:text-[#EA580C] transition-colors">Hardened Bush Pins</Link></li>
+              <li><Link to="/custom-manufacturing" className="hover:text-[#EA580C] transition-colors">Custom Engine Castings</Link></li>
             </ul>
           </div>
 

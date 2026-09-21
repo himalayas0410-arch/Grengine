@@ -36,25 +36,25 @@ const otherEquipmentItems = [
 ];
 
 const faqs = [
-  { 
-    q: "What is your Minimum Order Quantity (MOQ)?", 
-    a: "Our MOQ is 300 pieces per order." 
+  {
+    q: "What is your Minimum Order Quantity (MOQ)?",
+    a: "Our MOQ is 300 pieces per order."
   },
-  { 
-    q: "Are you a certified manufacturer?", 
-    a: "Yes, Singhal Industrial Corporation (KOMODO Engine Parts) is ISO 9001:2015 certified for manufacturing and quality control." 
+  {
+    q: "Are you a certified manufacturer?",
+    a: "Yes, Singhal Industrial Corporation (KOMODO Engine Parts) is ISO 9001:2015 certified for manufacturing and quality control."
   },
-  { 
-    q: "Do you offer customized branding and packaging?", 
-    a: "Yes, we offer tailored OEM packaging, custom laser marking, and customized box branding according to client specifications." 
+  {
+    q: "Do you offer customized branding and packaging?",
+    a: "Yes, we offer tailored OEM packaging, custom laser marking, and customized box branding according to client specifications."
   },
-  { 
-    q: "Which markets do you serve?", 
-    a: "We export high-performance engine parts across international markets in Europe, Middle East, Africa, Latin America, and Asia." 
+  {
+    q: "Which markets do you serve?",
+    a: "We export high-performance engine parts across international markets in Europe, Middle East, Africa, Latin America, and Asia."
   },
-  { 
-    q: "Do you develop new engine parts?", 
-    a: "Yes, our engineering team manufactures custom pistons, cylinder liners, and castings based on technical drawings or physical samples." 
+  {
+    q: "Do you develop new engine parts?",
+    a: "Yes, our engineering team manufactures custom pistons, cylinder liners, and castings based on technical drawings or physical samples."
   }
 ];
 
@@ -63,7 +63,7 @@ export function Infrastructure() {
 
   return (
     <div className="w-full bg-white">
-      <SEO 
+      <SEO
         title="Manufacturing Infrastructure, Foundry & CNC Machining"
         description="Explore Singhal Industrial Corporation's manufacturing facility in Agra, India: Inductotherm melting furnaces, CNC turning, VMC milling, spectro analysis & honing."
         canonicalPath="/infrastructure"
@@ -103,9 +103,9 @@ export function Infrastructure() {
             {/* Right Image */}
             <div className="flex justify-center lg:justify-end">
               <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200">
-                <img 
-                  src="/images/melting_furnace.jpg" 
-                  alt="Melting Induction Furnace" 
+                <img
+                  src="/images/melting_furnace.jpg"
+                  alt="Melting Induction Furnace"
                   className="w-full h-[420px] object-cover"
                 />
               </div>
@@ -121,9 +121,9 @@ export function Infrastructure() {
             {/* Left Machine Illustrations */}
             <div className="flex flex-col items-center justify-center">
               <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200 bg-white">
-                <img 
-                  src="/images/cnc_machine.jpg" 
-                  alt="Precision CNC Turning Center Machine" 
+                <img
+                  src="/images/cnc_machine.jpg"
+                  alt="Precision CNC Turning Center Machine"
                   className="w-full h-[380px] object-cover"
                 />
               </div>
@@ -173,9 +173,9 @@ export function Infrastructure() {
             {/* Right Image */}
             <div className="flex justify-center lg:justify-end">
               <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200">
-                <img 
-                  src="/images/measuring_inspection.jpg" 
-                  alt="Precision Measuring Dial Gauge Inspection" 
+                <img
+                  src="/images/measuring_inspection.jpg"
+                  alt="Precision Measuring Dial Gauge Inspection"
                   className="w-full h-[450px] object-cover"
                 />
               </div>
@@ -191,9 +191,9 @@ export function Infrastructure() {
             {/* Left Image */}
             <div className="flex justify-center lg:justify-start">
               <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200">
-                <img 
-                  src="/images/heat_treatment.jpg" 
-                  alt="Heat Treatment Furnace Equipment" 
+                <img
+                  src="/images/heat_treatment.jpg"
+                  alt="Heat Treatment Furnace Equipment"
                   className="w-full h-[420px] object-cover"
                 />
               </div>
@@ -230,8 +230,8 @@ export function Infrastructure() {
             {faqs.map((faq, index) => {
               const isOpen = openFaq === index;
               return (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="border border-zinc-200 rounded-xl overflow-hidden transition-all duration-200"
                 >
                   <button

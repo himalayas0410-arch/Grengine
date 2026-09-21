@@ -218,7 +218,7 @@ export function ProductDetail() {
   return (
     <div className="w-full pt-20 bg-white min-h-screen font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
+
         <Link to="/products" className="inline-flex items-center text-xs font-bold text-zinc-500 hover:text-[#EA580C] transition-colors mb-8 uppercase tracking-wider">
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Catalog
@@ -228,8 +228,8 @@ export function ProductDetail() {
           {/* Image & Gallery */}
           <div className="space-y-4">
             <div className="relative h-[380px] lg:h-[480px] rounded-3xl overflow-hidden bg-zinc-50 border border-zinc-200 p-6 flex items-center justify-center shadow-lg">
-              <img 
-                src={activeImage || product.image} 
+              <img
+                src={activeImage || product.image}
                 alt={product.name}
                 className="w-full h-full object-contain rounded-2xl transition-all duration-300"
               />
@@ -244,9 +244,8 @@ export function ProductDetail() {
                     <button
                       key={idx}
                       onClick={() => setActiveImage(imgUrl)}
-                      className={`relative w-20 h-20 rounded-2xl overflow-hidden border-2 bg-white p-1 transition-all shrink-0 ${
-                        isSelected ? 'border-[#EA580C] ring-2 ring-orange-100 shadow-md' : 'border-zinc-200 opacity-70 hover:opacity-100'
-                      }`}
+                      className={`relative w-20 h-20 rounded-2xl overflow-hidden border-2 bg-white p-1 transition-all shrink-0 ${isSelected ? 'border-[#EA580C] ring-2 ring-orange-100 shadow-md' : 'border-zinc-200 opacity-70 hover:opacity-100'
+                        }`}
                     >
                       <img src={imgUrl} alt={`${product.name} view ${idx + 1}`} className="w-full h-full object-contain" />
                     </button>
@@ -270,7 +269,7 @@ export function ProductDetail() {
               </p>
             </div>
 
-            <div 
+            <div
               className="text-zinc-600 text-sm leading-relaxed border-t border-b border-zinc-100 py-6"
               dangerouslySetInnerHTML={{ __html: product.richDescription }}
             />

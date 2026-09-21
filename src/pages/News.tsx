@@ -164,7 +164,7 @@ export function News() {
 
   return (
     <div className="w-full max-w-full overflow-x-hidden bg-white">
-      <SEO 
+      <SEO
         title="Industry News, Automechanika Events & Engineering Articles"
         description="Latest trade fair exhibitions, Automechanika Dubai booth galleries & engine spare parts technical reboring guides from Singhal Industrial Corporation."
         canonicalPath="/news"
@@ -196,17 +196,17 @@ export function News() {
           {/* Events Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {pastEvents.map((evt) => (
-              <div 
-                key={evt.id} 
+              <div
+                key={evt.id}
                 onClick={() => openLightbox(evt)}
                 className="bg-white rounded-2xl overflow-hidden border border-zinc-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer group"
               >
                 <div>
                   <div className="relative h-52 overflow-hidden bg-zinc-100">
-                    <img 
-                      src={evt.mainImg} 
-                      alt={evt.title} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                    <img
+                      src={evt.mainImg}
+                      alt={evt.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-3 right-3 bg-black/70 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-lg flex items-center shadow-md">
                       <Images className="w-3.5 h-3.5 mr-1.5 text-red-400" />
@@ -242,22 +242,22 @@ export function News() {
 
       {/* Lightbox Modal for Past Event Photos */}
       {selectedEvent && (
-        <div 
+        <div
           onClick={closeLightbox}
           className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto"
         >
-          <div 
+          <div
             onClick={(e) => e.stopPropagation()}
             className="relative w-full max-w-4xl bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl border border-zinc-800 flex flex-col max-h-[90vh] my-auto"
           >
-            
+
             {/* Modal Header */}
             <div className="p-4 sm:p-6 bg-zinc-900 border-b border-zinc-800 flex items-center justify-between">
               <div>
                 <h3 className="text-lg sm:text-xl font-bold text-white">{selectedEvent.title}</h3>
                 <p className="text-xs text-zinc-400">{selectedEvent.location} • {selectedEvent.date}</p>
               </div>
-              <button 
+              <button
                 onClick={closeLightbox}
                 className="p-2 bg-zinc-800 text-zinc-300 hover:text-white rounded-full hover:bg-zinc-700 transition-colors"
               >
@@ -267,22 +267,22 @@ export function News() {
 
             {/* Main Photo View */}
             <div className="relative flex-1 bg-black flex items-center justify-center min-h-[300px] sm:min-h-[420px] p-4">
-              <img 
-                src={selectedEvent.gallery[activePhotoIdx]} 
-                alt={`${selectedEvent.title} photo ${activePhotoIdx + 1}`} 
+              <img
+                src={selectedEvent.gallery[activePhotoIdx]}
+                alt={`${selectedEvent.title} photo ${activePhotoIdx + 1}`}
                 className="max-h-[60vh] max-w-full object-contain rounded-lg"
               />
 
               {/* Prev / Next buttons */}
               {selectedEvent.gallery.length > 1 && (
                 <>
-                  <button 
+                  <button
                     onClick={prevPhoto}
                     className="absolute left-4 p-2.5 bg-black/60 hover:bg-black text-white rounded-full transition-colors border border-white/20 z-10"
                   >
                     <ChevronLeft className="w-6 h-6" />
                   </button>
-                  <button 
+                  <button
                     onClick={nextPhoto}
                     className="absolute right-4 p-2.5 bg-black/60 hover:bg-black text-white rounded-full transition-colors border border-white/20 z-10"
                   >
@@ -307,9 +307,8 @@ export function News() {
                       e.stopPropagation();
                       setActivePhotoIdx(idx);
                     }}
-                    className={`w-12 h-12 rounded-lg overflow-hidden border-2 transition-all shrink-0 ${
-                      activePhotoIdx === idx ? 'border-[#D34747] scale-105' : 'border-zinc-700 opacity-60 hover:opacity-100'
-                    }`}
+                    className={`w-12 h-12 rounded-lg overflow-hidden border-2 transition-all shrink-0 ${activePhotoIdx === idx ? 'border-[#D34747] scale-105' : 'border-zinc-700 opacity-60 hover:opacity-100'
+                      }`}
                   >
                     <img src={url} alt="thumbnail" className="w-full h-full object-cover" />
                   </button>
