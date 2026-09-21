@@ -10,7 +10,7 @@ export function KirloskarEngineHeadsPage() {
     { label: "Material Composition", value: "High Grade Alloy Cast Iron / Pearlitic Grey Iron" },
     { label: "Cooling Mechanism", value: "Air Cooled & Water Cooled Fin Configurations" },
     { label: "Valve Inserts", value: "Induction Hardened Valve Seats & Sintered Guides" },
-    { label: "Quality Standard", value: "ISO 9001:2015 / OE Match Specification" },
+    { label: "Quality Standard", value: "OE Match Specification" },
     { label: "MOQ", value: companyConfig.moq }
   ];
 

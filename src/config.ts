@@ -14,7 +14,7 @@ export const companyConfig = {
   moq: "300 pieces",
   countriesServed: "45+",
   productionCapacity: "500K+ units/month",
-  certifications: ["ISO 9001:2015 Certified"],
+  certifications: [],
   social: {
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",

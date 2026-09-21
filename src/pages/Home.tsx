@@ -201,7 +201,7 @@ export function Home() {
               <div>
                 <div className="text-2xl font-black text-purple-600 tracking-tight leading-none mb-1 uppercase">OEM Quality</div>
                 <div className="text-zinc-800 text-xs font-extrabold uppercase tracking-wide">Engine Grade Standard</div>
-                <div className="text-zinc-500 text-[11px] font-medium">ISO 9001:2015 Certified</div>
+                <div className="text-zinc-500 text-[11px] font-medium">Precision Manufacturing</div>
               </div>
             </div>
 
@@ -258,11 +258,11 @@ export function Home() {
         </div>
       </section>
 
-      {/* DOMESTIC NETWORK & PRESENCE Section - Clean Light Mode Design */}
-      <section className="py-20 bg-white border-t border-b border-zinc-200">
+      {/* DOMESTIC NETWORK & PRESENCE Section - Clean Image Display */}
+      <section className="py-16 md:py-20 bg-white border-t border-b border-zinc-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="text-center max-w-3xl mx-auto mb-10">
             <span className="text-[#EA580C] text-xs font-extrabold uppercase tracking-widest block mb-2">
               Pan-India Supply & Logistics
             </span>
@@ -275,51 +275,13 @@ export function Home() {
             </p>
           </div>
 
-          {/* Map Image Banner Container */}
-          <div className="mb-12 rounded-3xl overflow-hidden bg-[#F8FAFC] border border-zinc-200 p-4 md:p-6 shadow-sm flex items-center justify-center">
+          {/* Map Image Display Only */}
+          <div className="rounded-3xl overflow-hidden bg-[#F8FAFC] border border-zinc-200 p-4 md:p-8 shadow-sm flex items-center justify-center">
             <img 
               src="/images/orangemap.png" 
-              alt="GEE ARR Pan-India Domestic Network Map" 
-              className="max-h-[500px] w-auto object-contain rounded-2xl"
+              alt="GEE ARR Pan-India Domestic Network & Presence Map" 
+              className="max-h-[600px] w-auto object-contain rounded-2xl"
             />
-          </div>
-
-          {/* Locations Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5 mb-10">
-            {domesticLocations.map((loc, idx) => (
-              <div
-                key={idx}
-                className="bg-[#F8FAFC] border border-zinc-200/90 hover:border-[#EA580C] rounded-xl p-3.5 text-center transition-all duration-200 hover:shadow-md group"
-              >
-                <div className="w-7 h-7 rounded-full bg-orange-50 text-[#EA580C] flex items-center justify-center mx-auto mb-2 border border-orange-100 group-hover:bg-[#EA580C] group-hover:text-white transition-colors">
-                  <MapPin className="w-3.5 h-3.5" />
-                </div>
-                <h4 className="font-extrabold text-zinc-900 text-xs tracking-wide group-hover:text-[#EA580C] transition-colors">
-                  {loc.name}
-                </h4>
-                <p className="text-[10px] text-zinc-500 font-medium mt-1 leading-tight">
-                  {loc.hub}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-[#F8FAFC] rounded-2xl p-6 border border-zinc-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center space-x-3.5">
-              <div className="p-3 bg-orange-50 text-[#EA580C] rounded-xl shrink-0">
-                <Truck className="w-6 h-6" />
-              </div>
-              <div>
-                <h4 className="text-sm font-extrabold text-zinc-900">Looking for Bulk Distribution or Dealership?</h4>
-                <p className="text-zinc-500 text-xs mt-0.5">We partner with auto parts stockists and dealers across all Indian states.</p>
-              </div>
-            </div>
-            <Link
-              to="/quote"
-              className="bg-[#EA580C] hover:bg-orange-700 text-white text-xs font-extrabold px-6 py-3 rounded-lg uppercase tracking-wider transition-colors shrink-0 shadow-sm"
-            >
-              Become a Dealer / Partner
-            </Link>
           </div>
 
         </div>
@@ -343,7 +305,7 @@ export function Home() {
                 <ShieldCheck className="w-4 h-4 text-[#EA580C] mr-2" /> 100% Quality Inspected
               </div>
               <div className="flex items-center text-xs font-bold text-zinc-800 bg-white px-4 py-2 rounded-lg border border-zinc-200">
-                <Award className="w-4 h-4 text-[#EA580C] mr-2" /> ISO 9001:2015 Certified
+                <Award className="w-4 h-4 text-[#EA580C] mr-2" /> Precision Engineering
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ export function KirloskarCylinderBlocksPage() {
     { label: "Cooling Type", value: "Air-Cooled (Extended Deep Thermal Cooling Fins)" },
     { label: "Casting Process", value: "Centrifugal & Shell Moulded Fine Grain Grey Iron" },
     { label: "Hardness Range", value: "210 - 240 BHN for Maximum Scuff & Wear Resistance" },
-    { label: "Quality Compliance", value: "ISO 9001:2015 Standards" },
+    { label: "Quality Compliance", value: "OE Manufacturing Standards" },
     { label: "MOQ", value: companyConfig.moq }
   ];
 

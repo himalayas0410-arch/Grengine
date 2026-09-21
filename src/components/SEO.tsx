@@ -10,11 +10,11 @@ interface SEOProps {
   schema?: object;
 }
 
-const DEFAULT_TITLE = "Auto & Agricultural Engine Spare Parts Manufacturer India | Singhal Industrial Corporation";
-const DEFAULT_DESC = "Singhal Industrial Corporation (KOMODO Engine Parts) - Premier ISO 9001:2015 manufacturer & exporter of Cylinder Liners, Pistons, Gaskets, Air Compressor Kits & Engine Components in Agra, India since 1966. Serving 45+ export markets.";
-const DEFAULT_KEYWORDS = "auto spare parts India, cylinder liners manufacturer, piston exporter India, engine parts manufacturer Agra, diesel engine spare parts, KOMODO engine parts, Singhal Industrial Corporation, tractor spare parts India, air compressor repair kits, gaskets manufacturer";
+const DEFAULT_TITLE = "Auto & Agricultural Engine Spare Parts Manufacturer India | GEE ARR (GR)";
+const DEFAULT_DESC = "GEE ARR (GR Engine Parts) - Premier manufacturer & exporter of Kirloskar Engine Heads, Cylinder Blocks, Liners, Pistons & Engine Components in Agra, India since 1960.";
+const DEFAULT_KEYWORDS = "auto spare parts India, cylinder liners manufacturer, piston exporter India, Kirloskar engine heads, Kirloskar cylinder blocks, GEE ARR engine parts, GR engine parts, tractor spare parts India";
 const BASE_URL = "https://indiasparepart.com";
-const DEFAULT_IMAGE = "https://indiasparepart.com/images/komodo_logo.jpeg";
+const DEFAULT_IMAGE = "https://indiasparepart.com/images/gr_logo.jpeg";
 
 export function SEO({
   title,
@@ -27,7 +27,7 @@ export function SEO({
 }: SEOProps) {
 
   const fullTitle = title 
-    ? `${title} | Singhal Industrial Corporation (indiasparepart.com)`
+    ? `${title} | GEE ARR (GR Engine Parts)`
     : DEFAULT_TITLE;
 
   const canonicalUrl = `${BASE_URL}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;

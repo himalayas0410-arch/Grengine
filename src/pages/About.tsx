@@ -14,7 +14,7 @@ export function About() {
     <div className="w-full bg-white text-zinc-900 font-sans">
       <SEO 
         title="About GEE ARR (GR) - Established 1960 in Agra, India"
-        description="Learn about GEE ARR (GR Engine Parts). Established in 1960 in Foundry Nagar, Agra, India, we are a premier ISO 9001:2015 certified manufacturer of Kirloskar Engine Heads, Cylinder Blocks, Liners, and Pistons."
+        description="Learn about GEE ARR (GR Engine Parts). Established in 1960 in Foundry Nagar, Agra, India, we are a premier manufacturer of Kirloskar Engine Heads, Cylinder Blocks, Liners, and Pistons."
         canonicalPath="/about"
       />
 
