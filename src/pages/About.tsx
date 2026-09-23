@@ -253,7 +253,7 @@ export function About() {
 
                 <div className="mb-6 rounded-2xl overflow-hidden bg-white border border-zinc-200 p-3 shadow-sm flex items-center justify-center">
                   <img 
-                    src="/images/orangemap.png" 
+                    src="/images/neworangemap.png" 
                     alt="GEE AAR Pan-India Network Map" 
                     className="max-h-96 w-auto object-contain rounded-xl"
                   />

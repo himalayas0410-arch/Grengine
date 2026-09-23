@@ -87,7 +87,7 @@ export function Home() {
       {/* Hero Section - Matching Exact Original Structure */}
       <section className="w-full relative overflow-hidden min-h-[550px] md:min-h-[620px] flex items-center bg-[#EEF1F5] border-b border-zinc-100">
         <img 
-          src="/images/banner.png" 
+          src="/images/newbanner.png" 
           alt="GEE AAR GR Engine Parts Hero Banner" 
           className="absolute inset-0 w-full h-full object-cover object-right z-0"
         />
@@ -269,7 +269,7 @@ export function Home() {
           {/* Map Image Display Only */}
           <div className="rounded-3xl overflow-hidden bg-[#F8FAFC] border border-zinc-200 p-4 md:p-8 shadow-sm flex items-center justify-center">
             <img 
-              src="/images/orangemap.png" 
+              src="/images/neworangemap.png" 
               alt="GEE AAR Pan-India Domestic Network & Presence Map" 
               className="max-h-[600px] w-auto object-contain rounded-2xl"
             />
