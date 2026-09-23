@@ -93,7 +93,7 @@ export function Home() {
         />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-16 md:py-24">
-          <div className="max-w-xl lg:max-w-2xl bg-white/40 md:bg-transparent p-6 md:p-0 rounded-3xl backdrop-blur-sm md:backdrop-blur-none">
+          <div className="max-w-md lg:max-w-lg bg-white/40 md:bg-transparent p-6 md:p-0 rounded-3xl backdrop-blur-sm md:backdrop-blur-none">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -105,11 +105,11 @@ export function Home() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-zinc-900 leading-[1.12] mb-5 tracking-tight">
                 {companyConfig.tagline}
               </h1>
-              <div className="text-lg md:text-xl font-bold text-[#EA580C] mb-4">
-                Manufacturer of Cylinder Engine Heads, Air Cooled Blocks & Pistons
+              <div className="text-base md:text-lg font-bold text-[#EA580C] mb-3 leading-snug">
+                Manufacturer of Engine Heads, Air Cooled Blocks & Pistons
               </div>
-              <p className="text-zinc-600 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
-                We are one of the leading engine parts manufacturers & exporters, serving automotive OEMs and aftermarket customers around the world with 33 years of engineering excellence.
+              <p className="text-zinc-600 text-sm md:text-base leading-relaxed mb-8 max-w-md">
+                Leading engine parts manufacturer & exporter serving global OEMs and aftermarket with 33 years of engineering excellence.
               </p>
               <div>
                 <Link 
