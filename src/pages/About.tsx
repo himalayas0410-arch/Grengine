@@ -166,8 +166,8 @@ export function About() {
                   <div className="md:col-span-6">
                     <div className="rounded-2xl overflow-hidden border border-zinc-200 shadow-md bg-zinc-50">
                       <img 
-                        src="/images/indian_qa_measuring.jpg" 
-                        alt="Indian Quality Assurance Mechanical Engineer Measuring Engine Block Bore Gauge" 
+                        src="/images/qa_measuring_inspection.png" 
+                        alt="Quality Assurance Technician Measuring Engine Block Bore Gauge in Metrology Lab" 
                         className="w-full h-80 md:h-[380px] object-cover rounded-xl"
                       />
                     </div>

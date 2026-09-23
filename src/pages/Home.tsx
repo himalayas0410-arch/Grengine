@@ -6,42 +6,42 @@ import { useState } from 'react';
 import { SEO } from '../components/SEO';
 
 const productsGrid = [
-  { 
-    name: 'CYLINDER ENGINE HEADS', 
-    desc: 'Precision engineered replacement cylinder heads for diesel engines, pumpsets, and industrial units.', 
-    img: '/images/kat.jpeg', 
-    path: '/products/cylinder-engine-heads' 
+  {
+    name: 'CYLINDER ENGINE HEADS',
+    desc: 'Precision engineered replacement cylinder heads for diesel engines, pumpsets, and industrial units.',
+    img: '/images/kat.jpeg',
+    path: '/products/cylinder-engine-heads'
   },
-  { 
-    name: 'CYLINDER AIR COOLED BLOCKS', 
-    desc: 'Air-cooled cylinder blocks cast with extended cooling fins for maximum heat exchange and durability.', 
-    img: '/images/in_cylinder_liners.jpeg', 
-    path: '/products/cylinder-air-cooled-blocks' 
+  {
+    name: 'CYLINDER AIR COOLED BLOCKS',
+    desc: 'Air-cooled cylinder blocks cast with extended cooling fins for maximum heat exchange and durability.',
+    img: '/images/in_cylinder_liners.jpeg',
+    path: '/products/cylinder-air-cooled-blocks'
   },
-  { 
-    name: 'PISTONS', 
-    desc: 'Durable eutectic silicon-aluminum alloy pistons with Ni-Resist ring groove carrier inserts.', 
-    img: '/images/pistons.jpeg', 
+  {
+    name: 'PISTONS',
+    desc: 'Durable eutectic silicon-aluminum alloy pistons with Ni-Resist ring groove carrier inserts.',
+    img: '/images/pistons.jpeg',
     fallbackImg: '/images/piston_hero.jpg',
-    path: '/products/pistons' 
+    path: '/products/pistons'
   },
-  { 
-    name: 'AIR BRAKE COMPRESSOR KITS', 
-    desc: 'Complete repair overhaul kits including cylinder block, pistons, and piston rings for heavy-duty trucks.', 
-    img: '/images/air_compressor_kits.jpeg', 
-    path: '/products/air-compressor-kits' 
+  {
+    name: 'AIR BRAKE COMPRESSOR KITS',
+    desc: 'Complete repair overhaul kits including cylinder block, pistons, and piston rings for heavy-duty trucks.',
+    img: '/images/air_compressor_kits.jpeg',
+    path: '/products/air-compressor-kits'
   },
-  { 
-    name: 'PISTON RINGS & PINS', 
-    desc: 'Engineered compression ring sets with chrome and nitriding coatings for minimal blow-by.', 
-    img: '/images/piston_hero.jpg', 
-    path: '/products/piston-rings' 
+  {
+    name: 'PISTON RINGS & PINS',
+    desc: 'Engineered compression ring sets with chrome and nitriding coatings for minimal blow-by.',
+    img: '/images/piston_hero.jpg',
+    path: '/products/piston-rings'
   },
-  { 
-    name: 'PRECISION CASTINGS', 
-    desc: 'Custom shell-moulded grey iron, SG iron, and aluminum gravity castings built to technical drawings.', 
-    img: '/images/our_castings.jpeg', 
-    path: '/custom-manufacturing' 
+  {
+    name: 'PRECISION CASTINGS',
+    desc: 'Custom shell-moulded grey iron, SG iron, and aluminum gravity castings built to technical drawings.',
+    img: '/images/our_castings.jpeg',
+    path: '/custom-manufacturing'
   }
 ];
 
@@ -78,7 +78,7 @@ export function Home() {
 
   return (
     <div className="w-full bg-white text-zinc-900 font-sans">
-      <SEO 
+      <SEO
         title="GEE AAR (GR) - Auto & Agricultural Engine Spare Parts Manufacturer Agra"
         description="GEE AAR (GR) - Premier manufacturer of Cylinder Engine Heads, Cylinder Air Cooled Blocks & Pistons in C-59 Foundary Nagar, Agra, India since 1993."
         canonicalPath="/"
@@ -86,34 +86,34 @@ export function Home() {
 
       {/* Hero Section - Matching Exact Original Structure */}
       <section className="w-full relative overflow-hidden min-h-[550px] md:min-h-[620px] flex items-center bg-[#EEF1F5] border-b border-zinc-100">
-        <img 
-          src="/images/newbanner.png" 
-          alt="GEE AAR GR Engine Parts Hero Banner" 
+        <img
+          src="/images/newbanner.png"
+          alt="GEE AAR GR Engine Parts Hero Banner"
           className="absolute inset-0 w-full h-full object-cover object-right z-0"
         />
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-16 md:py-24">
-          <div className="max-w-xl lg:max-w-2xl bg-white/40 md:bg-transparent p-6 md:p-0 rounded-3xl backdrop-blur-sm md:backdrop-blur-none">
-            <motion.div 
+          <div className="max-w-md lg:max-w-lg bg-white/40 md:bg-transparent p-6 md:p-0 rounded-3xl backdrop-blur-sm md:backdrop-blur-none">
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
-              <div className="inline-block bg-[#EA580C] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-5 uppercase tracking-wider shadow-sm">
+              <div className="inline-block bg-[#EA580C] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider shadow-sm">
                 BEST AUTO PARTS MANUFACTURERS
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-zinc-900 leading-[1.18] mb-4 tracking-tight max-w-xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-zinc-900 leading-[1.12] mb-5 tracking-tight">
                 {companyConfig.tagline}
               </h1>
               <div className="text-base md:text-lg font-bold text-[#EA580C] mb-3 leading-snug">
                 Manufacturer of Engine Heads, Air Cooled Blocks & Pistons
               </div>
-              <p className="text-zinc-600 text-sm md:text-base leading-relaxed mb-8 max-w-lg">
+              <p className="text-zinc-600 text-sm md:text-base leading-relaxed mb-8 max-w-md">
                 Leading engine parts manufacturer & exporter serving global OEMs and aftermarket with 33 years of engineering excellence.
               </p>
               <div>
-                <Link 
-                  to="/about" 
+                <Link
+                  to="/about"
                   className="inline-flex items-center px-8 py-4 bg-[#EA580C] text-white font-bold text-sm rounded-full hover:bg-orange-700 transition-all shadow-md"
                 >
                   More Details <ArrowRight className="ml-2 w-4 h-4" />
@@ -127,7 +127,7 @@ export function Home() {
       {/* Value Props & Key Stats */}
       <section className="py-10 md:py-14 bg-white border-b border-zinc-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { icon: Package, title: 'QUALITY', desc: 'Renowned for high precision quality and commitment to engineering excellence since 1993' },
@@ -147,7 +147,7 @@ export function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            
+
             <div className="bg-[#F8FAFC] rounded-2xl p-6 border border-zinc-200/70 hover:border-orange-200 transition-colors flex items-center space-x-4">
               <div className="p-3 bg-emerald-500/10 text-emerald-600 rounded-2xl shrink-0">
                 <Building2 className="w-6 h-6 stroke-[2]" />
@@ -216,15 +216,15 @@ export function Home() {
             {productsGrid.map((product, i) => (
               <div key={i} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-zinc-200/80 flex flex-col justify-between group">
                 <div className="h-56 overflow-hidden relative bg-zinc-50 flex items-center justify-center p-4">
-                  <img 
-                    src={product.img} 
-                    alt={product.name} 
+                  <img
+                    src={product.img}
+                    alt={product.name}
                     onError={(e) => {
                       if (product.fallbackImg) {
                         (e.target as HTMLImageElement).src = product.fallbackImg;
                       }
                     }}
-                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" 
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                   {/* GR Watermark overlay badge */}
                   <div className="absolute bottom-3 left-3 bg-black/85 backdrop-blur-md text-white text-[10px] font-black px-3 py-1 rounded-md border border-orange-500/50 shadow-lg flex items-center gap-1 uppercase tracking-widest pointer-events-none">
@@ -236,8 +236,8 @@ export function Home() {
 
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <p className="text-zinc-600 text-xs leading-relaxed mb-6">{product.desc}</p>
-                  <Link 
-                    to={product.path} 
+                  <Link
+                    to={product.path}
                     className="inline-flex items-center text-[#EA580C] font-extrabold text-xs uppercase tracking-wider group-hover:text-orange-700 transition-colors"
                   >
                     View Product Page <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
@@ -252,7 +252,7 @@ export function Home() {
       {/* DOMESTIC NETWORK & PRESENCE Section - Clean Image Display */}
       <section className="py-16 md:py-20 bg-white border-t border-b border-zinc-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="text-center max-w-3xl mx-auto mb-10">
             <span className="text-[#EA580C] text-xs font-extrabold uppercase tracking-widest block mb-2">
               Pan-India Supply & Logistics
@@ -268,9 +268,9 @@ export function Home() {
 
           {/* Map Image Display Only */}
           <div className="rounded-3xl overflow-hidden bg-[#F8FAFC] border border-zinc-200 p-4 md:p-8 shadow-sm flex items-center justify-center">
-            <img 
-              src="/images/neworangemap.png" 
-              alt="GEE AAR Pan-India Domestic Network & Presence Map" 
+            <img
+              src="/images/neworangemap.png"
+              alt="GEE AAR Pan-India Domestic Network & Presence Map"
               className="max-h-[600px] w-auto object-contain rounded-2xl"
             />
           </div>
@@ -311,7 +311,7 @@ export function Home() {
           </span>
           <h2 className="text-3xl font-extrabold text-zinc-900 mb-3">Client Testimonials</h2>
           <p className="text-zinc-500 text-xs mb-12">See what engine parts distributors say about GEE AAR</p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-zinc-200 text-left">
               <div className="text-amber-400 text-lg mb-4">★★★★★</div>
@@ -351,7 +351,7 @@ export function Home() {
           <div className="border border-zinc-200 rounded-2xl overflow-hidden bg-white shadow-sm">
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-zinc-200 last:border-0">
-                <button 
+                <button
                   className="w-full flex items-center justify-between p-6 text-left font-bold text-zinc-800 hover:bg-zinc-50 transition-colors text-sm"
                   onClick={() => setOpenFaq(openFaq === i ? -1 : i)}
                 >

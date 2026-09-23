@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "Are you a certified manufacturer?",
-    a: "Yes, Singhal Industrial Corporation (KOMODO Engine Parts) is ISO 9001:2015 certified for manufacturing and quality control."
+    a: "Yes, GEE AAR (GR Engine Parts) is a certified precision manufacturer adhering to strict quality control."
   },
   {
     q: "Do you offer customized branding and packaging?",
@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: "Do you develop new engine parts?",
-    a: "Yes, our engineering team manufactures custom pistons, cylinder liners, and castings based on technical drawings or physical samples."
+    a: "Yes, our engineering team manufactures custom pistons, cylinder air cooled blocks, and castings based on technical drawings or physical samples."
   }
 ];
 
@@ -62,19 +62,18 @@ export function Infrastructure() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white font-sans">
       <SEO
-        title="Manufacturing Infrastructure, Foundry & CNC Machining"
-        description="Explore Singhal Industrial Corporation's manufacturing facility in Agra, India: Inductotherm melting furnaces, CNC turning, VMC milling, spectro analysis & honing."
+        title="Manufacturing Infrastructure, Foundry & CNC Machining | GEE AAR"
+        description="Explore GEE AAR (GR Engine Parts) manufacturing facility in Agra, India: Inductotherm melting furnaces, CNC turning, VMC milling, spectro analysis & honing."
         canonicalPath="/infrastructure"
       />
 
       {/* Hero Header */}
-      <section className="bg-[#1C1F26] text-white py-16 md:py-20 relative overflow-hidden text-center">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-800/40 via-zinc-900 to-black z-0 opacity-80" />
+      <section className="bg-zinc-950 text-white py-16 md:py-20 relative overflow-hidden text-center border-b border-orange-600/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-            Infrastructure
+          <h1 className="text-4xl md:text-5xl font-black text-white tracking-tight">
+            Manufacturing <span className="text-[#EA580C]">Infrastructure</span>
           </h1>
         </div>
       </section>
@@ -91,7 +90,7 @@ export function Infrastructure() {
               <ul className="space-y-4 pt-2">
                 {meltingItems.map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-sky-500 mr-3 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#EA580C] mr-3 mt-0.5 shrink-0" />
                     <span className="text-zinc-700 text-sm md:text-base font-medium leading-snug">
                       {item}
                     </span>
@@ -137,7 +136,7 @@ export function Infrastructure() {
               <ul className="space-y-4 pt-2">
                 {machiningItems.map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-sky-500 mr-3 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#EA580C] mr-3 mt-0.5 shrink-0" />
                     <span className="text-zinc-700 text-sm md:text-base font-medium leading-snug">
                       {item}
                     </span>
@@ -149,7 +148,7 @@ export function Infrastructure() {
         </div>
       </section>
 
-      {/* Section 3: Measuring */}
+      {/* Section 3: Measuring - Updated with Indian QA Engineer Image */}
       <section className="py-16 md:py-24 bg-white border-b border-zinc-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -161,7 +160,7 @@ export function Infrastructure() {
               <ul className="grid grid-cols-1 sm:grid-cols-1 gap-3 pt-2">
                 {measuringItems.map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-sky-500 mr-3 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#EA580C] mr-3 mt-0.5 shrink-0" />
                     <span className="text-zinc-700 text-sm md:text-base font-medium leading-snug">
                       {item}
                     </span>
@@ -170,13 +169,13 @@ export function Infrastructure() {
               </ul>
             </div>
 
-            {/* Right Image */}
+            {/* Right Image with Quality Metrology Bore Gauge Inspection */}
             <div className="flex justify-center lg:justify-end">
-              <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200">
+              <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200 p-2 bg-zinc-50">
                 <img
-                  src="/images/measuring_inspection.jpg"
-                  alt="Precision Measuring Dial Gauge Inspection"
-                  className="w-full h-[450px] object-cover"
+                  src="/images/qa_measuring_inspection.png"
+                  alt="Quality Assurance Technician Measuring Engine Block Bore Gauge in Metrology Lab"
+                  className="w-full h-[450px] object-cover rounded-2xl"
                 />
               </div>
             </div>
@@ -207,7 +206,7 @@ export function Infrastructure() {
               <ul className="space-y-4 pt-2">
                 {otherEquipmentItems.map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-sky-500 mr-3 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#EA580C] mr-3 mt-0.5 shrink-0" />
                     <span className="text-zinc-700 text-sm md:text-base font-medium leading-snug">
                       {item}
                     </span>
@@ -239,7 +238,7 @@ export function Infrastructure() {
                     className="w-full flex items-center justify-between p-5 text-left bg-zinc-50 hover:bg-zinc-100/80 transition-colors font-bold text-zinc-900 text-sm md:text-base"
                   >
                     <span className="flex items-center">
-                      <span className="text-zinc-400 mr-2 font-mono">+</span> {faq.q}
+                      <span className="text-[#EA580C] mr-2 font-mono">+</span> {faq.q}
                     </span>
                     {isOpen ? (
                       <Minus className="w-4 h-4 text-zinc-500 shrink-0 ml-4" />

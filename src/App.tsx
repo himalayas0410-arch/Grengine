@@ -13,7 +13,6 @@ import { KirloskarEngineHeadsPage } from './pages/KirloskarEngineHeadsPage';
 import { KirloskarCylinderBlocksPage } from './pages/KirloskarCylinderBlocksPage';
 import { ProductDetail } from './pages/ProductDetail';
 import { Quote } from './pages/Quote';
-import { Quality } from './pages/Quality';
 import { About } from './pages/About';
 import { Infrastructure } from './pages/Infrastructure';
 import { CustomManufacturing } from './pages/CustomManufacturing';
@@ -36,7 +35,6 @@ const router = createBrowserRouter([
       { path: 'products/air-compressor-kits', element: <AirCompressorKitsPage /> },
       { path: 'products/:slug', element: <ProductDetail /> },
       { path: 'quote', element: <Quote /> },
-      { path: 'quality', element: <Quality /> },
       { path: 'about', element: <About /> },
       { path: 'infrastructure', element: <Infrastructure /> },
       { path: 'custom-manufacturing', element: <CustomManufacturing /> },
