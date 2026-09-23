@@ -93,22 +93,22 @@ export function Home() {
         />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-16 md:py-24">
-          <div className="max-w-md lg:max-w-lg bg-white/40 md:bg-transparent p-6 md:p-0 rounded-3xl backdrop-blur-sm md:backdrop-blur-none">
+          <div className="max-w-xl lg:max-w-2xl bg-white/40 md:bg-transparent p-6 md:p-0 rounded-3xl backdrop-blur-sm md:backdrop-blur-none">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
-              <div className="inline-block bg-[#EA580C] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider shadow-sm">
+              <div className="inline-block bg-[#EA580C] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-5 uppercase tracking-wider shadow-sm">
                 BEST AUTO PARTS MANUFACTURERS
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-zinc-900 leading-[1.12] mb-5 tracking-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-zinc-900 leading-[1.18] mb-4 tracking-tight max-w-xl">
                 {companyConfig.tagline}
               </h1>
               <div className="text-base md:text-lg font-bold text-[#EA580C] mb-3 leading-snug">
                 Manufacturer of Engine Heads, Air Cooled Blocks & Pistons
               </div>
-              <p className="text-zinc-600 text-sm md:text-base leading-relaxed mb-8 max-w-md">
+              <p className="text-zinc-600 text-sm md:text-base leading-relaxed mb-8 max-w-lg">
                 Leading engine parts manufacturer & exporter serving global OEMs and aftermarket with 33 years of engineering excellence.
               </p>
               <div>
