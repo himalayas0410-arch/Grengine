@@ -49,41 +49,39 @@ export function PistonsPage() {
     "description": "Durable eutectic silicon-aluminum alloy pistons with Ni-Resist ring groove carrier inserts for automotive, truck & tractor engines.",
     "brand": {
       "@type": "Brand",
-      "name": "KOMODO Engine Parts"
+      "name": "GEE AAR"
     },
     "manufacturer": {
       "@type": "Organization",
-      "name": "Singhal Industrial Corporation",
-      "url": "https://indiasparepart.com"
+      "name": "GEE AAR (GR Engine Parts)",
+      "url": "https://geeaar.com"
     }
   };
 
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white font-sans">
       <SEO
-        title="Engine Pistons & Piston Assemblies Manufacturer India"
-        description="High-performance eutectic silicon-aluminum alloy engine pistons with Ni-Resist inserts manufactured in Agra, India by Singhal Industrial Corporation (KOMODO)."
+        title="Engine Pistons & Piston Assemblies Manufacturer Agra"
+        description="High-performance eutectic silicon-aluminum alloy engine pistons with Ni-Resist inserts manufactured in Agra, India by GEE AAR."
         canonicalPath="/products/pistons"
-        image="https://indiasparepart.com/images/piston_hero.jpg"
         schema={productSchema}
       />
 
       {/* Hero Banner */}
-      <section className="bg-zinc-900 text-white py-16 md:py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-red-950/80 via-zinc-900 to-zinc-950 z-0" />
+      <section className="bg-zinc-950 text-white py-16 md:py-20 relative overflow-hidden border-b border-orange-600/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center space-x-2 bg-red-600/20 text-red-400 border border-red-500/30 text-xs font-bold px-3.5 py-1.5 rounded-full mb-6 uppercase tracking-wider">
-              <Award className="w-4 h-4 mr-1" /> Singhal Industrial Corporation
+            <span className="inline-flex items-center space-x-2 bg-[#EA580C] text-black font-black text-xs px-3.5 py-1.5 rounded-full mb-6 uppercase tracking-wider">
+              <Award className="w-4 h-4 mr-1" /> GEE AAR Engine Parts
             </span>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight leading-tight">
-              Singhal Precision Pistons
+            <h1 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight leading-tight">
+              GEE AAR Precision Pistons
             </h1>
             <p className="text-zinc-300 text-lg md:text-xl leading-relaxed mb-8">
               Engineered from high-strength alloys for automotive, commercial vehicle, and agricultural engines worldwide.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/quote" className="px-6 py-3 bg-[#D32F2F] text-white font-bold text-sm uppercase tracking-wider rounded-md hover:bg-red-700 transition-colors shadow-lg">
+              <Link to="/quote" className="px-6 py-3 bg-[#EA580C] text-white font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-orange-700 transition-colors shadow-lg">
                 Request Product Quote
               </Link>
             </div>

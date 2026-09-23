@@ -36,11 +36,11 @@ export function Footer() {
                 className="h-12 w-auto object-contain rounded bg-white p-1"
               />
               <span className="text-xl font-extrabold text-white tracking-tight">
-                GEE ARR
+                GEE AAR
               </span>
             </Link>
             <p className="text-xs text-zinc-400 leading-relaxed mb-6">
-              GEE ARR (GR Engine Parts) - Premier manufacturer & exporter of precision Kirloskar engine heads, cylinder blocks, dry/wet cylinder liners, pistons, and custom auto/agricultural components since {companyConfig.established}.
+              GEE AAR (GR Engine Parts) - Premier manufacturer & exporter of precision cylinder engine heads, cylinder air cooled blocks, pistons, and custom auto/agricultural components since {companyConfig.established}.
             </p>
             <div className="flex items-center space-x-2">
               {[
@@ -84,9 +84,8 @@ export function Footer() {
               Our Products
             </h3>
             <ul className="space-y-2.5 text-xs">
-              <li><Link to="/products/kirloskar-engine-heads" className="hover:text-[#EA580C] transition-colors flex items-center font-semibold text-orange-400">Kirloskar Engine Heads <ArrowRight className="w-3 h-3 ml-1 text-[#EA580C]" /></Link></li>
-              <li><Link to="/products/kirloskar-cylinder-blocks" className="hover:text-[#EA580C] transition-colors flex items-center font-semibold text-orange-400">Kirloskar Cylinder Blocks <ArrowRight className="w-3 h-3 ml-1 text-[#EA580C]" /></Link></li>
-              <li><Link to="/products/cylinder-liners" className="hover:text-[#EA580C] transition-colors">Cylinder Liners (Dry & Wet)</Link></li>
+              <li><Link to="/products/cylinder-engine-heads" className="hover:text-[#EA580C] transition-colors flex items-center font-semibold text-orange-400">Cylinder Engine Heads <ArrowRight className="w-3 h-3 ml-1 text-[#EA580C]" /></Link></li>
+              <li><Link to="/products/cylinder-air-cooled-blocks" className="hover:text-[#EA580C] transition-colors flex items-center font-semibold text-orange-400">Cylinder Air Cooled Blocks <ArrowRight className="w-3 h-3 ml-1 text-[#EA580C]" /></Link></li>
               <li><Link to="/products/pistons" className="hover:text-[#EA580C] transition-colors">Engine Pistons</Link></li>
               <li><Link to="/products/air-compressor-kits" className="hover:text-[#EA580C] transition-colors">Air Compressor Repair Kits</Link></li>
               <li><Link to="/custom-manufacturing" className="hover:text-[#EA580C] transition-colors">Custom Engine Castings</Link></li>
@@ -103,7 +102,7 @@ export function Footer() {
                 <div className="p-1.5 rounded bg-orange-950/60 text-[#EA580C] mr-3 shrink-0 mt-0.5 border border-orange-800/40">
                   <MapPin className="w-4 h-4" />
                 </div>
-                <span className="text-zinc-300 leading-relaxed">G-59 Foundry Nagar, Agra, UP, INDIA</span>
+                <span className="text-zinc-300 leading-relaxed">{companyConfig.address}</span>
               </li>
               <li className="flex items-center">
                 <div className="p-1.5 rounded bg-orange-950/60 text-[#EA580C] mr-3 shrink-0 border border-orange-800/40">
@@ -122,7 +121,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-zinc-800/80 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-zinc-500">
-          <p>Copyright &copy; 2026 GEE ARR (GR Engine Parts). All Rights Reserved. Established 1960 in Agra, India.</p>
+          <p>Copyright &copy; 2026 GEE AAR (GR Engine Parts). All Rights Reserved. Established 1993 in Agra, India.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy-policy" className="hover:text-zinc-400 transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-zinc-400 transition-colors">Terms of Service</Link>

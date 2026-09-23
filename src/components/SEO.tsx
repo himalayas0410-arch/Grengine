@@ -10,9 +10,9 @@ interface SEOProps {
   schema?: object;
 }
 
-const DEFAULT_TITLE = "Auto & Agricultural Engine Spare Parts Manufacturer India | GEE ARR (GR)";
-const DEFAULT_DESC = "GEE ARR (GR Engine Parts) - Premier manufacturer & exporter of Kirloskar Engine Heads, Cylinder Blocks, Liners, Pistons & Engine Components in Agra, India since 1960.";
-const DEFAULT_KEYWORDS = "auto spare parts India, cylinder liners manufacturer, piston exporter India, Kirloskar engine heads, Kirloskar cylinder blocks, GEE ARR engine parts, GR engine parts, tractor spare parts India";
+const DEFAULT_TITLE = "Auto & Agricultural Engine Spare Parts Manufacturer India | GEE AAR (GR)";
+const DEFAULT_DESC = "GEE AAR (GR Engine Parts) - Premier manufacturer & exporter of Cylinder Engine Heads, Cylinder Air Cooled Blocks, Pistons & Engine Components in Agra, India since 1993.";
+const DEFAULT_KEYWORDS = "auto spare parts India, piston exporter India, cylinder engine heads, cylinder air cooled blocks, GEE AAR engine parts, GR engine parts, tractor spare parts India";
 const BASE_URL = "https://indiasparepart.com";
 const DEFAULT_IMAGE = "https://indiasparepart.com/images/gr_logo.jpeg";
 
@@ -27,7 +27,7 @@ export function SEO({
 }: SEOProps) {
 
   const fullTitle = title 
-    ? `${title} | GEE ARR (GR Engine Parts)`
+    ? `${title} | GEE AAR (GR Engine Parts)`
     : DEFAULT_TITLE;
 
   const canonicalUrl = `${BASE_URL}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;

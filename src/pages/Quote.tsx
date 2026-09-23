@@ -15,7 +15,7 @@ export function Quote() {
     phone: '',
     company: '',
     country: '',
-    productCategory: 'Kirloskar Engine Heads',
+    productCategory: 'Cylinder Engine Heads',
     quantity: '300',
     message: ''
   });
@@ -61,8 +61,8 @@ export function Quote() {
   return (
     <div className="w-full bg-white font-sans">
       <SEO 
-        title="Contact Us & Request Quote | GEE ARR (GR)"
-        description="Contact GEE ARR (GR Engine Parts) in Agra, India for bulk pricing, catalog requests & inquiries for Kirloskar Engine Heads, Cylinder Blocks, Liners, and Pistons."
+        title="Contact Us & Request Quote | GEE AAR (GR)"
+        description="Contact GEE AAR (GR Engine Parts) in Agra, India for bulk pricing, catalog requests & inquiries for Cylinder Engine Heads, Cylinder Air Cooled Blocks, and Pistons."
         canonicalPath="/quote"
       />
       {/* Hero Banner */}
@@ -77,7 +77,7 @@ export function Quote() {
               Contact Us / <span className="text-[#EA580C]">Get a Quote</span>
             </h1>
             <p className="text-zinc-400 text-sm md:text-base leading-relaxed mb-4">
-              Reach out to GEE ARR (GR Engine Parts) for technical catalogs, bulk pricing, dealership options, or custom manufacturing inquiries.
+              Reach out to GEE AAR (GR Engine Parts) for technical catalogs, bulk pricing, dealership options, or custom manufacturing inquiries.
             </p>
           </div>
         </div>
@@ -94,7 +94,7 @@ export function Quote() {
                   Direct Communication
                 </span>
                 <h2 className="text-2xl font-black text-zinc-900 mb-4 tracking-tight">
-                  GEE ARR Sales & Factory Office
+                  GEE AAR Sales & Factory Office
                 </h2>
                 <p className="text-zinc-600 text-xs leading-relaxed mb-6">
                   Our sales and engineering team in Agra is available Monday through Saturday to assist with your engine spare part requirements.
@@ -108,7 +108,7 @@ export function Quote() {
                   </div>
                   <div>
                     <div className="font-extrabold text-zinc-900 text-sm mb-1">Factory & Office Address</div>
-                    <div className="text-zinc-600 text-xs leading-relaxed font-medium">G-59 Foundry Nagar, Agra, UP, INDIA</div>
+                    <div className="text-zinc-600 text-xs leading-relaxed font-medium">C-59 Foundary Nagar, Agra, UP, INDIA</div>
                   </div>
                 </div>
 
@@ -152,7 +152,7 @@ export function Quote() {
                     <CheckCircle2 className="w-12 h-12 text-[#EA580C] mx-auto mb-4" />
                     <h4 className="text-xl font-black text-zinc-900 mb-2">Thank You for Reaching Out!</h4>
                     <p className="text-zinc-600 text-xs leading-relaxed max-w-md mx-auto font-medium">
-                      Your inquiry has been received by GEE ARR (GR Engine Parts). Our team will review your requirements and respond via <strong>{companyConfig.email}</strong> or phone.
+                      Your inquiry has been received by GEE AAR (GR Engine Parts). Our team will review your requirements and respond via <strong>{companyConfig.email}</strong> or phone.
                     </p>
                   </div>
                 ) : (
@@ -214,12 +214,10 @@ export function Quote() {
                           onChange={(e) => setFormData({ ...formData, productCategory: e.target.value })}
                           className="w-full px-4 py-3 rounded-xl border border-zinc-200 focus:outline-none focus:border-[#EA580C] text-xs font-medium bg-white"
                         >
-                          <option value="Kirloskar Engine Heads">Kirloskar Engine Heads</option>
-                          <option value="Kirloskar Cylinder Blocks">Air-Cooled Kirloskar Cylinder Blocks</option>
-                          <option value="Cylinder Liners">Cylinder Liners (Dry / Wet / Finned)</option>
+                          <option value="Cylinder Engine Heads">Cylinder Engine Heads</option>
+                          <option value="Cylinder Air Cooled Blocks">Cylinder Air Cooled Blocks</option>
                           <option value="Pistons">Engine Pistons (Eutectic Alloy)</option>
                           <option value="Air Compressor Kits">Air Brake Compressor Repair Kits</option>
-                          <option value="Bush Pins">Hardened Bush Pins</option>
                           <option value="Piston Rings">Piston Rings & Pins</option>
                           <option value="Custom Manufacturing">Custom Casting & CNC Machining</option>
                         </select>

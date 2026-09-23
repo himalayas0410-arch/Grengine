@@ -1,4 +1,4 @@
-import { Award, CheckCircle2, ArrowRight, ShieldCheck, Building2, Target, Globe, MapPin } from 'lucide-react';
+import { Award, CheckCircle2, ArrowRight, ShieldCheck, Building2, Target, Globe, MapPin, TrendingUp, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { companyConfig } from '../config';
 import { SEO } from '../components/SEO';
@@ -13,8 +13,8 @@ export function About() {
   return (
     <div className="w-full bg-white text-zinc-900 font-sans">
       <SEO 
-        title="About GEE ARR (GR) - Established 1960 in Agra, India"
-        description="Learn about GEE ARR (GR Engine Parts). Established in 1960 in Foundry Nagar, Agra, India, we are a premier manufacturer of Kirloskar Engine Heads, Cylinder Blocks, Liners, and Pistons."
+        title="About GEE AAR (GR) - Established 1993 in Agra, India"
+        description="Learn about GEE AAR (GR Engine Parts). Established in 1993 in C-59 Foundary Nagar, Agra, India, we are a premier manufacturer of Cylinder Engine Heads, Air Cooled Blocks, and Pistons."
         canonicalPath="/about"
       />
 
@@ -24,13 +24,13 @@ export function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <span className="inline-flex items-center space-x-2 bg-[#EA580C] text-black font-black text-xs px-3.5 py-1.5 rounded-full mb-6 uppercase tracking-wider shadow-md">
-              <Award className="w-4 h-4 mr-1" /> ESTABLISHED 1960 | AGRA, INDIA
+              <Award className="w-4 h-4 mr-1" /> ESTABLISHED 1993 | AGRA, INDIA
             </span>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-3 tracking-tight leading-tight">
-              About GEE ARR <span className="text-[#EA580C]">GR</span>
+              About GEE AAR <span className="text-[#EA580C]">GR</span>
             </h1>
             <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
-              Over 65 years of engineering precision, quality manufacturing, and pan-India presence in auto & agricultural engine spare parts.
+              33 years of engineering precision, quality manufacturing, and pan-India presence in auto & agricultural engine spare parts.
             </p>
           </div>
         </div>
@@ -41,34 +41,208 @@ export function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
-            <div className="lg:col-span-8 space-y-6 text-zinc-700 leading-relaxed text-sm md:text-base">
-              <div className="p-6 md:p-8 rounded-3xl bg-zinc-50 border border-zinc-200 mb-8 shadow-sm">
-                <h2 className="text-2xl font-black text-zinc-900 mb-3 tracking-tight">Company History & Heritage</h2>
+            <div className="lg:col-span-8 space-y-12 text-zinc-700 leading-relaxed text-sm md:text-base">
+              
+              {/* Company History */}
+              <div className="p-6 md:p-8 rounded-3xl bg-zinc-50 border border-zinc-200 shadow-sm space-y-4">
+                <h2 className="text-2xl font-black text-zinc-900 tracking-tight">Company History & Heritage</h2>
                 <p className="text-zinc-800 font-semibold leading-relaxed">
-                  Established in 1960 in Foundry Nagar, Agra, India, <strong>GEE ARR (GR Engine Parts)</strong> has been a trusted pioneer in manufacturing precision auto and agricultural engine spare parts for over six decades.
+                  Established in 1993 in C-59 Foundary Nagar, Agra, India, <strong>GEE AAR (GR Engine Parts)</strong> has been a trusted pioneer in manufacturing precision auto and agricultural engine spare parts for 33 years.
+                </p>
+                <p className="text-zinc-600 text-sm">
+                  From humble beginnings in 1993, GEE AAR has expanded into a state-of-the-art manufacturing operation equipped with modern shell moulding foundries, CNC machining centers, and comprehensive quality assurance testing equipment.
+                </p>
+                <p className="text-zinc-600 text-sm">
+                  We specialize in heavy-duty replacement engine components including <strong>Cylinder Engine Heads, Cylinder Air Cooled Blocks, Eutectic Silicon Pistons, Air Compressor Kits, and Piston Rings</strong>.
                 </p>
               </div>
 
-              <p>
-                From humble beginnings in 1960, GEE ARR has expanded into a state-of-the-art manufacturing operation equipped with modern shell moulding foundries, CNC machining centers, and comprehensive quality assurance testing equipment.
-              </p>
+              {/* Why GEE AAR? */}
+              <div className="bg-white rounded-3xl p-6 md:p-8 border border-zinc-200/90 shadow-sm">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                  <div className="md:col-span-7 space-y-4">
+                    <h2 className="text-2xl md:text-3xl font-black text-zinc-900 tracking-tight">
+                      Why GEE AAR?
+                    </h2>
+                    <ul className="space-y-3 text-xs md:text-sm text-zinc-700">
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                        <span><strong>Flexible MOQs:</strong> Tailored solutions for businesses of all sizes.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                        <span><strong>In-House Manufacturing:</strong> Total quality control with every process under one roof.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                        <span><strong>Custom Branding:</strong> Aligning with your brand identity through customized products and packaging.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                        <span><strong>Global Expertise:</strong> Trusted by businesses in international markets, including the USA.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                        <span><strong>Commitment to Excellence:</strong> Precision engineering, durable products, and timely delivery define our services.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="md:col-span-5">
+                    <div className="rounded-2xl overflow-hidden border border-zinc-200 shadow-md bg-zinc-50 h-64 md:h-72">
+                      <img 
+                        src="/images/our_castings.jpeg" 
+                        alt="GEE AAR Manufacturing & Packaging Excellence" 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-              <p>
-                We specialize in heavy-duty replacement engine components including <strong>Kirloskar Engine Heads, Air-Cooled Kirloskar Cylinder Blocks, Centrifugally Cast Cylinder Liners, Eutectic Silicon Pistons, Air Compressor Kits, Hardened Bush Pins, and Piston Rings</strong>.
-              </p>
+              {/* Our Vision and Mission */}
+              <div className="bg-[#F8FAFC] rounded-3xl p-6 md:p-8 border border-zinc-200 space-y-6">
+                <h2 className="text-2xl md:text-3xl font-black text-zinc-900 tracking-tight">
+                  Our Vision and Mission
+                </h2>
+                <div className="space-y-4 text-xs md:text-sm">
+                  <div className="bg-white p-5 rounded-2xl border border-zinc-200 shadow-xs">
+                    <h3 className="font-extrabold text-zinc-900 text-sm md:text-base mb-1.5 flex items-center">
+                      <Globe className="w-4 h-4 text-[#EA580C] mr-2" /> Vision
+                    </h3>
+                    <p className="text-zinc-600 leading-relaxed">
+                      To become a global leader in the auto parts manufacturing industry by consistently exceeding customer expectations with innovative and reliable solutions.
+                    </p>
+                  </div>
 
-              <div className="my-8 p-6 md:p-8 bg-zinc-900 text-white rounded-3xl border border-zinc-800 shadow-xl">
+                  <div className="bg-white p-5 rounded-2xl border border-zinc-200 shadow-xs">
+                    <h3 className="font-extrabold text-zinc-900 text-sm md:text-base mb-1.5 flex items-center">
+                      <Target className="w-4 h-4 text-[#EA580C] mr-2" /> Mission
+                    </h3>
+                    <p className="text-zinc-600 leading-relaxed">
+                      To provide superior engine components that enhance the performance and reliability of our customers' engines, while upholding the highest standards of integrity and quality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Quality and Innovation */}
+              <div className="bg-white rounded-3xl p-6 md:p-8 border border-zinc-200/90 shadow-sm">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                  <div className="md:col-span-5 order-2 md:order-1">
+                    <div className="rounded-2xl overflow-hidden border border-zinc-200 shadow-md bg-zinc-50 h-64 md:h-72">
+                      <img 
+                        src="/images/pistons.jpeg" 
+                        alt="GEE AAR Quality and Innovation Pistons" 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="md:col-span-7 order-1 md:order-2 space-y-4">
+                    <h2 className="text-2xl md:text-3xl font-black text-zinc-900 tracking-tight">
+                      Quality and Innovation
+                    </h2>
+                    <p className="text-xs md:text-sm text-zinc-600 leading-relaxed">
+                      At GEE AAR, quality is not just a standard; it's our tradition. We operate an <strong>in-house foundry</strong> and <strong>machine shop</strong>, allowing us to <strong>maintain stringent quality control</strong> and provide limitless <strong>customization options</strong>.
+                    </p>
+                    <p className="text-xs md:text-sm text-zinc-600 leading-relaxed">
+                      Our commitment to innovation ensures that we are always at the <strong>forefront of technological advancements</strong>, delivering products that meet and exceed our customer's requirements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Our Growth & Expansion */}
+              <div className="bg-[#F8FAFC] rounded-3xl p-6 md:p-8 border border-zinc-200 space-y-6">
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-black text-zinc-900 tracking-tight mb-2">
+                    Our Growth & Expansion
+                  </h2>
+                  <p className="text-zinc-600 text-xs md:text-sm">
+                    We are making significant advancements to expand our capabilities and drive growth.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-2xl border border-zinc-200 space-y-4">
+                  <h3 className="font-black text-zinc-900 text-sm md:text-base border-b border-zinc-100 pb-2">
+                    Recent Advancements (FY 2024-25):
+                  </h3>
+                  <ul className="space-y-3 text-xs md:text-sm text-zinc-700">
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                      <span><strong>1.5x Increase in Casting Capacity:</strong> Expanded both aluminium & grey cast iron casting capacity.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                      <span><strong>40%+ Increase in Production Output:</strong> Achieved through process optimization & efficiency improvements. Also, adding new machinery.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                      <span><strong>20% Increase in Workforce:</strong> Strengthened our team to support higher production demands.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                      <span><strong>Eliminating Bottlenecks:</strong> Focused on increasing throughput & streamlining manufacturing.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                      <span><strong>On-Time Delivery & Product Expansion:</strong> Prioritizing shipment reliability while expanding our product range.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="w-2 h-2 rounded-full bg-[#EA580C] mt-2 mr-3 shrink-0" />
+                      <span><strong>New Workforce Training:</strong> Investing in skill development to maintain GEE AAR's high-quality standards.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Future Growth Initiatives */}
+              <div className="bg-zinc-950 text-white rounded-3xl p-6 md:p-8 border border-zinc-800 space-y-6 shadow-xl">
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight mb-1">
+                    Future Growth Initiatives
+                  </h2>
+                  <span className="text-[#EA580C] text-xs font-extrabold uppercase tracking-widest block">
+                    (FY 2025-2026)
+                  </span>
+                </div>
+
+                <ul className="space-y-3.5 text-xs md:text-sm text-zinc-300">
+                  <li className="flex items-start">
+                    <Sparkles className="w-4 h-4 text-[#EA580C] mt-0.5 mr-3 shrink-0" />
+                    <span><strong className="text-white">New CNC Machining Capacity:</strong> Expanding precision & efficiency with new CNC machines.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Sparkles className="w-4 h-4 text-[#EA580C] mt-0.5 mr-3 shrink-0" />
+                    <span><strong className="text-white">2x Increase in Grey Cast Iron Casting:</strong> Investing in a higher-capacity furnace.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Sparkles className="w-4 h-4 text-[#EA580C] mt-0.5 mr-3 shrink-0" />
+                    <span><strong className="text-white">Expanded Aluminium Capacity:</strong> Increasing aluminium melting capabilities to meet rising demand.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Sparkles className="w-4 h-4 text-[#EA580C] mt-0.5 mr-3 shrink-0" />
+                    <span><strong className="text-white">Product Diversification:</strong> Utilising our casting & machining capacity to manufacture a wide variety of high-quality components as per buyer requirements.</span>
+                  </li>
+                </ul>
+
+                <p className="text-xs md:text-sm text-zinc-400 border-t border-zinc-800/80 pt-4 italic">
+                  These strategic initiatives position GEE AAR for long-term success, ensuring we remain a trusted partner for high-quality components.
+                </p>
+              </div>
+
+              {/* Uncompromising Quality Policy */}
+              <div className="p-6 md:p-8 bg-zinc-900 text-white rounded-3xl border border-zinc-800 shadow-xl">
                 <h3 className="text-xl font-extrabold text-[#EA580C] mb-3">Uncompromising Quality Policy</h3>
                 <p className="mb-4 text-zinc-300 text-xs md:text-sm leading-relaxed">
-                  At GEE ARR, quality is engineered into every stage of production. From raw material melt analysis on multi-channel optical emission spectrometers to final CMM dimensional inspection, every part meets rigorous OE-grade standards.
+                  At GEE AAR, quality is engineered into every stage of production. From raw material melt analysis on multi-channel optical emission spectrometers to final dimensional inspection, every part meets rigorous OE-grade standards.
                 </p>
                 <div className="font-extrabold text-white text-sm border-l-4 border-[#EA580C] pl-4 py-1">
-                  Quality is never an accident—it is the result of 65+ years of disciplined processes and technical excellence.
+                  Quality is never an accident—it is the result of 33 years of disciplined processes and technical excellence.
                 </div>
               </div>
 
               {/* Domestic Presence Grid */}
-              <div className="my-10 bg-zinc-50 rounded-3xl p-6 md:p-8 border border-zinc-200/80 shadow-sm">
+              <div className="bg-zinc-50 rounded-3xl p-6 md:p-8 border border-zinc-200/80 shadow-sm">
                 <div className="flex items-center space-x-3 mb-3">
                   <MapPin className="w-6 h-6 text-[#EA580C]" />
                   <h3 className="text-xl font-extrabold text-zinc-900">Domestic Network & Presence</h3>
@@ -80,7 +254,7 @@ export function About() {
                 <div className="mb-6 rounded-2xl overflow-hidden bg-white border border-zinc-200 p-3 shadow-sm flex items-center justify-center">
                   <img 
                     src="/images/orangemap.png" 
-                    alt="GEE ARR Pan-India Network Map" 
+                    alt="GEE AAR Pan-India Network Map" 
                     className="max-h-96 w-auto object-contain rounded-xl"
                   />
                 </div>
@@ -94,14 +268,6 @@ export function About() {
                 </div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-black text-white mt-8">
-                <div className="flex items-center space-x-3 mb-2 text-[#EA580C] font-bold text-xs uppercase tracking-wider">
-                  <Target className="w-5 h-5" /> Our Mission
-                </div>
-                <p className="text-base md:text-lg font-bold">
-                  To manufacture high performance engine parts that keep commercial vehicles and agricultural machinery running reliably across India and global markets.
-                </p>
-              </div>
             </div>
 
             {/* Sidebar */}
@@ -110,10 +276,10 @@ export function About() {
                 <div className="w-16 h-16 rounded-2xl bg-orange-950/60 text-[#EA580C] border border-orange-800/40 flex items-center justify-center mx-auto mb-4">
                   <Building2 className="w-8 h-8" />
                 </div>
-                <h3 className="font-black text-2xl text-zinc-900 mb-1 tracking-tight">GEE ARR</h3>
-                <div className="text-xs font-extrabold text-[#EA580C] uppercase tracking-wider mb-4">Brand: GR • Est. 1960</div>
+                <h3 className="font-black text-2xl text-zinc-900 mb-1 tracking-tight">GEE AAR</h3>
+                <div className="text-xs font-extrabold text-[#EA580C] uppercase tracking-wider mb-4">Brand: GR • Est. 1993</div>
                 <div className="p-4 rounded-xl bg-white border border-zinc-200 text-xs font-bold text-zinc-800">
-                  G-59 Foundry Nagar, Agra, UP, India<br/>
+                  C-59 Foundary Nagar, Agra, UP, India<br/>
                   <span className="text-zinc-500 font-normal">Phone: +91 6396566120</span>
                 </div>
               </div>
@@ -122,12 +288,10 @@ export function About() {
                 <h4 className="font-bold text-base mb-4 text-[#EA580C] uppercase tracking-wider">Core Product Range</h4>
                 <ul className="space-y-3 text-xs">
                   {[
-                    "Kirloskar Engine Heads",
-                    "Kirloskar Cylinder Blocks (Air Cooled)",
-                    "Cylinder Liners & Sleeves",
+                    "Cylinder Engine Heads",
+                    "Cylinder Air Cooled Blocks",
                     "Pistons & Pin Assemblies",
                     "Air Brake Compressor Kits",
-                    "Hardened Bush Pins",
                     "Compression Piston Rings",
                     "Precision Shell-Moulded Castings"
                   ].map((item, idx) => (

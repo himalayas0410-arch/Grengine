@@ -25,9 +25,8 @@ const YoutubeIcon = ({ className }: { className?: string }) => (
 );
 
 const productCategories = [
-  { name: 'KIRLOSKAR ENGINE HEADS', path: '/products/kirloskar-engine-heads' },
-  { name: 'KIRLOSKAR CYLINDER BLOCKS (AIR COOLED)', path: '/products/kirloskar-cylinder-blocks' },
-  { name: 'CYLINDER LINERS', path: '/products/cylinder-liners' },
+  { name: 'CYLINDER ENGINE HEADS', path: '/products/cylinder-engine-heads' },
+  { name: 'CYLINDER AIR COOLED BLOCKS', path: '/products/cylinder-air-cooled-blocks' },
   { name: 'PISTONS', path: '/products/pistons' },
   { name: 'AIR COMPRESSOR KITS', path: '/products/air-compressor-kits' },
   { name: 'PISTON RINGS', path: '/products/piston-rings' },
@@ -135,10 +134,10 @@ export function Navbar() {
               />
               <div className="flex flex-col">
                 <span className="text-xl md:text-2xl font-black text-zinc-900 tracking-tight leading-none group-hover:text-[#EA580C] transition-colors">
-                  GEE ARR
+                  GEE AAR
                 </span>
                 <span className="text-[10px] font-extrabold uppercase tracking-widest text-zinc-500 mt-1">
-                  Engine Parts • Est. 1960
+                  Engine Parts • Est. 1993
                 </span>
               </div>
             </Link>

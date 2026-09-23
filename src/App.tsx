@@ -8,7 +8,6 @@ import { Layout } from './Layout';
 import { Home } from './pages/Home';
 import { Products } from './pages/Products';
 import { PistonsPage } from './pages/PistonsPage';
-import { CylinderLinersPage } from './pages/CylinderLinersPage';
 import { AirCompressorKitsPage } from './pages/AirCompressorKitsPage';
 import { KirloskarEngineHeadsPage } from './pages/KirloskarEngineHeadsPage';
 import { KirloskarCylinderBlocksPage } from './pages/KirloskarCylinderBlocksPage';
@@ -29,10 +28,11 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: 'products', element: <Products /> },
+      { path: 'products/cylinder-engine-heads', element: <KirloskarEngineHeadsPage /> },
       { path: 'products/kirloskar-engine-heads', element: <KirloskarEngineHeadsPage /> },
+      { path: 'products/cylinder-air-cooled-blocks', element: <KirloskarCylinderBlocksPage /> },
       { path: 'products/kirloskar-cylinder-blocks', element: <KirloskarCylinderBlocksPage /> },
       { path: 'products/pistons', element: <PistonsPage /> },
-      { path: 'products/cylinder-liners', element: <CylinderLinersPage /> },
       { path: 'products/air-compressor-kits', element: <AirCompressorKitsPage /> },
       { path: 'products/:slug', element: <ProductDetail /> },
       { path: 'quote', element: <Quote /> },

@@ -12,20 +12,20 @@ export function Quality() {
   ];
 
   return (
-    <div className="w-full pt-24 bg-white min-h-screen">
+    <div className="w-full pt-24 bg-white min-h-screen font-sans">
       <SEO
-        title="ISO 9001:2015 Quality Standards & Spectro Analysis"
-        description="Learn about Singhal Industrial Corporation's ISO 9001:2015 quality assurance system: CMM dimensional inspection, spectro alloy analysis & surface profiling."
+        title="Quality Standards & Spectro Analysis | GEE AAR (GR)"
+        description="Learn about GEE AAR (GR Engine Parts) quality assurance system: CMM dimensional inspection, spectro alloy analysis & surface profiling in Agra."
         canonicalPath="/quality"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         <div className="max-w-3xl mb-16">
-          <div className="inline-block bg-[#D34747] text-white text-[10px] font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
+          <div className="inline-block bg-[#EA580C] text-white text-[10px] font-bold px-3.5 py-1.5 rounded-full mb-4 uppercase tracking-wider shadow-sm">
             Quality Assurance
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-6">Quality Is Engineered Into Every Component.</h1>
+          <h1 className="text-4xl md:text-5xl font-black text-zinc-900 mb-6 tracking-tight">Quality Is Engineered Into Every Component.</h1>
           <p className="text-lg text-zinc-600">
             Our commitment to quality is non-negotiable. We employ a rigorous, multi-stage inspection process to ensure zero-defect delivery to our global OEM and aftermarket partners.
           </p>
@@ -33,11 +33,11 @@ export function Quality() {
 
         {/* Certifications */}
         <div className="mb-24">
-          <h2 className="text-2xl font-bold text-zinc-900 mb-8 border-b border-zinc-200 pb-4">Quality Certifications</h2>
+          <h2 className="text-2xl font-bold text-zinc-900 mb-8 border-b border-zinc-200 pb-4">Quality Standards</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {['ISO 9001:2015', 'IATF 16949:2016', 'ISO 14001:2015'].map((cert, index) => (
-              <div key={index} className="bg-zinc-50 border border-zinc-200 p-6 rounded-xl flex items-start group hover:border-[#D34747] hover:shadow-sm transition-all">
-                <ShieldCheck className="w-8 h-8 text-[#D34747] mr-4 shrink-0" />
+            {['100% Dimensional Inspection', 'Spectro Melt Alloy Control', 'OEM Grade Tolerances'].map((cert, index) => (
+              <div key={index} className="bg-zinc-50 border border-zinc-200 p-6 rounded-2xl flex items-start group hover:border-[#EA580C] hover:shadow-sm transition-all">
+                <ShieldCheck className="w-8 h-8 text-[#EA580C] mr-4 shrink-0" />
                 <div>
                   <h3 className="text-lg font-bold text-zinc-900 mb-1">{cert}</h3>
                   <p className="text-sm text-zinc-500">Certified for Excellence</p>

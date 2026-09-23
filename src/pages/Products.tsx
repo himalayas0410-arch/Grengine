@@ -1,4 +1,4 @@
-import { ArrowRight, Search, Filter } from 'lucide-react';
+import { ArrowRight, Search, Filter, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { SEO } from '../components/SEO';
@@ -6,26 +6,18 @@ import { SEO } from '../components/SEO';
 const products = [
   { 
     id: '1', 
-    slug: 'kirloskar-engine-heads', 
-    name: 'Kirloskar Engine Heads', 
-    category: 'Kirloskar Engine Parts', 
-    shortDescription: 'Precision engineered replacement cylinder heads built with premium alloy cast iron for Kirloskar diesel engines and pumpsets.', 
+    slug: 'cylinder-engine-heads', 
+    name: 'Cylinder Engine Heads', 
+    category: 'Engine Parts', 
+    shortDescription: 'Precision engineered replacement cylinder heads built with premium alloy cast iron for diesel engines and pumpsets.', 
     image: '/images/kat.jpeg' 
   },
   { 
     id: '2', 
-    slug: 'kirloskar-cylinder-blocks', 
-    name: 'Air-Cooled Kirloskar Cylinder Blocks', 
-    category: 'Kirloskar Engine Parts', 
+    slug: 'cylinder-air-cooled-blocks', 
+    name: 'Cylinder Air Cooled Blocks', 
+    category: 'Engine Parts', 
     shortDescription: 'Heavy-duty air-cooled cylinder blocks cast with extended cooling fins for maximum heat exchange under severe continuous duty.', 
-    image: '/images/in_cylinder_liners.jpeg' 
-  },
-  { 
-    id: '3', 
-    slug: 'cylinder-liners', 
-    name: 'Cylinder Liners (Dry & Wet)', 
-    category: 'Engine Components', 
-    shortDescription: 'Centrifugally cast grey iron cylinder liners with 95%+ pearlitic micro-structure, plateau honing, and high wear resistance.', 
     image: '/images/in_cylinder_liners.jpeg' 
   },
   { 
@@ -66,8 +58,8 @@ export function Products() {
   return (
     <div className="w-full pt-12 pb-24 bg-white min-h-screen font-sans">
       <SEO 
-        title="Engine Spare Parts Catalog | GEE ARR (GR)"
-        description="Explore GEE ARR (GR) complete catalog: Kirloskar Engine Heads, Air-Cooled Cylinder Blocks, Dry & Wet Cylinder Liners, Pistons, Air Compressor Kits, and Bush Pins."
+        title="Engine Spare Parts Catalog | GEE AAR (GR)"
+        description="Explore GEE AAR (GR) complete catalog: Cylinder Engine Heads, Cylinder Air Cooled Blocks, Pistons, Air Compressor Kits, and Precision Castings in Agra."
         canonicalPath="/products"
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,7 +67,7 @@ export function Products() {
         {/* Header */}
         <div className="max-w-3xl mb-12">
           <div className="inline-block bg-[#EA580C] text-white text-xs font-black px-3.5 py-1.5 rounded-full mb-4 uppercase tracking-wider shadow-sm">
-            GEE ARR (GR) Catalog
+            GEE AAR (GR) Catalog
           </div>
           <h1 className="text-4xl md:text-5xl font-black text-zinc-900 mb-4 tracking-tight">
             Engineered Engine Spare Parts
@@ -110,6 +102,10 @@ export function Products() {
                     alt={product.name}
                     className="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
                   />
+                  {/* GR Watermark overlay badge */}
+                  <div className="absolute bottom-3 left-3 bg-black/85 backdrop-blur-md text-white text-[10px] font-black px-3 py-1 rounded-md border border-orange-500/50 shadow-lg flex items-center gap-1 uppercase tracking-widest pointer-events-none">
+                    <Check className="w-3 h-3 text-orange-500" /> GR® GENUINE
+                  </div>
                 </div>
                 <div className="p-6">
                   <div className="text-[11px] font-black uppercase tracking-wider text-[#EA580C] mb-2">{product.category}</div>
@@ -140,7 +136,7 @@ export function Products() {
               </div>
               <h3 className="text-2xl font-black text-white mb-3">Custom Component Orders</h3>
               <p className="text-zinc-400 text-xs leading-relaxed mb-6">
-                Send us your CAD technical drawings or physical sample components. GEE ARR manufactures custom pistons, cylinder liners, and alloy castings to your exact specifications.
+                Send us your CAD technical drawings or physical sample components. GEE AAR manufactures custom pistons and alloy castings to your exact specifications.
               </p>
             </div>
             <Link 

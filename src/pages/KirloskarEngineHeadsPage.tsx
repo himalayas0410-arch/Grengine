@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import { CheckCircle2, ShieldCheck, Wrench, Package, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, Wrench, Package, ArrowRight, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { companyConfig } from '../config';
 import { SEO } from '../components/SEO';
 
 export function KirloskarEngineHeadsPage() {
   const specs = [
-    { label: "Compatible Engines", value: "Kirloskar AV1, TV1, DM10, DM20, TAE, TV2 Series" },
+    { label: "Compatible Engines", value: "Agricultural Diesel Engines, Pumpsets & Power Units" },
     { label: "Material Composition", value: "High Grade Alloy Cast Iron / Pearlitic Grey Iron" },
     { label: "Cooling Mechanism", value: "Air Cooled & Water Cooled Fin Configurations" },
     { label: "Valve Inserts", value: "Induction Hardened Valve Seats & Sintered Guides" },
@@ -19,15 +19,15 @@ export function KirloskarEngineHeadsPage() {
     "Precision CNC machined valve guides and seats ensuring zero compression loss.",
     "Engineered combustion bowl geometry for optimal fuel atomization and reduced emissions.",
     "100% pressure tested against porosity and casting micro-defects.",
-    "Direct drop-in replacement for Kirloskar agricultural diesel engines and power units."
+    "Direct replacement for agricultural diesel engines and industrial power units."
   ];
 
   return (
     <div className="w-full bg-white">
       <SEO 
-        title="Kirloskar Engine Heads Manufacturer | GEE ARR (GR)"
-        description="GEE ARR (GR) manufactures heavy-duty Kirloskar cylinder heads built with premium alloy cast iron for agricultural engines and industrial diesel pumpsets in Agra, India."
-        canonicalPath="/products/kirloskar-engine-heads"
+        title="Cylinder Engine Heads Manufacturer | GEE AAR (GR)"
+        description="GEE AAR (GR) manufactures heavy-duty cylinder engine heads built with premium alloy cast iron for agricultural engines and industrial diesel pumpsets in Agra, India."
+        canonicalPath="/products/cylinder-engine-heads"
       />
 
       {/* Header Banner */}
@@ -35,13 +35,13 @@ export function KirloskarEngineHeadsPage() {
         <div className="absolute inset-0 bg-[radial-gradient(#EA580C_1px,transparent_1px)] [background-size:16px_16px] opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="inline-block bg-[#EA580C] text-black text-xs font-black px-3.5 py-1 rounded-full uppercase tracking-wider mb-4">
-            GEE ARR (GR) Flagship Product
+            GEE AAR (GR) Flagship Product
           </div>
           <h1 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-4">
-            Kirloskar <span className="text-[#EA580C]">Engine Heads</span>
+            Cylinder <span className="text-[#EA580C]">Engine Heads</span>
           </h1>
           <p className="text-zinc-400 text-sm md:text-base max-w-2xl leading-relaxed">
-            Precision-engineered replacement cylinder heads for Kirloskar single and multi-cylinder diesel engines, agricultural pumpsets, and industrial power units.
+            Precision-engineered replacement cylinder heads for single and multi-cylinder diesel engines, agricultural pumpsets, and industrial power units.
           </p>
         </div>
       </section>
@@ -51,14 +51,17 @@ export function KirloskarEngineHeadsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             
-            {/* Product Image */}
+            {/* Product Image with GR Watermark */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-zinc-200 bg-zinc-100 p-4">
               <img 
                 src="/images/kat.jpeg" 
-                alt="Kirloskar Engine Head by GEE ARR (GR)" 
+                alt="Cylinder Engine Head by GEE AAR (GR)" 
                 className="w-full h-80 md:h-[420px] object-cover rounded-xl"
               />
-              <div className="absolute top-8 left-8 bg-black/90 backdrop-blur-md text-white text-xs font-bold px-4 py-2 rounded-lg border border-orange-500/30">
+              <div className="absolute top-8 right-8 bg-black/85 backdrop-blur-md text-white text-xs font-black px-3.5 py-1.5 rounded-lg border border-orange-500/50 shadow-xl flex items-center gap-1.5 uppercase tracking-widest">
+                <Shield className="w-3.5 h-3.5 text-[#EA580C]" /> GR® Genuine
+              </div>
+              <div className="absolute bottom-8 left-8 bg-black/90 backdrop-blur-md text-white text-xs font-bold px-4 py-2 rounded-lg border border-orange-500/30">
                 100% Quality Inspected
               </div>
             </div>
@@ -69,7 +72,7 @@ export function KirloskarEngineHeadsPage() {
                 Engineered for High Compression & Extreme Duty
               </h2>
               <p className="text-zinc-600 text-sm md:text-base leading-relaxed mb-6">
-                GEE ARR (GR) manufactures heavy-duty Kirloskar cylinder heads designed to withstand continuous operation in tough agricultural and industrial environments. Produced using shell-moulded alloy cast iron, each cylinder head delivers maximum durability, perfect thermal stability, and exact dimensional compatibility.
+                GEE AAR (GR) manufactures heavy-duty cylinder engine heads designed to withstand continuous operation in tough agricultural and industrial environments. Produced using shell-moulded alloy cast iron, each cylinder head delivers maximum durability, perfect thermal stability, and exact dimensional compatibility.
               </p>
 
               <div className="space-y-3 mb-8">
