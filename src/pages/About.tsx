@@ -125,19 +125,10 @@ export function About() {
                 </div>
               </div>
 
-              {/* Quality and Innovation */}
+              {/* Quality and Innovation / Measuring */}
               <div className="bg-white rounded-3xl p-6 md:p-8 border border-zinc-200/90 shadow-sm">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-                  <div className="md:col-span-5 order-2 md:order-1">
-                    <div className="rounded-2xl overflow-hidden border border-zinc-200 shadow-md bg-zinc-50 h-64 md:h-72">
-                      <img 
-                        src="/images/pistons.jpeg" 
-                        alt="GEE AAR Quality and Innovation Pistons" 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="md:col-span-7 order-1 md:order-2 space-y-4">
+                  <div className="md:col-span-6 space-y-4">
                     <h2 className="text-2xl md:text-3xl font-black text-zinc-900 tracking-tight">
                       Quality and Innovation
                     </h2>
@@ -147,6 +138,39 @@ export function About() {
                     <p className="text-xs md:text-sm text-zinc-600 leading-relaxed">
                       Our commitment to innovation ensures that we are always at the <strong>forefront of technological advancements</strong>, delivering products that meet and exceed our customer's requirements.
                     </p>
+
+                    <div className="pt-2 border-t border-zinc-100">
+                      <h3 className="font-extrabold text-zinc-900 text-sm mb-3">Precision Measuring & Inspection Tools:</h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-semibold text-zinc-700">
+                        {[
+                          "Bore Gauges",
+                          "Micron Dials & Comparators",
+                          "Vernier Calipers",
+                          "Rockwell Hardness Tester",
+                          "Piston Chamber Measuring",
+                          "Air Gauge Digital Readout",
+                          "Height Gauge",
+                          "CE Melt Meter",
+                          "Microstructure Analysis",
+                          "Resin Sand Analysis"
+                        ].map((tool, idx) => (
+                          <div key={idx} className="flex items-center space-x-2">
+                            <CheckCircle2 className="w-4 h-4 text-[#EA580C] shrink-0" />
+                            <span>{tool}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="md:col-span-6">
+                    <div className="rounded-2xl overflow-hidden border border-zinc-200 shadow-md bg-zinc-50">
+                      <img 
+                        src="/images/indian_qa_measuring.jpg" 
+                        alt="Indian Quality Assurance Mechanical Engineer Measuring Engine Block Bore Gauge" 
+                        className="w-full h-80 md:h-[380px] object-cover rounded-xl"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
