@@ -1,4 +1,4 @@
-import { ShieldCheck, Ruler, Focus, Microscope, FileText, CheckSquare } from 'lucide-react';
+import { ShieldCheck, Ruler, Focus, Microscope, FileText, CheckSquare, CheckCircle2 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 
 export function Quality() {
@@ -9,6 +9,19 @@ export function Quality() {
     { title: 'Surface Inspection', desc: 'Profilometer testing to ensure surface roughness meets exact engineering specifications for optimal oil retention.' },
     { title: 'Performance Testing', desc: 'Hardness testing, ultrasonic flaw detection, and simulated load testing.' },
     { title: 'Final Inspection & Packaging', desc: '100% visual inspection and secure, anti-corrosive export packaging.' },
+  ];
+
+  const measuringTools = [
+    "Bore Gauges",
+    "Micron Dials with Comparator Stands",
+    "Vernier Calipers",
+    "Rockwell Hardness Tester",
+    "Piston Combustion Chamber Measuring",
+    "Air Gauge with Digital Readout",
+    "Height Gauge",
+    "CE Meter",
+    "Microstructure Analysis",
+    "Resin Sand Analysis"
   ];
 
   return (
@@ -29,6 +42,40 @@ export function Quality() {
           <p className="text-lg text-zinc-600">
             Our commitment to quality is non-negotiable. We employ a rigorous, multi-stage inspection process to ensure zero-defect delivery to our global OEM and aftermarket partners.
           </p>
+        </div>
+
+        {/* Measuring Section - Matching Exact User Request */}
+        <div className="mb-24 bg-zinc-50 border border-zinc-200 rounded-3xl p-8 md:p-12 shadow-sm">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            {/* Checklist */}
+            <div className="lg:col-span-6 space-y-6">
+              <h2 className="text-3xl font-black text-zinc-900 tracking-tight">
+                Measuring & Inspection
+              </h2>
+
+              <div className="space-y-3">
+                {measuringTools.map((tool, idx) => (
+                  <div key={idx} className="flex items-center space-x-3">
+                    <CheckCircle2 className="w-5 h-5 text-[#EA580C] shrink-0" />
+                    <span className="text-zinc-800 text-sm md:text-base font-semibold">{tool}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Indian QA Engineer Image */}
+            <div className="lg:col-span-6">
+              <div className="rounded-2xl overflow-hidden shadow-xl border border-zinc-200 bg-white p-2">
+                <img 
+                  src="/images/indian_qa_measuring.jpg" 
+                  alt="Indian QA Mechanical Engineer Measuring Engine Block Bore Gauge" 
+                  className="w-full h-80 md:h-[420px] object-cover rounded-xl"
+                />
+              </div>
+            </div>
+
+          </div>
         </div>
 
         {/* Certifications */}
@@ -53,7 +100,7 @@ export function Quality() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {qualitySteps.map((step, index) => (
               <div key={index} className="bg-white border border-zinc-200 p-8 rounded-2xl relative overflow-hidden group hover:shadow-md transition-shadow">
-                <div className="absolute -top-4 -right-4 p-4 opacity-5 font-bold text-8xl text-[#D34747] select-none">
+                <div className="absolute -top-4 -right-4 p-4 opacity-5 font-bold text-8xl text-[#EA580C] select-none">
                   {index + 1}
                 </div>
                 <h3 className="text-lg font-bold text-zinc-900 mb-3 relative z-10">{step.title}</h3>
@@ -75,8 +122,8 @@ export function Quality() {
               { icon: FileText, name: 'Profile Projector' },
               { icon: Ruler, name: 'Bore Gauges & Micrometers' },
             ].map((eq, index) => (
-              <div key={index} className="flex items-center p-4 bg-zinc-50 border border-zinc-200 rounded-md">
-                <eq.icon className="w-5 h-5 text-[#3FB6C6] mr-3 shrink-0" />
+              <div key={index} className="flex items-center p-4 bg-zinc-50 border border-zinc-200 rounded-xl">
+                <eq.icon className="w-5 h-5 text-[#EA580C] mr-3 shrink-0" />
                 <span className="text-sm text-zinc-700 font-semibold">{eq.name}</span>
               </div>
             ))}
