@@ -189,11 +189,11 @@ export function Infrastructure() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Image */}
             <div className="flex justify-center lg:justify-start">
-              <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200">
+              <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200 p-2 bg-white">
                 <img
-                  src="/images/heat_treatment.jpg"
-                  alt="Heat Treatment Furnace Equipment"
-                  className="w-full h-[420px] object-cover"
+                  src="/images/shotblastingimage.jpeg"
+                  alt="Industrial Shot Blasting Equipment"
+                  className="w-full h-[420px] object-cover rounded-2xl"
                 />
               </div>
             </div>
