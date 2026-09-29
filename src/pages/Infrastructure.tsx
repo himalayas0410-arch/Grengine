@@ -12,7 +12,8 @@ const machiningItems = [
   "CNC Turning Machines",
   "VMC Milling Machine",
   "Over 30 Lathes, SPM's of Different Kinds (Turning, Drilling, Milling, Boring, Broaching etc.)",
-  "Specialised Honing Machines for Cylinder Liners"
+  "Specialised Honing Machines for Cylinder Liners",
+  "Plato Honing Machines for Superior Cylinder Surface Finish"
 ];
 
 const measuringItems = [
@@ -116,22 +117,12 @@ export function Infrastructure() {
       {/* Section 2: Machining */}
       <section className="py-16 md:py-24 bg-[#F4F6F9] border-b border-zinc-200/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Machine Illustrations */}
-            <div className="flex flex-col items-center justify-center">
-              <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200 bg-white">
-                <img
-                  src="/images/cnc_machine.jpg"
-                  alt="Precision CNC Turning Center Machine"
-                  className="w-full h-[380px] object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Right Content */}
-            <div className="space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Left Content */}
+            <div className="lg:col-span-5 space-y-6">
               <h2 className="text-3xl md:text-4xl font-extrabold text-zinc-900 tracking-tight">
-                Machining
+                Machining & Honing
               </h2>
               <ul className="space-y-4 pt-2">
                 {machiningItems.map((item, index) => (
@@ -144,6 +135,52 @@ export function Infrastructure() {
                 ))}
               </ul>
             </div>
+
+            {/* Right Subcategory Showcase Cards */}
+            <div className="lg:col-span-7 space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                
+                {/* Specialised Honing Machines for Cylinder Liners */}
+                <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-zinc-200 group hover:border-[#EA580C] transition-all flex flex-col justify-between">
+                  <div className="h-56 overflow-hidden bg-zinc-100 relative">
+                    <img
+                      src="/images/machining.jpeg"
+                      alt="Specialised Honing Machines for Cylinder Liners"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <span className="absolute top-3 left-3 bg-black/85 backdrop-blur-md text-[#EA580C] text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-wider border border-orange-500/40 shadow-md">
+                      Honing Facility
+                    </span>
+                  </div>
+                  <div className="p-5 bg-white border-t border-zinc-100">
+                    <h3 className="font-extrabold text-zinc-900 text-sm sm:text-base leading-snug">
+                      Specialised Honing Machines for Cylinder Liners
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Plato Honing */}
+                <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-zinc-200 group hover:border-[#EA580C] transition-all flex flex-col justify-between">
+                  <div className="h-56 overflow-hidden bg-zinc-100 relative">
+                    <img
+                      src="/images/pleto_honing.jpeg"
+                      alt="Plato Honing Machine"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <span className="absolute top-3 left-3 bg-black/85 backdrop-blur-md text-[#EA580C] text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-wider border border-orange-500/40 shadow-md">
+                      Plato Honing
+                    </span>
+                  </div>
+                  <div className="p-5 bg-white border-t border-zinc-100">
+                    <h3 className="font-extrabold text-zinc-900 text-sm sm:text-base leading-snug">
+                      Plato Honing
+                    </h3>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
