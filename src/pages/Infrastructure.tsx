@@ -102,11 +102,11 @@ export function Infrastructure() {
 
             {/* Right Image */}
             <div className="flex justify-center lg:justify-end">
-              <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200">
+              <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200 p-2 bg-white">
                 <img
-                  src="/images/melting_furnace.jpg"
-                  alt="Melting Induction Furnace"
-                  className="w-full h-[420px] object-cover"
+                  src="/images/melting.jpeg"
+                  alt="Inductotherm Melting Furnace Facility"
+                  className="w-full h-[420px] object-cover rounded-2xl"
                 />
               </div>
             </div>
