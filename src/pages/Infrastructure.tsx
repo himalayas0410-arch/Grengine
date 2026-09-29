@@ -169,12 +169,12 @@ export function Infrastructure() {
               </ul>
             </div>
 
-            {/* Right Image with Quality Metrology Bore Gauge Inspection */}
+            {/* Right Image with Indian Quality Assurance Mechanical Engineer */}
             <div className="flex justify-center lg:justify-end">
               <div className="w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border border-zinc-200 p-2 bg-zinc-50">
                 <img
-                  src="/images/qa_measuring_inspection.png"
-                  alt="Quality Assurance Technician Measuring Engine Block Bore Gauge in Metrology Lab"
+                  src="/images/indian_qa_measuring.jpg"
+                  alt="Indian Quality Assurance Mechanical Engineer Measuring Engine Block Bore Gauge"
                   className="w-full h-[450px] object-cover rounded-2xl"
                 />
               </div>
