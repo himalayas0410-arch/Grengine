@@ -98,6 +98,40 @@ const pastEvents: EventItem[] = [
       "/images/events/istanbul_2022/img_4.jpeg",
       "/images/events/istanbul_2022/img_5.jpeg"
     ]
+  },
+  {
+    id: 'delhi-2020',
+    title: "Automechanika New Delhi 2020",
+    location: "Pragati Maidan, New Delhi, India",
+    date: "2020",
+    mainImg: "/images/events/delhi_2020/img_10.jpeg",
+    gallery: [
+      "/images/events/delhi_2020/img_1.jpeg",
+      "/images/events/delhi_2020/img_2.jpeg",
+      "/images/events/delhi_2020/img_3.jpeg",
+      "/images/events/delhi_2020/img_4.jpeg",
+      "/images/events/delhi_2020/img_5.jpeg",
+      "/images/events/delhi_2020/img_6.jpeg",
+      "/images/events/delhi_2020/img_7.jpeg",
+      "/images/events/delhi_2020/img_8.jpeg",
+      "/images/events/delhi_2020/img_9.jpeg",
+      "/images/events/delhi_2020/img_10.jpeg",
+      "/images/events/delhi_2020/img_11.jpeg",
+      "/images/events/delhi_2020/img_12.jpeg",
+      "/images/events/delhi_2020/img_13.jpeg",
+      "/images/events/delhi_2020/img_14.jpeg",
+      "/images/events/delhi_2020/img_15.jpeg",
+      "/images/events/delhi_2020/img_16.jpeg",
+      "/images/events/delhi_2020/img_17.jpeg",
+      "/images/events/delhi_2020/img_18.jpeg",
+      "/images/events/delhi_2020/img_19.jpeg",
+      "/images/events/delhi_2020/img_20.jpeg",
+      "/images/events/delhi_2020/img_21.jpeg",
+      "/images/events/delhi_2020/img_22.jpeg",
+      "/images/events/delhi_2020/img_23.jpeg",
+      "/images/events/delhi_2020/img_24.jpeg",
+      "/images/events/delhi_2020/img_25.jpeg"
+    ]
   }
 ];
 
