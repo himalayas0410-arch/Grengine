@@ -20,6 +20,31 @@ export function Layout() {
     }
   }, [location]);
 
+  // Disable direct right-click download and drag-saving for all images
+  useEffect(() => {
+    const handleContextMenu = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === 'IMG' || target.closest('img'))) {
+        e.preventDefault();
+      }
+    };
+
+    const handleDragStart = (e: DragEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (target && (target.tagName === 'IMG' || target.closest('img'))) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener('contextmenu', handleContextMenu, true);
+    document.addEventListener('dragstart', handleDragStart, true);
+
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu, true);
+      document.removeEventListener('dragstart', handleDragStart, true);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-white text-zinc-900 font-sans selection:bg-red-600 selection:text-white">
       <Navbar />
