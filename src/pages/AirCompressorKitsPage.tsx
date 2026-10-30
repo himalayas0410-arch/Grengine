@@ -9,7 +9,6 @@ const compressorPhotos = [
 ];
 
 const compatibleBrands = [
-  { name: "GR Engine Parts", badge: "GR", desc: "Precision replacement air compressor kits, cylinders & pistons manufactured by GEE AAR." },
   { name: "IR (Ingersoll Rand)", badge: "IR", desc: "Heavy-duty compressor overhaul kits & replacement cylinder blocks for IR air systems." },
   { name: "Atlas Copco", badge: "ATLAS COPCO", desc: "High pressure compressor replacement kits & valves built to OEM specifications." },
   { name: "Betico", badge: "BETICO", desc: "Large bore 230mm & heavy industrial air compressor cylinder blocks & overhaul assemblies." }
@@ -21,8 +20,8 @@ export function AirCompressorKitsPage() {
   return (
     <div className="w-full bg-white font-sans">
       <SEO
-        title="Air Compressor Kits | GR, IR, Atlas Copco & Betico"
-        description="Air brake compressor repair overhaul kits, cylinder blocks, pistons & ring assemblies for GR, IR (Ingersoll Rand), Atlas Copco, and Betico compressors manufactured in Agra, India by GEE AAR."
+        title="Air Compressor Kits | IR, Atlas Copco & Betico"
+        description="Air brake compressor repair overhaul kits, cylinder blocks, pistons & ring assemblies for IR (Ingersoll Rand), Atlas Copco, and Betico compressors manufactured in Agra, India by GEE AAR."
         canonicalPath="/products/air-compressor-kits"
         image="https://geeaar.com/images/air_compressor_kits.jpeg"
       />
@@ -38,7 +37,7 @@ export function AirCompressorKitsPage() {
               Air Compressor <span className="text-[#EA580C]">Kits & Blocks</span>
             </h1>
             <p className="text-zinc-300 text-lg md:text-xl leading-relaxed mb-8">
-              Precision-cast replacement air compressor kits, cylinder blocks, pistons, and valve assemblies for <strong>GR, IR (Ingersoll Rand), Atlas Copco, and Betico</strong> air systems.
+              Precision-cast replacement air compressor kits, cylinder blocks, pistons, and valve assemblies for <strong>IR (Ingersoll Rand), Atlas Copco, and Betico</strong> air systems.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/quote" className="px-6 py-3 bg-[#EA580C] text-white font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-orange-700 transition-colors shadow-lg">
@@ -108,7 +107,7 @@ export function AirCompressorKitsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {compatibleBrands.map((brand, idx) => (
               <div key={idx} className="bg-white p-6 rounded-2xl border border-zinc-200 shadow-sm hover:border-[#EA580C] hover:shadow-md transition-all">
                 <div className="inline-block bg-orange-50 text-[#EA580C] border border-orange-200 font-black text-xs px-3 py-1 rounded-md mb-3 uppercase tracking-wider">
@@ -171,7 +170,7 @@ export function AirCompressorKitsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-extrabold mb-4">Inquire About Air Compressor Kits</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto mb-8 text-sm">
-            Contact GEE AAR for volume air compressor pricing and technical specs for GR, IR, Atlas Copco, and Betico units.
+            Contact GEE AAR for volume air compressor pricing and technical specs for IR, Atlas Copco, and Betico units.
           </p>
           <Link to="/quote" className="inline-flex items-center px-8 py-3.5 bg-[#EA580C] text-white font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-orange-700 transition-colors shadow-lg">
             Request Quote <ArrowRight className="ml-2 w-4 h-4" />
