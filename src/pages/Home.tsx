@@ -212,22 +212,22 @@ export function Home() {
           </div>
 
           {/* Quick Stats Ribbon */}
-          <div className="mt-12 bg-zinc-900 text-white rounded-2xl p-6 md:p-8 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-2xl md:text-3xl font-black text-[#EA580C]">1993</div>
-              <div className="text-zinc-400 text-xs font-semibold uppercase tracking-wider mt-1">Established Year</div>
+          <div className="mt-12 bg-gradient-to-r from-orange-50/80 via-white to-orange-50/80 border border-orange-200/80 rounded-2xl p-6 md:p-8 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center shadow-xs">
+            <div className="p-2">
+              <div className="text-3xl md:text-4xl font-black text-[#EA580C] tracking-tight">1993</div>
+              <div className="text-zinc-700 text-xs font-extrabold uppercase tracking-wider mt-1.5">Established Year</div>
             </div>
-            <div>
-              <div className="text-2xl md:text-3xl font-black text-[#EA580C]">33+</div>
-              <div className="text-zinc-400 text-xs font-semibold uppercase tracking-wider mt-1">Years Experience</div>
+            <div className="border-l border-orange-200/60 p-2">
+              <div className="text-3xl md:text-4xl font-black text-[#EA580C] tracking-tight">33+</div>
+              <div className="text-zinc-700 text-xs font-extrabold uppercase tracking-wider mt-1.5">Years Experience</div>
             </div>
-            <div>
-              <div className="text-2xl md:text-3xl font-black text-[#EA580C]">17+</div>
-              <div className="text-zinc-400 text-xs font-semibold uppercase tracking-wider mt-1">States Covered</div>
+            <div className="border-t sm:border-t-0 sm:border-l border-orange-200/60 p-2 pt-4 sm:pt-2">
+              <div className="text-3xl md:text-4xl font-black text-[#EA580C] tracking-tight">17+</div>
+              <div className="text-zinc-700 text-xs font-extrabold uppercase tracking-wider mt-1.5">States Covered</div>
             </div>
-            <div>
-              <div className="text-2xl md:text-3xl font-black text-[#EA580C]">300 Pcs</div>
-              <div className="text-zinc-400 text-xs font-semibold uppercase tracking-wider mt-1">Standard MOQ</div>
+            <div className="border-t sm:border-t-0 lg:border-l border-orange-200/60 p-2 pt-4 sm:pt-2">
+              <div className="text-3xl md:text-4xl font-black text-[#EA580C] tracking-tight">300 Pcs</div>
+              <div className="text-zinc-700 text-xs font-extrabold uppercase tracking-wider mt-1.5">Standard MOQ</div>
             </div>
           </div>
         </div>
