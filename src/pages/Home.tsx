@@ -45,6 +45,35 @@ const productsGrid = [
   }
 ];
 
+const suitableBrandsRow1 = [
+  { name: 'Volvo', img: '/images/suitable_for/logo-1.png', className: 'h-11 sm:h-13 md:h-14 max-w-[110px]' },
+  { name: 'CAT', img: '/images/suitable_for/logo-9.png', className: 'h-11 sm:h-13 md:h-14 max-w-[130px]' },
+  { name: 'Mercedes-Benz', img: '/images/suitable_for/logo-4.png', className: 'h-9 sm:h-11 md:h-12 max-w-[140px]' },
+  { name: 'Toyota', img: '/images/suitable_for/logo-2.png', className: 'h-11 sm:h-13 md:h-14 max-w-[120px]' },
+  { name: 'Perkins', img: '/images/suitable_for/logo-3.png', className: 'h-8 sm:h-9 md:h-10 max-w-[150px]' },
+];
+
+const suitableBrandsRow2 = [
+  { name: 'Scania', img: '/images/suitable_for/logo-5.png', className: 'h-10 sm:h-12 md:h-13 max-w-[130px]' },
+  { name: 'Ashok Leyland', img: '/images/suitable_for/logo-6.png', className: 'h-11 sm:h-13 md:h-14 max-w-[100px]' },
+  { name: 'IVECO', img: '/images/suitable_for/logo-7.png', className: 'h-9 sm:h-10 md:h-11 max-w-[150px]' },
+  { name: 'Deutz', img: '/images/suitable_for/logo-10.png', className: 'h-11 sm:h-13 md:h-14 max-w-[100px]' },
+  { name: 'Mack', img: '/images/suitable_for/logo-8.png', className: 'h-10 sm:h-12 md:h-13 max-w-[130px]' },
+  { name: 'Atlas Copco', img: '/images/suitable_for/logo-11.png', className: 'h-7 sm:h-8 md:h-9 max-w-[140px]' },
+];
+
+const suitableBrandsRow3 = [
+  { name: 'Lister Petter', img: '/images/suitable_for/logo-12.png', className: 'h-10 sm:h-11 md:h-12 max-w-[110px]' },
+  { name: 'Massey Ferguson', img: '/images/suitable_for/logo-14.png', className: 'h-11 sm:h-12 md:h-13 max-w-[140px]' },
+  { name: 'FIAT', img: '/images/suitable_for/logo-13.png', className: 'h-7 sm:h-8 md:h-9 max-w-[140px]' },
+  { name: 'Zetor', img: '/images/suitable_for/logo-15.png', className: 'h-9 sm:h-11 md:h-12 max-w-[140px]' },
+  { name: 'UTB', img: '/images/suitable_for/logo-16.png', className: 'h-11 sm:h-13 md:h-14 max-w-[90px]' },
+];
+
+const suitableBrandsRow4 = [
+  { name: 'Lombardini', img: '/images/suitable_for/logo-17.png', className: 'h-7 sm:h-8 md:h-8 max-w-[160px]' },
+];
+
 const domesticLocations = [
   { name: 'Agra - UP', hub: 'Central HQ & Manufacturing Plant' },
   { name: 'Punjab', hub: 'Agricultural & Tractor Spare Hub' },
@@ -93,107 +122,114 @@ export function Home() {
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-16 md:py-24">
-          <div className="max-w-md lg:max-w-lg bg-white/40 md:bg-transparent p-6 md:p-0 rounded-3xl backdrop-blur-sm md:backdrop-blur-none">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
-            >
-              <div className="inline-block bg-[#EA580C] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider shadow-sm">
-                BEST AUTO PARTS MANUFACTURERS
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-zinc-900 leading-[1.12] mb-5 tracking-tight">
-                {companyConfig.tagline}
-              </h1>
-              <div className="text-base md:text-lg font-bold text-[#EA580C] mb-3 leading-snug">
-                Manufacturer of Engine Heads, Air Cooled Blocks & Pistons
-              </div>
-              <p className="text-zinc-600 text-sm md:text-base leading-relaxed mb-8 max-w-md">
-                Leading engine parts manufacturer & exporter serving global OEMs and aftermarket with 33 years of engineering excellence.
-              </p>
-              <div>
-                <Link
-                  to="/about"
-                  className="inline-flex items-center px-8 py-4 bg-[#EA580C] text-white font-bold text-sm rounded-full hover:bg-orange-700 transition-all shadow-md"
-                >
-                  More Details <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-              </div>
-            </motion.div>
+          <div className="max-w-xl lg:max-w-2xl bg-white/40 md:bg-transparent p-6 md:p-0 rounded-3xl backdrop-blur-sm md:backdrop-blur-none">
+            <div className="inline-block bg-[#EA580C] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider shadow-sm">
+              Best Auto Parts Manufacturers
+            </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-zinc-950 leading-[1.12] mb-5 tracking-tight uppercase">
+              Cylinder Engine Heads, Air Cooled Blocks &amp; Pistons
+            </h1>
+            <div className="text-lg md:text-xl font-bold text-[#EA580C] mb-4">
+              Manufacturer of Cylinder Engine Heads, Cylinder Air Cooled Blocks &amp; Pistons
+            </div>
+            <p className="text-zinc-700 text-sm md:text-base leading-relaxed mb-8 max-w-xl font-medium">
+              Headquartered in C-59 Foundary Nagar, Agra, UP, GEE AAR (GR Engine Parts) manufactures OE-specification engine components engineered for maximum durability, heat dissipation, and long operational life.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                to="/products"
+                className="inline-flex items-center justify-center px-7 py-3.5 bg-[#EA580C] text-white font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:bg-orange-700 transition-colors"
+              >
+                Explore Products <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+              <Link
+                to="/quote"
+                className="inline-flex items-center justify-center px-7 py-3.5 bg-zinc-950 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:bg-zinc-800 transition-colors"
+              >
+                Request Quotation
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Value Props & Key Stats */}
-      <section className="py-10 md:py-14 bg-white border-b border-zinc-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: Package, title: 'QUALITY', desc: 'Renowned for high precision quality and commitment to engineering excellence since 1993' },
-              { icon: Eye, title: 'VISION', desc: 'Our aim is to be a market leader in precision machined engine components across global markets' },
-              { icon: Target, title: 'MISSION', desc: 'Delivering precision-engineered engine components with reliability, innovation, and long-term partnership.' }
-            ].map((prop, i) => (
-              <div key={i} className="flex items-start space-x-4 p-5 rounded-2xl bg-[#F8FAFC] border border-zinc-200/70 hover:border-orange-200 transition-colors">
-                <div className="p-2.5 bg-orange-50 text-[#EA580C] rounded-xl shrink-0">
-                  <prop.icon className="w-6 h-6 stroke-[1.75]" />
-                </div>
-                <div>
-                  <h3 className="font-extrabold text-zinc-900 text-base mb-1 tracking-wide">{prop.title}</h3>
-                  <p className="text-zinc-600 text-xs leading-relaxed">{prop.desc}</p>
-                </div>
-              </div>
-            ))}
+      {/* WHY CHOOSE GEE AAR Section */}
+      <section className="py-16 md:py-20 bg-white border-b border-zinc-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="text-[#EA580C] text-xs font-extrabold uppercase tracking-widest block mb-2">
+              Engineering Reliability
+            </span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-zinc-900 mb-4 uppercase tracking-tight">
+              Why Choose GEE AAR Engine Parts?
+            </h2>
+            <div className="w-16 h-1 bg-[#EA580C] mx-auto mb-4 rounded-full" />
+            <p className="text-zinc-600 text-sm leading-relaxed">
+              Serving domestic &amp; international engine markets since 1993 with 33 years of casting, CNC machining, and quality assurance excellence.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-
-            <div className="bg-[#F8FAFC] rounded-2xl p-6 border border-zinc-200/70 hover:border-orange-200 transition-colors flex items-center space-x-4">
-              <div className="p-3 bg-emerald-500/10 text-emerald-600 rounded-2xl shrink-0">
-                <Building2 className="w-6 h-6 stroke-[2]" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-zinc-50 border border-zinc-200/80 rounded-2xl p-6 hover:shadow-lg transition-all group">
+              <div className="w-12 h-12 rounded-xl bg-orange-100 text-[#EA580C] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Building2 className="w-6 h-6" />
               </div>
-              <div>
-                <div className="text-3xl font-black text-emerald-600 tracking-tight leading-none mb-1">33</div>
-                <div className="text-zinc-800 text-xs font-extrabold uppercase tracking-wide">Years Experience</div>
-                <div className="text-zinc-500 text-[11px] font-medium">Established 1993 in Agra</div>
-              </div>
+              <h3 className="font-extrabold text-zinc-900 text-base mb-2">In-House Foundry</h3>
+              <p className="text-zinc-600 text-xs leading-relaxed">
+                Inductotherm melting furnaces and precision shell moulding deliver high-grade cast iron and aluminum alloys with zero porosity.
+              </p>
             </div>
 
-            <div className="bg-[#F8FAFC] rounded-2xl p-6 border border-zinc-200/70 hover:border-orange-200 transition-colors flex items-center space-x-4">
-              <div className="p-3 bg-blue-500/10 text-blue-600 rounded-2xl shrink-0">
-                <MapPin className="w-6 h-6 stroke-[2]" />
+            <div className="bg-zinc-50 border border-zinc-200/80 rounded-2xl p-6 hover:shadow-lg transition-all group">
+              <div className="w-12 h-12 rounded-xl bg-orange-100 text-[#EA580C] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Target className="w-6 h-6" />
               </div>
-              <div>
-                <div className="text-3xl font-black text-blue-600 tracking-tight leading-none mb-1">17+</div>
-                <div className="text-zinc-800 text-xs font-extrabold uppercase tracking-wide">Domestic Hubs</div>
-                <div className="text-zinc-500 text-[11px] font-medium">Pan-India Network</div>
-              </div>
+              <h3 className="font-extrabold text-zinc-900 text-base mb-2">Precision CNC Turning</h3>
+              <p className="text-zinc-600 text-xs leading-relaxed">
+                Multi-axis CNC turning and VMC machining centers ensure tight micron tolerances and consistent dimensional accuracy.
+              </p>
             </div>
 
-            <div className="bg-[#F8FAFC] rounded-2xl p-6 border border-zinc-200/70 hover:border-orange-200 transition-colors flex items-center space-x-4">
-              <div className="p-3 bg-orange-500/10 text-orange-600 rounded-2xl shrink-0">
-                <Package className="w-6 h-6 stroke-[2]" />
+            <div className="bg-zinc-50 border border-zinc-200/80 rounded-2xl p-6 hover:shadow-lg transition-all group">
+              <div className="w-12 h-12 rounded-xl bg-orange-100 text-[#EA580C] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Award className="w-6 h-6" />
               </div>
-              <div>
-                <div className="text-3xl font-black text-orange-600 tracking-tight leading-none mb-1">500K+</div>
-                <div className="text-zinc-800 text-xs font-extrabold uppercase tracking-wide">Monthly Capacity</div>
-                <div className="text-zinc-500 text-[11px] font-medium">High Volume Production</div>
-              </div>
+              <h3 className="font-extrabold text-zinc-900 text-base mb-2">33 Years Heritage</h3>
+              <p className="text-zinc-600 text-xs leading-relaxed">
+                Established in 1993 in Agra, India, GEE AAR provides 33 years of specialized expertise in engine components.
+              </p>
             </div>
 
-            <div className="bg-[#F8FAFC] rounded-2xl p-6 border border-zinc-200/70 hover:border-orange-200 transition-colors flex items-center space-x-4">
-              <div className="p-3 bg-purple-500/10 text-purple-600 rounded-2xl shrink-0">
-                <CheckCircle2 className="w-6 h-6 stroke-[2]" />
+            <div className="bg-zinc-50 border border-zinc-200/80 rounded-2xl p-6 hover:shadow-lg transition-all group">
+              <div className="w-12 h-12 rounded-xl bg-orange-100 text-[#EA580C] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Truck className="w-6 h-6" />
               </div>
-              <div>
-                <div className="text-2xl font-black text-purple-600 tracking-tight leading-none mb-1 uppercase">OEM Quality</div>
-                <div className="text-zinc-800 text-xs font-extrabold uppercase tracking-wide">Engine Grade Standard</div>
-                <div className="text-zinc-500 text-[11px] font-medium">Precision Manufacturing</div>
-              </div>
+              <h3 className="font-extrabold text-zinc-900 text-base mb-2">Pan-India Logistics</h3>
+              <p className="text-zinc-600 text-xs leading-relaxed">
+                Prompt dispatch and reliable freight connections across 17 Indian states and major transport hubs.
+              </p>
             </div>
-
           </div>
 
+          {/* Quick Stats Ribbon */}
+          <div className="mt-12 bg-zinc-900 text-white rounded-2xl p-6 md:p-8 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            <div>
+              <div className="text-2xl md:text-3xl font-black text-[#EA580C]">1993</div>
+              <div className="text-zinc-400 text-xs font-semibold uppercase tracking-wider mt-1">Established Year</div>
+            </div>
+            <div>
+              <div className="text-2xl md:text-3xl font-black text-[#EA580C]">33+</div>
+              <div className="text-zinc-400 text-xs font-semibold uppercase tracking-wider mt-1">Years Experience</div>
+            </div>
+            <div>
+              <div className="text-2xl md:text-3xl font-black text-[#EA580C]">17+</div>
+              <div className="text-zinc-400 text-xs font-semibold uppercase tracking-wider mt-1">States Covered</div>
+            </div>
+            <div>
+              <div className="text-2xl md:text-3xl font-black text-[#EA580C]">300 Pcs</div>
+              <div className="text-zinc-400 text-xs font-semibold uppercase tracking-wider mt-1">Standard MOQ</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -249,8 +285,109 @@ export function Home() {
         </div>
       </section>
 
+      {/* SUITABLE FOR Section - Matching Reference Design */}
+      <section className="py-20 md:py-24 bg-white border-t border-zinc-200/80 overflow-hidden relative">
+        {/* Subtle radial center highlight matching user design */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(234,88,12,0.035)_0%,transparent_70%)] pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          {/* Header */}
+          <div className="text-center max-w-4xl mx-auto mb-16 md:mb-20">
+            <h2 className="text-3xl md:text-5xl font-black text-zinc-950 tracking-tight uppercase mb-3">
+              SUITABLE FOR
+            </h2>
+            <div className="w-16 h-1 bg-[#EA580C] mx-auto mb-5 rounded-full" />
+            <p className="text-zinc-600 text-xs md:text-sm leading-relaxed max-w-3xl mx-auto">
+              Precision-engineered engine spare parts, cylinder engine heads, air cooled blocks, pistons &amp; components suitable for leading global commercial vehicle, tractor, agricultural &amp; industrial engine brands.
+            </p>
+          </div>
+
+          {/* Logo Showcase - 4 Balanced Clean Rows Matching Reference Image */}
+          <div className="space-y-10 md:space-y-14 max-w-5xl mx-auto">
+            
+            {/* Row 1: Volvo, CAT, Mercedes-Benz, Toyota, Perkins */}
+            <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 md:gap-16">
+              {suitableBrandsRow1.map((logo, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-center justify-center transition-transform duration-300 hover:scale-110 p-2 cursor-pointer"
+                  title={`Suitable for ${logo.name}`}
+                >
+                  <img
+                    src={logo.img}
+                    alt={logo.name}
+                    className={`${logo.className} w-auto object-contain drop-shadow-xs transition-opacity hover:opacity-90`}
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Row 2: Scania, Ashok Leyland, IVECO, Deutz, Mack, Atlas Copco */}
+            <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-11 md:gap-14">
+              {suitableBrandsRow2.map((logo, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-center justify-center transition-transform duration-300 hover:scale-110 p-2 cursor-pointer"
+                  title={`Suitable for ${logo.name}`}
+                >
+                  <img
+                    src={logo.img}
+                    alt={logo.name}
+                    className={`${logo.className} w-auto object-contain drop-shadow-xs transition-opacity hover:opacity-90`}
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Row 3: Lister Petter, Massey Ferguson, FIAT, Zetor, UTB */}
+            <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 md:gap-16">
+              {suitableBrandsRow3.map((logo, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-center justify-center transition-transform duration-300 hover:scale-110 p-2 cursor-pointer"
+                  title={`Suitable for ${logo.name}`}
+                >
+                  <img
+                    src={logo.img}
+                    alt={logo.name}
+                    className={`${logo.className} w-auto object-contain drop-shadow-xs transition-opacity hover:opacity-90`}
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Row 4: Lombardini */}
+            <div className="flex flex-wrap items-center justify-center">
+              {suitableBrandsRow4.map((logo, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-center justify-center transition-transform duration-300 hover:scale-110 p-2 cursor-pointer"
+                  title={`Suitable for ${logo.name}`}
+                >
+                  <img
+                    src={logo.img}
+                    alt={logo.name}
+                    className={`${logo.className} w-auto object-contain drop-shadow-xs transition-opacity hover:opacity-90`}
+                  />
+                </div>
+              ))}
+            </div>
+
+          </div>
+
+          {/* Disclaimer Note */}
+          <div className="mt-16 text-center max-w-3xl mx-auto">
+            <p className="text-[11px] text-zinc-400 leading-relaxed italic bg-zinc-50 p-4 rounded-xl border border-zinc-200/70">
+              * Note: All manufacturer names, numbers, symbols, and logos used herein are for reference purposes only. The parts supplied are high-quality precision aftermarket replacement engine components manufactured by GEE AAR (GR Engine Parts).
+            </p>
+          </div>
+
+        </div>
+      </section>
+
       {/* DOMESTIC NETWORK & PRESENCE Section - Clean Image Display */}
-      <section className="py-16 md:py-20 bg-white border-t border-b border-zinc-200">
+      <section className="py-16 md:py-20 bg-zinc-50 border-t border-b border-zinc-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center max-w-3xl mx-auto mb-10">
@@ -267,7 +404,7 @@ export function Home() {
           </div>
 
           {/* Map Image Display Only */}
-          <div className="rounded-3xl overflow-hidden bg-[#F8FAFC] border border-zinc-200 p-4 md:p-8 shadow-sm flex items-center justify-center">
+          <div className="rounded-3xl overflow-hidden bg-white border border-zinc-200 p-4 md:p-8 shadow-sm flex items-center justify-center">
             <img
               src="/images/neworangemap.png"
               alt="GEE AAR Pan-India Domestic Network & Presence Map"
