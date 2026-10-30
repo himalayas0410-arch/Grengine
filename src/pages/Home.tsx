@@ -390,7 +390,7 @@ export function Home() {
       </section>
 
       {/* DOMESTIC NETWORK & PRESENCE Section - Clean Image Display */}
-      <section className="py-16 md:py-20 bg-zinc-50 border-t border-b border-zinc-200">
+      <section className="py-16 md:py-20 bg-white border-b border-zinc-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center max-w-3xl mx-auto mb-10">
@@ -406,12 +406,12 @@ export function Home() {
             </p>
           </div>
 
-          {/* Map Image Display Only */}
-          <div className="rounded-3xl overflow-hidden bg-white border border-zinc-200 p-4 md:p-8 shadow-sm flex items-center justify-center">
+          {/* Map Image Display - No background box or border */}
+          <div className="flex items-center justify-center">
             <img
               src="/images/neworangemap.png"
               alt="GEE AAR Pan-India Domestic Network & Presence Map"
-              className="max-h-[600px] w-auto object-contain rounded-2xl"
+              className="max-h-[640px] w-auto object-contain"
             />
           </div>
 
