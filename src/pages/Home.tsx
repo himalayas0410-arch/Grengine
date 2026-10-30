@@ -121,30 +121,33 @@ export function Home() {
           className="absolute inset-0 w-full h-full object-cover object-right z-0"
         />
 
+        {/* Soft gradient wash on the left to guarantee zero image overlap */}
+        <div className="absolute inset-y-0 left-0 w-full sm:w-3/4 md:w-3/5 lg:w-1/2 bg-gradient-to-r from-white/95 via-white/80 to-transparent z-[1] pointer-events-none" />
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-16 md:py-24">
-          <div className="max-w-xl lg:max-w-2xl bg-white/40 md:bg-transparent p-6 md:p-0 rounded-3xl backdrop-blur-sm md:backdrop-blur-none">
-            <div className="inline-block bg-[#EA580C] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider shadow-sm">
-              Best Auto Parts Manufacturers
+          <div className="max-w-[460px] lg:max-w-[520px]">
+            <div className="inline-block bg-[#EA580C] text-white text-[11px] font-black px-3.5 py-1.5 rounded-full mb-4 uppercase tracking-wider shadow-sm">
+              Best Auto Parts Manufacturers • Est. 1993
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-zinc-950 leading-[1.12] mb-5 tracking-tight uppercase">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-zinc-950 leading-[1.12] mb-3 tracking-tight uppercase">
               Cylinder Engine Heads, Air Cooled Blocks &amp; Pistons
             </h1>
-            <div className="text-lg md:text-xl font-bold text-[#EA580C] mb-4">
-              Manufacturer of Cylinder Engine Heads, Cylinder Air Cooled Blocks &amp; Pistons
+            <div className="text-sm sm:text-base md:text-lg font-black text-[#EA580C] mb-3 leading-snug">
+              Engineered for Maximum Durability &amp; Heat Dissipation
             </div>
-            <p className="text-zinc-700 text-sm md:text-base leading-relaxed mb-8 max-w-xl font-medium">
-              Headquartered in C-59 Foundary Nagar, Agra, UP, GEE AAR (GR Engine Parts) manufactures OE-specification engine components engineered for maximum durability, heat dissipation, and long operational life.
+            <p className="text-zinc-700 text-xs sm:text-sm md:text-base leading-relaxed mb-8 max-w-[440px] font-medium">
+              Headquartered in C-59 Foundary Nagar, Agra, UP, GEE AAR delivers precision OE-standard engine spare parts for diesel, automotive, and industrial applications.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3.5">
               <Link
                 to="/products"
-                className="inline-flex items-center justify-center px-7 py-3.5 bg-[#EA580C] text-white font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:bg-orange-700 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3.5 bg-[#EA580C] text-white font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:bg-orange-700 transition-colors"
               >
                 Explore Products <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
               <Link
                 to="/quote"
-                className="inline-flex items-center justify-center px-7 py-3.5 bg-zinc-950 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:bg-zinc-800 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3.5 bg-zinc-950 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:bg-zinc-800 transition-colors"
               >
                 Request Quotation
               </Link>
