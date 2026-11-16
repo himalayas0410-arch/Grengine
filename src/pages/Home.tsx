@@ -108,8 +108,8 @@ export function Home() {
   return (
     <div className="w-full bg-white text-zinc-900 font-sans">
       <SEO
-        title="GEE AAR (GR) - Auto & Agricultural Engine Spare Parts Manufacturer Agra"
-        description="GEE AAR (GR) - Premier manufacturer of Cylinder Engine Heads, Cylinder Air Cooled Blocks & Pistons in C-59 Foundary Nagar, Agra, India since 1993."
+        title="GEE AAR ELECTRO CHEM (GR) - Auto & Agricultural Engine Spare Parts Manufacturer Agra"
+        description="GEE AAR ELECTRO CHEM (GR) - Premier manufacturer of Cylinder Engine Heads, Cylinder Air Cooled Blocks & Pistons in C-59 Foundary Nagar, Agra, India since 1993."
         canonicalPath="/"
       />
 
@@ -136,7 +136,7 @@ export function Home() {
               Engineered for Maximum Durability &amp; Heat Dissipation
             </div>
             <p className="text-zinc-700 text-xs sm:text-sm md:text-base leading-relaxed mb-8 max-w-[440px] font-medium">
-              Headquartered in C-59 Foundary Nagar, Agra, UP, GEE AAR delivers precision OE-standard engine spare parts for diesel, automotive, and industrial applications.
+              Headquartered in C-59 Foundary Nagar, Agra, UP, GEE AAR ELECTRO CHEM delivers precision OE-standard engine spare parts for diesel, automotive, and industrial applications.
             </p>
             <div className="flex flex-wrap gap-3.5">
               <Link
@@ -426,10 +426,10 @@ export function Home() {
               <img src="/images/gr_logo.jpeg" alt="GR Logo" className="h-10 w-auto object-contain" />
             </div>
             <h2 className="text-2xl md:text-3xl font-extrabold text-zinc-900 mb-3 tracking-tight">
-              GEE AAR Engine Parts
+              GEE AAR ELECTRO CHEM
             </h2>
             <p className="text-zinc-600 text-xs md:text-sm leading-relaxed mb-6">
-              Under our brand name <strong>GEE AAR</strong>, we manufacture high-performance Cylinder Engine Heads, Cylinder Air Cooled Blocks, Pistons, and precision engine components from C-59 Foundary Nagar, Agra, India.
+              Under <strong>GEE AAR ELECTRO CHEM</strong>, we manufacture high-performance Cylinder Engine Heads, Cylinder Air Cooled Blocks, Pistons, and precision engine components from C-59 Foundary Nagar, Agra, India.
             </p>
             <div className="flex justify-center items-center space-x-4">
               <div className="flex items-center text-xs font-bold text-zinc-800 bg-white px-4 py-2 rounded-lg border border-zinc-200">

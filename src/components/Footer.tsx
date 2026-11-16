@@ -32,15 +32,15 @@ export function Footer() {
             <Link to="/" className="inline-flex items-center space-x-3 mb-5 group">
               <img 
                 src="/images/gr_logo.jpeg" 
-                alt="GR Engine Parts" 
+                alt="GEE AAR ELECTRO CHEM" 
                 className="h-12 w-auto object-contain rounded bg-white p-1"
               />
               <span className="text-xl font-extrabold text-white tracking-tight">
-                GEE AAR
+                GEE AAR ELECTRO CHEM
               </span>
             </Link>
             <p className="text-xs text-zinc-400 leading-relaxed mb-6">
-              GEE AAR (GR Engine Parts) - Premier manufacturer & exporter of precision cylinder engine heads, cylinder air cooled blocks, pistons, and custom auto/agricultural components since {companyConfig.established}.
+              GEE AAR ELECTRO CHEM (GR Engine Parts) - Premier manufacturer & exporter of precision cylinder engine heads, cylinder air cooled blocks, pistons, and custom auto/agricultural components since {companyConfig.established}.
             </p>
             <div className="flex items-center space-x-2">
               {[
@@ -124,7 +124,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-zinc-800/80 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-zinc-500">
-          <p>Copyright &copy; 2026 GEE AAR (GR Engine Parts). All Rights Reserved. Established 1993 in Agra, India.</p>
+          <p>Copyright &copy; 2026 GEE AAR ELECTRO CHEM (GR Engine Parts). All Rights Reserved. Established 1993 in Agra, India.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy-policy" className="hover:text-zinc-400 transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-zinc-400 transition-colors">Terms of Service</Link>

@@ -22,7 +22,7 @@ export function AirCompressorKitsPage() {
     <div className="w-full bg-white font-sans">
       <SEO
         title="Air Compressor Kits & Blocks | KG Khosla, Mercedes, L&T & Anest Iwata"
-        description="Air brake compressor repair overhaul kits, cylinder blocks, pistons & ring assemblies for KG Khosla, Mercedes, L&T, and Anest Iwata compressors manufactured in Agra, India by GEE AAR."
+        description="Air brake compressor repair overhaul kits, cylinder blocks, pistons & ring assemblies for KG Khosla, Mercedes, L&T, and Anest Iwata compressors manufactured in Agra, India by GEE AAR ELECTRO CHEM."
         canonicalPath="/products/air-compressor-kits"
         image="https://geeaar.com/images/air_compressor_kits.jpeg"
       />
@@ -32,7 +32,7 @@ export function AirCompressorKitsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <span className="inline-flex items-center space-x-2 bg-[#EA580C] text-black font-black text-xs px-3.5 py-1.5 rounded-full mb-6 uppercase tracking-wider">
-              <Award className="w-4 h-4 mr-1" /> GEE AAR Engine Parts
+              <Award className="w-4 h-4 mr-1" /> GEE AAR ELECTRO CHEM
             </span>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight leading-tight">
               Air Compressor <span className="text-[#EA580C]">Kits & Blocks</span>
@@ -62,7 +62,7 @@ export function AirCompressorKitsPage() {
               </h2>
 
               <p>
-                GEE AAR manufactures high-precision <strong>Air Compressor Kits, Cylinder Blocks, Pistons, and Valves</strong> for heavy commercial vehicle air brake compressors, agricultural air systems, and industrial compressor units.
+                GEE AAR ELECTRO CHEM manufactures high-precision <strong>Air Compressor Kits, Cylinder Blocks, Pistons, and Valves</strong> for heavy commercial vehicle air brake compressors, agricultural air systems, and industrial compressor units.
               </p>
 
               <p>
@@ -140,7 +140,7 @@ export function AirCompressorKitsPage() {
               </h2>
             </div>
             <p className="text-zinc-500 text-xs mt-2 md:mt-0">
-              Actual manufactured products from GEE AAR Agra factory
+              Actual manufactured products from GEE AAR ELECTRO CHEM Agra factory
             </p>
           </div>
 
@@ -176,7 +176,7 @@ export function AirCompressorKitsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-extrabold mb-4">Inquire About Air Compressor Kits</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto mb-8 text-sm">
-            Contact GEE AAR for volume air compressor pricing and technical specs for KG Khosla, Mercedes, L&T, and Anest Iwata units.
+            Contact GEE AAR ELECTRO CHEM for volume air compressor pricing and technical specs for KG Khosla, Mercedes, L&T, and Anest Iwata units.
           </p>
           <Link to="/quote" className="inline-flex items-center px-8 py-3.5 bg-[#EA580C] text-white font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-orange-700 transition-colors shadow-lg">
             Request Quote <ArrowRight className="ml-2 w-4 h-4" />

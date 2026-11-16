@@ -131,15 +131,15 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3 group py-0.5">
+            <Link to="/" className="flex items-center space-x-3 group py-0.5 shrink-0">
               <img 
                 src="/images/gr_logo.jpeg" 
-                alt="GR Engine Parts" 
+                alt="GEE AAR ELECTRO CHEM" 
                 className="h-12 sm:h-16 md:h-18 max-h-20 w-auto object-contain transition-transform group-hover:scale-105"
               />
               <div className="flex flex-col">
                 <span className="text-xl md:text-2xl font-black text-zinc-900 tracking-tight leading-none group-hover:text-[#EA580C] transition-colors">
-                  GEE AAR
+                  GEE AAR ELECTRO CHEM
                 </span>
                 <span className="text-[10px] font-extrabold uppercase tracking-widest text-zinc-500 mt-1">
                   Engine Parts • Est. 1993

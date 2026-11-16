@@ -13,8 +13,8 @@ export function About() {
   return (
     <div className="w-full bg-white text-zinc-900 font-sans">
       <SEO 
-        title="About GEE AAR (GR) - Established 1993 in Agra, India"
-        description="Learn about GEE AAR (GR Engine Parts). Established in 1993 in C-59 Foundary Nagar, Agra, India, we are a premier manufacturer of Cylinder Engine Heads, Air Cooled Blocks, and Pistons."
+        title="About GEE AAR ELECTRO CHEM (GR) - Established 1993 in Agra, India"
+        description="Learn about GEE AAR ELECTRO CHEM (GR Engine Parts). Established in 1993 in C-59 Foundary Nagar, Agra, India, we are a premier manufacturer of Cylinder Engine Heads, Air Cooled Blocks, and Pistons."
         canonicalPath="/about"
       />
 
@@ -27,7 +27,7 @@ export function About() {
               <Award className="w-4 h-4 mr-1" /> ESTABLISHED 1993 | AGRA, INDIA
             </span>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-3 tracking-tight leading-tight">
-              About GEE AAR <span className="text-[#EA580C]">GR</span>
+              About GEE AAR ELECTRO CHEM <span className="text-[#EA580C]">GR</span>
             </h1>
             <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
               33 years of engineering precision, quality manufacturing, and pan-India presence in auto & agricultural engine spare parts.
@@ -47,7 +47,7 @@ export function About() {
               <div className="p-6 md:p-8 rounded-3xl bg-zinc-50 border border-zinc-200 shadow-sm space-y-4">
                 <h2 className="text-2xl font-black text-zinc-900 tracking-tight">Company History & Heritage</h2>
                 <p className="text-zinc-800 font-semibold leading-relaxed">
-                  Established in 1993 in C-59 Foundary Nagar, Agra, India, <strong>GEE AAR (GR Engine Parts)</strong> has been a trusted pioneer in manufacturing precision auto and agricultural engine spare parts for 33 years.
+                  Established in 1993 in C-59 Foundary Nagar, Agra, India, <strong>GEE AAR ELECTRO CHEM (GR Engine Parts)</strong> has been a trusted pioneer in manufacturing precision auto and agricultural engine spare parts for 33 years.
                 </p>
                 <p className="text-zinc-600 text-sm">
                   From humble beginnings in 1993, GEE AAR has expanded into a state-of-the-art manufacturing operation equipped with modern shell moulding foundries, CNC machining centers, and comprehensive quality assurance testing equipment.
@@ -300,7 +300,7 @@ export function About() {
                 <div className="w-16 h-16 rounded-2xl bg-orange-950/60 text-[#EA580C] border border-orange-800/40 flex items-center justify-center mx-auto mb-4">
                   <Building2 className="w-8 h-8" />
                 </div>
-                <h3 className="font-black text-2xl text-zinc-900 mb-1 tracking-tight">GEE AAR</h3>
+                <h3 className="font-black text-2xl text-zinc-900 mb-1 tracking-tight">GEE AAR ELECTRO CHEM</h3>
                 <div className="text-xs font-extrabold text-[#EA580C] uppercase tracking-wider mb-4">Brand: GR • Est. 1993</div>
                 <div className="p-4 rounded-xl bg-white border border-zinc-200 text-xs font-bold text-zinc-800">
                   C-59 Foundary Nagar, Agra, UP, India<br/>

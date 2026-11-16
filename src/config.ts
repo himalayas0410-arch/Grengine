@@ -1,7 +1,7 @@
 export const companyConfig = {
-  name: "GEE AAR",
+  name: "GEE AAR ELECTRO CHEM",
   shortName: "GR",
-  brandName: "GEE AAR (GR Engine Parts)",
+  brandName: "GEE AAR ELECTRO CHEM (GR Engine Parts)",
   domain: "indiasparepart.com",
   siteUrl: "https://indiasparepart.com",
   tagline: "Quality Auto & Agricultural Engine Spare Parts Manufacturer",
