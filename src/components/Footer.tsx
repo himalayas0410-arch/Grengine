@@ -104,11 +104,14 @@ export function Footer() {
                 </div>
                 <span className="text-zinc-300 leading-relaxed">{companyConfig.address}</span>
               </li>
-              <li className="flex items-center">
-                <div className="p-1.5 rounded bg-orange-950/60 text-[#EA580C] mr-3 shrink-0 border border-orange-800/40">
+              <li className="flex items-start">
+                <div className="p-1.5 rounded bg-orange-950/60 text-[#EA580C] mr-3 shrink-0 border border-orange-800/40 mt-0.5">
                   <Phone className="w-4 h-4" />
                 </div>
-                <a href={`tel:${companyConfig.phone}`} className="hover:text-white transition-colors font-medium">{companyConfig.phone}</a>
+                <div className="flex flex-col space-y-1">
+                  <a href={`tel:${companyConfig.phone}`} className="hover:text-white transition-colors font-medium">{companyConfig.phone}</a>
+                  <a href={`tel:${companyConfig.phone2}`} className="hover:text-white transition-colors font-medium">{companyConfig.phone2}</a>
+                </div>
               </li>
               <li className="flex items-center">
                 <div className="p-1.5 rounded bg-orange-950/60 text-[#EA580C] mr-3 shrink-0 border border-orange-800/40">

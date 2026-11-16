@@ -89,9 +89,14 @@ export function Navbar() {
           </div>
 
           {/* Center/Info Badge */}
-          <div className="hidden md:flex items-center text-xs font-semibold text-orange-100 space-x-4">
-            <span>📍 AGRA, INDIA (Est. 1960)</span>
-            <span>📞 +91 6396566120</span>
+          <div className="hidden md:flex items-center text-xs font-semibold text-orange-100 space-x-3">
+            <span>📍 AGRA, INDIA (Est. 1993)</span>
+            <span className="flex items-center space-x-1.5">
+              <span>📞</span>
+              <a href={`tel:${companyConfig.phone}`} className="hover:text-white transition-colors">{companyConfig.phone}</a>
+              <span className="opacity-70">/</span>
+              <a href={`tel:${companyConfig.phone2}`} className="hover:text-white transition-colors">{companyConfig.phone2}</a>
+            </span>
           </div>
 
           {/* Right Side: Social Media Icons */}

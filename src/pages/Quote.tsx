@@ -112,13 +112,16 @@ export function Quote() {
                   </div>
                 </div>
 
-                <div className="flex items-center">
-                  <div className="p-3 rounded-xl bg-orange-950/60 text-[#EA580C] mr-4 shrink-0 border border-orange-800/40">
+                <div className="flex items-start">
+                  <div className="p-3 rounded-xl bg-orange-950/60 text-[#EA580C] mr-4 shrink-0 border border-orange-800/40 mt-0.5">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="font-extrabold text-zinc-900 text-sm mb-1">Phone / WhatsApp</div>
-                    <a href={`tel:${companyConfig.phone}`} className="text-zinc-700 text-xs font-bold hover:text-[#EA580C] transition-colors">{companyConfig.phone}</a>
+                    <div className="font-extrabold text-zinc-900 text-sm mb-1">Phone / Mobile / WhatsApp</div>
+                    <div className="flex flex-col space-y-1">
+                      <a href={`tel:${companyConfig.phone}`} className="text-zinc-700 text-xs font-bold hover:text-[#EA580C] transition-colors">{companyConfig.phone}</a>
+                      <a href={`tel:${companyConfig.phone2}`} className="text-zinc-700 text-xs font-bold hover:text-[#EA580C] transition-colors">{companyConfig.phone2}</a>
+                    </div>
                   </div>
                 </div>
 

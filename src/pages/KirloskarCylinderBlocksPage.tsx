@@ -169,7 +169,7 @@ export function KirloskarCylinderBlocksPage() {
                   href={`tel:${companyConfig.phone}`}
                   className="bg-black hover:bg-zinc-800 text-white font-bold text-sm px-6 py-3.5 rounded-xl transition-all flex items-center"
                 >
-                  Call +91 6396566120
+                  Call {companyConfig.phone}
                 </a>
               </div>
             </div>

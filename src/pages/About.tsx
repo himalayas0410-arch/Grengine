@@ -304,7 +304,7 @@ export function About() {
                 <div className="text-xs font-extrabold text-[#EA580C] uppercase tracking-wider mb-4">Brand: GR • Est. 1993</div>
                 <div className="p-4 rounded-xl bg-white border border-zinc-200 text-xs font-bold text-zinc-800">
                   C-59 Foundary Nagar, Agra, UP, India<br/>
-                  <span className="text-zinc-500 font-normal">Phone: +91 6396566120</span>
+                  <span className="text-zinc-500 font-normal">Phone: {companyConfig.phone} / {companyConfig.phone2}</span>
                 </div>
               </div>
 
