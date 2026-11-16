@@ -9,9 +9,6 @@ const compressorPhotos = [
 ];
 
 const compatibleBrands = [
-  { name: "IR (Ingersoll Rand)", badge: "IR", desc: "Heavy-duty compressor overhaul kits & replacement cylinder blocks for IR air systems." },
-  { name: "Atlas Copco", badge: "ATLAS COPCO", desc: "High pressure compressor replacement kits & valves built to OEM specifications." },
-  { name: "Betico", badge: "BETICO", desc: "Large bore 230mm & heavy industrial air compressor cylinder blocks & overhaul assemblies." },
   { name: "KG Khosla", badge: "KG KHOSLA", desc: "High-performance air compressor cylinder blocks, pistons, and overhaul kits engineered to precise standards." },
   { name: "Mercedes", badge: "MERCEDES", desc: "OE-spec replacement compressor cylinder blocks, overhaul kits, and components for commercial vehicle air brake systems." },
   { name: "L&T (Larsen & Toubro)", badge: "L&T", desc: "Heavy industrial air compressor blocks, replacement overhaul kits, and precision pneumatic parts." },
@@ -24,8 +21,8 @@ export function AirCompressorKitsPage() {
   return (
     <div className="w-full bg-white font-sans">
       <SEO
-        title="Air Compressor Kits & Blocks | IR, Atlas Copco, KG Khosla, L&T"
-        description="Air brake compressor repair overhaul kits, cylinder blocks, pistons & ring assemblies for IR, Atlas Copco, Betico, KG Khosla, Mercedes, L&T, and Anest Iwata compressors manufactured in Agra, India by GEE AAR."
+        title="Air Compressor Kits & Blocks | KG Khosla, Mercedes, L&T & Anest Iwata"
+        description="Air brake compressor repair overhaul kits, cylinder blocks, pistons & ring assemblies for KG Khosla, Mercedes, L&T, and Anest Iwata compressors manufactured in Agra, India by GEE AAR."
         canonicalPath="/products/air-compressor-kits"
         image="https://geeaar.com/images/air_compressor_kits.jpeg"
       />
@@ -41,7 +38,7 @@ export function AirCompressorKitsPage() {
               Air Compressor <span className="text-[#EA580C]">Kits & Blocks</span>
             </h1>
             <p className="text-zinc-300 text-lg md:text-xl leading-relaxed mb-8">
-              Precision-cast replacement air compressor kits, cylinder blocks, pistons, and valve assemblies compatible with leading manufacturers including <strong>IR, Atlas Copco, Betico, KG Khosla, Mercedes, L&T, and Anest Iwata</strong>.
+              Precision-cast replacement air compressor kits, cylinder blocks, pistons, and valve assemblies compatible with leading manufacturers including <strong>KG Khosla, Mercedes, L&T (Larsen & Toubro), and Anest Iwata</strong>.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/quote" className="px-6 py-3 bg-[#EA580C] text-white font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-orange-700 transition-colors shadow-lg">
@@ -111,7 +108,7 @@ export function AirCompressorKitsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {compatibleBrands.map((brand, idx) => (
               <div
                 key={idx}
@@ -179,7 +176,7 @@ export function AirCompressorKitsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-extrabold mb-4">Inquire About Air Compressor Kits</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto mb-8 text-sm">
-            Contact GEE AAR for volume air compressor pricing and technical specs for IR, Atlas Copco, Betico, KG Khosla, Mercedes, L&T, and Anest Iwata units.
+            Contact GEE AAR for volume air compressor pricing and technical specs for KG Khosla, Mercedes, L&T, and Anest Iwata units.
           </p>
           <Link to="/quote" className="inline-flex items-center px-8 py-3.5 bg-[#EA580C] text-white font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-orange-700 transition-colors shadow-lg">
             Request Quote <ArrowRight className="ml-2 w-4 h-4" />
