@@ -54,8 +54,8 @@ export function KirloskarEngineHeadsPage() {
             {/* Product Image with GR Watermark */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-zinc-200 bg-zinc-100 p-4">
               <img 
-                src="/images/kat.jpeg" 
-                alt="Cylinder Engine Head by GEE AAR (GR)" 
+                src="/images/engine_head_main.png" 
+                alt="Cylinder Engine Head by GEE AAR ELECTRO CHEM (GR)" 
                 className="w-full h-80 md:h-[420px] object-cover rounded-xl"
               />
               <div className="absolute top-8 right-8 bg-black/85 backdrop-blur-md text-white text-xs font-black px-3.5 py-1.5 rounded-lg border border-orange-500/50 shadow-xl flex items-center gap-1.5 uppercase tracking-widest">

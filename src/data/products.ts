@@ -18,7 +18,7 @@ export const MOCK_PRODUCTS: Product[] = [
     shortDescription: 'Precision engineered cylinder heads designed for heavy duty engine performance.',
     description: 'GEE AAR (GR) manufactures heavy-duty cylinder engine heads built with premium alloy cast iron. Featuring precision valve seats and combustion chambers engineered for optimal heat dissipation and severe duty compression.',
     category: 'Cylinder Engine Heads',
-    image: '/images/kat.jpeg',
+    image: '/images/engine_head_main.png',
     applications: ['Agricultural Pumpsets', 'Industrial Engines', 'Stationary Power Units'],
     materials: ['High-Grade Alloy Cast Iron', 'Grey Cast Iron'],
   },

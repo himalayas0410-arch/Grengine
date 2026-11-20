@@ -10,7 +10,7 @@ const products = [
     name: 'Cylinder Engine Heads', 
     category: 'Engine Parts', 
     shortDescription: 'Precision engineered replacement cylinder heads built with premium alloy cast iron for diesel engines and pumpsets.', 
-    image: '/images/kat.jpeg' 
+    image: '/images/engine_head_main.png' 
   },
   { 
     id: '2', 

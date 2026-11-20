@@ -9,7 +9,7 @@ const productsGrid = [
   {
     name: 'CYLINDER ENGINE HEADS',
     desc: 'Precision engineered replacement cylinder heads for diesel engines, pumpsets, and industrial units.',
-    img: '/images/kat.jpeg',
+    img: '/images/engine_head_main.png',
     path: '/products/cylinder-engine-heads'
   },
   {
