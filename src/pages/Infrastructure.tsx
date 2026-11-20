@@ -140,9 +140,47 @@ export function Infrastructure() {
             <div className="lg:col-span-7 space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 
+                {/* CNC Turning Machines */}
+                <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-zinc-200 group hover:border-[#EA580C] transition-all flex flex-col justify-between">
+                  <div className="h-52 overflow-hidden bg-zinc-100 relative">
+                    <img
+                      src="/images/cnc_machine.jpeg"
+                      alt="CNC Turning Machine"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <span className="absolute top-3 left-3 bg-black/85 backdrop-blur-md text-[#EA580C] text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-wider border border-orange-500/40 shadow-md">
+                      CNC Turning
+                    </span>
+                  </div>
+                  <div className="p-4 sm:p-5 bg-white border-t border-zinc-100">
+                    <h3 className="font-extrabold text-zinc-900 text-sm sm:text-base leading-snug">
+                      CNC Turning Machines
+                    </h3>
+                  </div>
+                </div>
+
+                {/* VMC Milling Machine */}
+                <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-zinc-200 group hover:border-[#EA580C] transition-all flex flex-col justify-between">
+                  <div className="h-52 overflow-hidden bg-zinc-100 relative">
+                    <img
+                      src="/images/vmc_machine.webp"
+                      alt="VMC Milling Machine"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <span className="absolute top-3 left-3 bg-black/85 backdrop-blur-md text-[#EA580C] text-[10px] font-black px-3 py-1 rounded-lg uppercase tracking-wider border border-orange-500/40 shadow-md">
+                      VMC Milling
+                    </span>
+                  </div>
+                  <div className="p-4 sm:p-5 bg-white border-t border-zinc-100">
+                    <h3 className="font-extrabold text-zinc-900 text-sm sm:text-base leading-snug">
+                      VMC Milling Machine
+                    </h3>
+                  </div>
+                </div>
+
                 {/* Specialised Honing Machines for Cylinder Liners */}
                 <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-zinc-200 group hover:border-[#EA580C] transition-all flex flex-col justify-between">
-                  <div className="h-56 overflow-hidden bg-zinc-100 relative">
+                  <div className="h-52 overflow-hidden bg-zinc-100 relative">
                     <img
                       src="/images/machining.jpeg"
                       alt="Specialised Honing Machines for Cylinder Liners"
@@ -152,16 +190,16 @@ export function Infrastructure() {
                       Honing Facility
                     </span>
                   </div>
-                  <div className="p-5 bg-white border-t border-zinc-100">
+                  <div className="p-4 sm:p-5 bg-white border-t border-zinc-100">
                     <h3 className="font-extrabold text-zinc-900 text-sm sm:text-base leading-snug">
-                      Specialised Honing Machines for Cylinder Liners
+                      Specialised Honing Machines
                     </h3>
                   </div>
                 </div>
 
                 {/* Plato Honing */}
                 <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-zinc-200 group hover:border-[#EA580C] transition-all flex flex-col justify-between">
-                  <div className="h-56 overflow-hidden bg-zinc-100 relative">
+                  <div className="h-52 overflow-hidden bg-zinc-100 relative">
                     <img
                       src="/images/plato_honing.jpg"
                       alt="Plato Honing Machine"
@@ -171,7 +209,7 @@ export function Infrastructure() {
                       Plato Honing
                     </span>
                   </div>
-                  <div className="p-5 bg-white border-t border-zinc-100">
+                  <div className="p-4 sm:p-5 bg-white border-t border-zinc-100">
                     <h3 className="font-extrabold text-zinc-900 text-sm sm:text-base leading-snug">
                       Plato Honing
                     </h3>
