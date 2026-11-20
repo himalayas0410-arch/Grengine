@@ -163,7 +163,7 @@ export function Infrastructure() {
                 <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-zinc-200 group hover:border-[#EA580C] transition-all flex flex-col justify-between">
                   <div className="h-56 overflow-hidden bg-zinc-100 relative">
                     <img
-                      src="/images/pleto_honing.jpeg"
+                      src="/images/plato_honing.jpg"
                       alt="Plato Honing Machine"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
